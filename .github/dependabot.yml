@@ -1,0 +1,8 @@
+# Keeps the GitHub Actions used by the workflows (checkout, setup-python,
+# upload-artifact) up to date. The Python code has no dependencies.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

@@ -1,0 +1,18 @@
+name: Broken source
+description: A source fails or posts the wrong things
+labels: ["bug"]
+body:
+  - type: input
+    id: id
+    attributes:
+      label: Source id
+      placeholder: "e.g. riverlane"
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: What happens
+      description: Paste the line from the run summary or the Check sources report.
+    validations:
+      required: true

@@ -1,0 +1,16 @@
+# Secrets: never commit webhook URLs
+webhooks.json
+*.webhooks.json
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local artefacts
+source-health.md
+state/*.corrupt
+state/.state-*.tmp
+.DS_Store

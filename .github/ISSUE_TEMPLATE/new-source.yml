@@ -1,0 +1,28 @@
+name: New source
+description: Suggest a blog or research organization to follow
+labels: ["source"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: "e.g. Persiflage (Frank Calegari)"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Blog or news page URL
+    validations:
+      required: true
+  - type: input
+    id: feed
+    attributes:
+      label: RSS/Atom feed URL (if known)
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs
+      description: Who writes it, and why researchers read it.
+    validations:
+      required: true

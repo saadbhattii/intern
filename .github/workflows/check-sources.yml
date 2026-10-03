@@ -1,0 +1,43 @@
+name: Check sources
+
+# Live health check of every source: which feeds resolve, which fall back to
+# scraping, which return nothing, which have gone stale. Never posts, never
+# changes state. The report appears on the run's Summary page.
+on:
+  schedule:
+    - cron: "41 6 * * 1"   # Mondays 06:41 UTC
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Comma-separated source ids (blank = all)"
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check every source
+        env:
+          INPUT_ONLY: ${{ inputs.only }}
+        run: |
+          if [ -n "${INPUT_ONLY}" ]; then
+            python -m feedbot check --only "${INPUT_ONLY}" --output source-health.md
+          else
+            python -m feedbot check --output source-health.md
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: source-health
+          path: source-health.md
+          if-no-files-found: ignore
+          retention-days: 30

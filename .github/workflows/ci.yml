@@ -1,0 +1,30 @@
+name: CI
+
+# Offline checks only: no secrets, no network, safe for pull requests from forks.
+on:
+  push:
+    paths-ignore:
+      - "state/**"
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Compile all modules
+        run: python -m compileall -q feedbot tests
+      - name: Validate sources.toml
+        run: python -m feedbot lint
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v

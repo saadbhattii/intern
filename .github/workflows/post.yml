@@ -1,0 +1,88 @@
+name: Post new articles
+
+on:
+  schedule:
+    # Hourly, at an off-peak minute (GitHub delays jobs queued at :00).
+    # Cron is UTC. Missed or delayed runs are harmless: state tracks what was posted.
+    - cron: "23 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print what would be posted; post nothing and save nothing"
+        type: boolean
+        default: false
+      only:
+        description: "Comma-separated source ids (blank = all)"
+        type: string
+        default: ""
+      force_latest:
+        description: "Post the newest N items per selected source even if already seen (testing)"
+        type: number
+        default: 0
+
+# Never run two posting jobs at once (prevents duplicate posts and state races).
+# Queued runs wait instead of being cancelled, so no run's progress is lost.
+concurrency:
+  group: post-new-articles
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # to commit state/state.json and docs/SOURCES.md
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch sources and post to Discord
+        id: run
+        env:
+          DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
+          DISCORD_STATUS_WEBHOOK: ${{ secrets.DISCORD_STATUS_WEBHOOK }}
+          INPUT_ONLY: ${{ inputs.only }}
+          INPUT_FORCE: ${{ inputs.force_latest }}
+          INPUT_DRY: ${{ inputs.dry_run }}
+        run: |
+          args=(run)
+          if [ "${INPUT_DRY}" = "true" ]; then args+=(--dry-run); fi
+          if [ -n "${INPUT_ONLY}" ]; then args+=(--only "${INPUT_ONLY}"); fi
+          if [ -n "${INPUT_FORCE}" ] && [ "${INPUT_FORCE}" != "0" ]; then args+=(--force-latest "${INPUT_FORCE}"); fi
+          python -m feedbot "${args[@]}"
+
+      - name: Regenerate docs/SOURCES.md
+        if: ${{ always() && inputs.dry_run != true }}
+        run: python -m feedbot docs || echo "::warning::could not regenerate docs (non-fatal)"
+
+      # Runs even if the previous step failed, so partial progress (items already
+      # posted) is always remembered and never re-posted.
+      - name: Commit state
+        if: ${{ always() && inputs.dry_run != true }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state docs/SOURCES.md
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(state): update feed state [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "State pushed."
+              exit 0
+            fi
+            echo "Push rejected (attempt ${attempt}); rebasing onto remote and retrying..."
+            sleep $((attempt * 3))
+            # -X theirs keeps OUR freshly written state if both sides touched it.
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" || git rebase --abort || true
+          done
+          echo "::error::Could not push state after 5 attempts. Items posted in this run may be re-posted once."
+          exit 1
