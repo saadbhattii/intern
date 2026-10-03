@@ -9,6 +9,7 @@ from typing import Callable
 
 from .config import Config
 from .http import fetch as http_fetch
+from .pages import link_samples
 from .runner import SourceError, collect
 from .util import format_date, utcnow
 
@@ -16,7 +17,10 @@ from .util import format_date, utcnow
 def check_sources(config: Config, only: set[str] | None = None, fetch: Callable = http_fetch) -> tuple[str, int]:
     """Fetch every source (ignoring state) and report how it resolved.
 
-    Returns (markdown, number_of_problem_sources). Never posts anything.
+    Returns (markdown, number_of_sources_needing_attention). Never posts anything.
+    Icons: ✅ healthy · ℹ️ healthy but nothing currently matches its keyword filter
+    · 💤 no post within stale_after_days · ⚠️ works via a fallback or returned
+    nothing · ❌ failed.
     """
     now = utcnow()
     stale_cutoff = now - timedelta(days=config.defaults["stale_after_days"])
@@ -26,52 +30,66 @@ def check_sources(config: Config, only: set[str] | None = None, fetch: Callable 
         try:
             return collect(source, fetch=fetch)
         except SourceError as exc:
-            return exc
+            message = str(exc)
+            if "no article links found" in message and source.site:
+                message += _samples_hint(source.site, fetch)
+            return SourceError(message)
         except Exception as exc:  # noqa: BLE001
             return SourceError(f"unexpected {type(exc).__name__}: {exc}")
 
     with ThreadPoolExecutor(max_workers=12) as pool:
         results = list(pool.map(task, sources))
 
+    order = {"❌": 0, "⚠️": 1, "💤": 2, "ℹ️": 3, "✅": 4}
     rows = []
-    problems = 0
     for source, result in zip(sources, results):
         if isinstance(result, SourceError):
-            problems += 1
-            rows.append((0, source, "❌", "-", "-", "-", str(result)[:300]))
+            rows.append(("❌", source, "-", "-", "-", str(result)[:600]))
             continue
         items = result.items
         relevant = [i for i in items if source.keyword_ok(i.title)]
         dated = [i.published for i in relevant if i.published]
         newest = max(dated) if dated else None
-        note = ""
-        icon = "✅"
-        if not items:
+        sample = relevant[0].title[:80] if relevant else ""
+        if result.note:
+            icon, note = "⚠️", result.note
+        elif not items:
             icon, note = "⚠️", "resolved but returned 0 items"
         elif source.include_keywords and not relevant:
-            icon, note = "⚠️", "no recent titles match include_keywords"
+            icon, note = "ℹ️", "working; no current titles match include_keywords (normal for filtered feeds)"
         elif newest and newest < stale_cutoff:
             icon, note = "💤", f"no post since {format_date(newest)}"
         elif result.method == "html":
-            note = "scraped listing page (no feed): " + (relevant[0].title[:80] if relevant else "")
+            icon, note = "✅", "listing page: " + sample
         else:
-            note = relevant[0].title[:80] if relevant else ""
-        if icon != "✅":
-            problems += 1
+            icon, note = "✅", sample
         if not source.enabled:
             note = "(disabled) " + note
-        rows.append((1 if icon == "✅" else 0, source, icon, result.method, str(len(relevant)),
-                     format_date(newest) or "undated", note))
+        rows.append((icon, source, result.method, str(len(relevant)), format_date(newest) or "undated", note))
 
-    rows.sort(key=lambda r: (r[0], r[1].category, r[1].id))
+    rows.sort(key=lambda r: (order[r[0]], r[1].category, r[1].id))
+    attention = sum(1 for r in rows if r[0] in ("❌", "⚠️") and r[1].enabled)
+    counts = {icon: sum(1 for r in rows if r[0] == icon) for icon in order}
     lines = ["## Source health check", "",
-             f"{len(sources) - problems}/{len(sources)} sources healthy. "
-             "This check never posts and never changes state.", "",
+             " · ".join(f"{icon} {n}" for icon, n in counts.items() if n)
+             + f" · **{attention} need attention**. This check never posts and never changes state.", "",
              "| | Source | Method | Items | Newest | Note |", "|---|---|---|---|---|---|"]
-    for _, source, icon, method, count, newest, note in rows:
+    for icon, source, method, count, newest, note in rows:
         note = note.replace("|", "\\|").replace("\n", " ")
         lines.append(f"| {icon} | `{source.id}` | {method} | {count} | {newest} | {note} |")
-    return "\n".join(lines) + "\n", problems
+    return "\n".join(lines) + "\n", attention
+
+
+def _samples_hint(site: str, fetch: Callable) -> str:
+    """List the links a page actually contains, to make writing link_pattern easy."""
+    try:
+        resp = fetch(site)
+        samples = link_samples(resp.text(), resp.url)
+    except Exception:  # noqa: BLE001 - diagnostics only
+        return ""
+    if not samples:
+        return " — page has no same-site links (probably rendered by JavaScript; find a feed or another page)"
+    return " — links on page: " + ", ".join(samples)
 
 
 def sources_markdown(config: Config) -> str:

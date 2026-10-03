@@ -26,6 +26,10 @@ USER_AGENT = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/126.0 Safari/537.36 research-feed-bot/1.0"
 )
+# Some firewalls reject browser-like agents that lack real browser fingerprints,
+# others reject anything that is not a browser. On HTTP 403 the request is
+# retried once with this honest feed-reader identity before giving up.
+FEED_READER_AGENT = "research-feed-bot/1.0 (RSS reader; +https://github.com/topics/rss-reader)"
 MAX_BYTES = 8 * 1024 * 1024
 RETRYABLE_STATUS = {408, 425, 429, 500, 502, 503, 504, 520, 521, 522, 523, 524}
 _NETWORK_ERRORS = (
@@ -120,7 +124,9 @@ def fetch(
     if last_modified:
         headers["If-Modified-Since"] = last_modified
 
-    for attempt in range(attempts):
+    tried_alternate_agent = False
+    attempt = 0
+    while attempt < attempts:
         request = urllib.request.Request(url, headers=headers)
         try:
             with urllib.request.urlopen(request, timeout=timeout) as resp:
@@ -133,8 +139,13 @@ def fetch(
         except urllib.error.HTTPError as exc:
             if exc.code == 304:
                 return Response(url, 304, b"", {})
+            if exc.code == 403 and not tried_alternate_agent:
+                tried_alternate_agent = True
+                headers = dict(headers, **{"User-Agent": FEED_READER_AGENT, "Accept": "*/*"})
+                continue  # does not consume a retry attempt
             if exc.code in RETRYABLE_STATUS and attempt < attempts - 1:
                 _sleep_for_retry(attempt, exc.headers.get("Retry-After") if exc.headers else None)
+                attempt += 1
                 continue
             raise FetchError(f"HTTP {exc.code}", status=exc.code) from None
         except FetchError:
@@ -142,6 +153,7 @@ def fetch(
         except _NETWORK_ERRORS as exc:
             if attempt < attempts - 1:
                 _sleep_for_retry(attempt, None)
+                attempt += 1
                 continue
             reason = getattr(exc, "reason", exc)
             raise FetchError(f"network error: {reason}") from None

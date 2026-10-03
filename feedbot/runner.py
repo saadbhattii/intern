@@ -31,6 +31,8 @@ from .feeds import FeedParseError, looks_like_feed, parse_feed
 from .http import FetchError, fetch as http_fetch
 from .pages import discover_feeds, extract_links
 from .state import SourceState, State
+from urllib.parse import urlsplit
+
 from .util import Item, normalize_url, utcnow
 
 
@@ -46,6 +48,7 @@ class Collected:
     not_modified: bool = False
     etag: str | None = None
     last_modified: str | None = None
+    note: str = ""
 
 
 @dataclass
@@ -75,7 +78,13 @@ def collect(
     last_modified: str | None = None,
     fetch: Callable = http_fetch,
 ) -> Collected:
+    """Resolve a source to items. Order: feeds -> advertised feeds -> listing page -> homepage.
+
+    A feed that parses but contains no items is kept only as a last resort, so a
+    stub or comments feed never hides a working listing page.
+    """
     problems: list[str] = []
+    empty: list[Collected] = []
     candidates: list[str] = []
     if source.kind in ("auto", "feed"):
         if resolved_feed and source.kind == "auto":
@@ -88,65 +97,92 @@ def collect(
 
     for url in candidates:
         use_cache = url == resolved_feed
-        try:
-            resp = fetch(
-                url,
-                etag=etag if use_cache else None,
-                last_modified=last_modified if use_cache else None,
-            )
-        except FetchError as exc:
-            problems.append(f"{url}: {exc}")
-            continue
-        if resp.status == 304:
-            return Collected([], "feed", url, not_modified=True, etag=etag, last_modified=last_modified)
-        if not looks_like_feed(resp.body):
-            problems.append(f"{url}: not an RSS/Atom feed")
-            continue
-        try:
-            items = parse_feed(resp.body, resp.url)
-        except FeedParseError as exc:
-            problems.append(f"{url}: {exc}")
-            continue
-        return Collected(items, "feed", url, etag=resp.headers.get("etag"),
-                         last_modified=resp.headers.get("last-modified"))
+        result = _try_feed(url, fetch, problems, empty,
+                           etag=etag if use_cache else None,
+                           last_modified=last_modified if use_cache else None)
+        if result:
+            return result
 
     if source.kind in ("auto", "html") and source.site:
-        try:
-            resp = fetch(source.site)
-        except FetchError as exc:
-            problems.append(f"{source.site}: {exc}")
-            raise SourceError(" | ".join(problems)) from None
-        if looks_like_feed(resp.body):
+        pages = [source.site]
+        root = _origin(source.site)
+        if normalize_url(root) != normalize_url(source.site):
+            pages.append(root)
+        for page_url in pages:
+            is_fallback = page_url != source.site
             try:
-                return Collected(parse_feed(resp.body, resp.url), "feed", source.site)
-            except FeedParseError as exc:
-                problems.append(f"{source.site}: {exc}")
-        page = resp.text()
-        if source.kind == "auto":
-            for found in discover_feeds(page, resp.url)[:3]:
-                if found in candidates:
-                    continue
-                try:
-                    feed_resp = fetch(found)
-                    if looks_like_feed(feed_resp.body):
-                        return Collected(parse_feed(feed_resp.body, feed_resp.url), "feed", found,
-                                         etag=feed_resp.headers.get("etag"),
-                                         last_modified=feed_resp.headers.get("last-modified"))
-                    problems.append(f"{found}: advertised feed is not RSS/Atom")
-                except (FetchError, FeedParseError) as exc:
-                    problems.append(f"{found}: {exc}")
-        try:
-            items = extract_links(page, resp.url, source.link_pattern or None)
-        except Exception as exc:  # noqa: BLE001 - never let one page break the run
-            items = []
-            problems.append(f"{source.site}: link extraction failed: {exc}")
-        if items:
-            return Collected(items, "html", resp.url)
-        problems.append(f"{source.site}: no article links found (set link_pattern?)")
+                resp = fetch(page_url)
+            except FetchError as exc:
+                problems.append(f"{page_url}: {exc}")
+                if exc.status in (404, 410) and not is_fallback:
+                    continue  # listing page moved: try the homepage
+                break
+            if looks_like_feed(resp.body):
+                result = _parsed(resp, page_url, problems, empty)
+                if result:
+                    return result
+                continue
+            page = resp.text()
+            if source.kind == "auto":
+                for found in discover_feeds(page, resp.url)[:3]:
+                    if found in candidates:
+                        continue
+                    candidates.append(found)
+                    result = _try_feed(found, fetch, problems, empty)
+                    if result:
+                        if is_fallback:
+                            result.note = f"listing page {source.site} is gone; using feed found on the homepage"
+                        return result
+            try:
+                items = extract_links(page, resp.url, source.link_pattern or None)
+            except Exception as exc:  # noqa: BLE001 - never let one page break the run
+                items = []
+                problems.append(f"{page_url}: link extraction failed: {exc}")
+            if items:
+                note = (f"listing page {source.site} is gone; scraping article links from the homepage"
+                        if is_fallback else "")
+                return Collected(items, "html", resp.url, note=note)
+            problems.append(f"{page_url}: no article links found")
 
+    if empty:
+        return empty[0]
     if not problems:
         problems.append("no feed or site configured")
     raise SourceError(" | ".join(problems))
+
+
+def _origin(url: str) -> str:
+    parts = urlsplit(url)
+    return f"{parts.scheme}://{parts.netloc}/"
+
+
+def _try_feed(url, fetch, problems, empty, etag=None, last_modified=None) -> Collected | None:
+    try:
+        resp = fetch(url, etag=etag, last_modified=last_modified)
+    except FetchError as exc:
+        problems.append(f"{url}: {exc}")
+        return None
+    if resp.status == 304:
+        return Collected([], "feed", url, not_modified=True, etag=etag, last_modified=last_modified)
+    if not looks_like_feed(resp.body):
+        problems.append(f"{url}: not an RSS/Atom feed")
+        return None
+    return _parsed(resp, url, problems, empty)
+
+
+def _parsed(resp, url, problems, empty) -> Collected | None:
+    try:
+        items = parse_feed(resp.body, resp.url)
+    except FeedParseError as exc:
+        problems.append(f"{url}: {exc}")
+        return None
+    result = Collected(items, "feed", url, etag=resp.headers.get("etag"),
+                       last_modified=resp.headers.get("last-modified"))
+    if not items:
+        problems.append(f"{url}: feed has no items")
+        empty.append(result)
+        return None
+    return result
 
 
 # --------------------------------------------------------------------------
@@ -297,6 +333,9 @@ def _process(source, hook, result, st, defaults, client, now, force_latest, repo
         st.set("resolved_feed", None)
         st.set("etag", None)
         st.set("last_modified", None)
+
+    if collected.note:
+        report.warnings.append(f"{source.id}: {collected.note} (update `site` in sources.toml)")
 
     if collected.not_modified and not force_latest:
         _success(source, st, now, report)

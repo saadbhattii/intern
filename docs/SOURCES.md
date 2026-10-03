@@ -2,7 +2,7 @@
 
 <!-- Generated from sources.toml by `python -m feedbot docs`. Do not edit by hand. -->
 
-125 active sources. Each posts titles and links only, to its own Discord channel.
+120 active sources. Each posts titles and links only, to its own Discord channel.
 
 ## Quantum researchers
 
@@ -41,17 +41,17 @@
 | [Gödel's Lost Letter and P=NP](https://rjlipton.com/) | `godels-lost-letter` | feed | Rare posts. |
 | [arg min](https://www.argmin.net/) | `arg-min` | feed | High volume. 2-4 posts a week during term. |
 | [0xDE](https://11011110.github.io/blog/) | `eppstein` | feed |  |
-| [Ernie's 3D Pancakes](https://jeffgerickson.substack.com/) | `ernies-3d-pancakes` | feed |  |
+| [Ernie's 3D Pancakes](https://jeffgerickson.substack.com/) | `ernies-3d-pancakes` | feed | Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting. |
 | [Thoughts (Emanuele Viola)](https://emanueleviola.wordpress.com/) | `emanuele-viola` | feed |  |
 | [Kamathematics](https://kamathematics.wordpress.com/) | `kamathematics` | feed |  |
 | [Machine Learning Research Blog](https://francisbach.com/) | `francis-bach` | feed |  |
-| [Adventures in Computation](https://aaronsadventures.blogspot.com/) | `aaron-roth` | feed |  |
-| [My Biased Coin](https://mybiasedcoin.blogspot.com/) | `my-biased-coin` | feed |  |
+| [Adventures in Computation](https://aaronsadventures.blogspot.com/) | `aaron-roth` | feed | Disabled. Dormant: no post since March 2024 (Check sources, Oct 2026). Re-enable if it revives. |
+| [My Biased Coin](https://mybiasedcoin.blogspot.com/) | `my-biased-coin` | feed | Disabled. Dormant: no post since November 2021 (Check sources, Oct 2026). Re-enable if it revives. |
 | [Sophie Huiberts](https://sophie.huiberts.me/) | `sophie-huiberts` | feed |  |
 | [Decentralized Thoughts](https://decentralizedthoughts.github.io/) | `decentralized-thoughts` | feed |  |
-| [Off the Convex Path](http://www.offconvex.org/) | `off-the-convex-path` | feed |  |
-| [Gradient Science](https://gradientscience.org/) | `gradient-science` | feed |  |
-| [Simons Institute Blog](https://blog.simons.berkeley.edu/) | `simons-institute` | feed |  |
+| [Off the Convex Path](http://www.offconvex.org/) | `off-the-convex-path` | feed | Disabled. Dormant: no post since July 2022 (Check sources, Oct 2026). Re-enable if it revives. |
+| [Gradient Science](https://gradientscience.org/) | `gradient-science` | feed | Disabled. Dormant: no post since March 2025 (Check sources, Oct 2026). Re-enable if it revives. |
+| [Simons Institute News](https://simons.berkeley.edu/news) | `simons-institute` | feed discovery, else listing page | The old blog.simons.berkeley.edu feed stopped in May 2025; news moved here. |
 | [Theory Dish](https://theorydish.blog/) | `theory-dish` | feed |  |
 | [DifferentialPrivacy.org](https://differentialprivacy.org/) | `differential-privacy` | feed |  |
 
@@ -64,9 +64,9 @@
 | [Ahead of AI](https://magazine.sebastianraschka.com/) | `ahead-of-ai` | feed |  |
 | [Interconnects](https://www.interconnects.ai/) | `interconnects` | feed | High volume. |
 | [Bounded Regret](https://bounded-regret.ghost.io/) | `bounded-regret` | feed |  |
-| [AI: A Guide for Thinking Humans](https://aiguide.substack.com/) | `ai-guide-thinking-humans` | feed |  |
+| [AI: A Guide for Thinking Humans](https://aiguide.substack.com/) | `ai-guide-thinking-humans` | feed | Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting. |
 | [Statistical Modeling, Causal Inference, and Social Science](https://statmodeling.stat.columbia.edu/) | `gelman-stat-modeling` | feed | High volume. 1-2 posts a day. |
-| [Marcus on AI](https://garymarcus.substack.com/) | `marcus-on-ai` | feed | High volume. Near-daily commentary; more polemic than research. |
+| [Marcus on AI](https://garymarcus.substack.com/) | `marcus-on-ai` | feed | High volume. Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting. |
 | [Simon Willison's Weblog](https://simonwillison.net/) | `simon-willison` | feed | High volume. Long-form entries only (the link blog is excluded). |
 
 ## Big tech quantum programs
@@ -131,7 +131,7 @@
 | [BlueQubit](https://www.bluequbit.io/blog) | `bluequbit` | feed discovery, else listing page |  |
 | [Multiverse Computing](https://multiversecomputing.com/resources) | `multiverse-computing` | feed discovery, else listing page | Leans marketing. |
 | [SandboxAQ](https://www.sandboxaq.com/blog) | `sandboxaq` | feed discovery, else listing page · filtered: quantum, qubit, post-quantum, pqc, cryptograph | Filtered to quantum topics. |
-| [Unitary Foundation](https://unitary.foundation/posts/) | `unitary-foundation` | feed | Open-source quantum software nonprofit (formerly Unitary Fund). |
+| [Unitary Foundation](https://unitary.foundation/blog) | `unitary-foundation` | feed discovery, else listing page | Open-source quantum software nonprofit (formerly Unitary Fund). Posts live at /posts/<slug>/. |
 | [Qiskit (Medium)](https://medium.com/qiskit) | `qiskit-medium` | feed | Disabled. Probably dormant; IBM now posts Qiskit news on the IBM Quantum blog. Enable if it revives. |
 
 ## Control systems and enabling hardware
@@ -158,7 +158,7 @@
 | Source | ID | How it is read | Notes |
 |---|---|---|---|
 | [IEEE Spectrum (quantum)](https://spectrum.ieee.org/topic/computing/) | `ieee-spectrum-quantum` | feed · filtered: quantum, qubit |  |
-| [IEEE Quantum](https://quantum.ieee.org/) | `ieee-quantum` | feed discovery, else listing page | Low volume; mostly events (IEEE Quantum Week). |
+| [IEEE Quantum](https://quantum.ieee.org/) | `ieee-quantum` | feed discovery, else listing page | Disabled. Dormant: no post since August 2025 (Check sources, Oct 2026). Re-enable if it revives. |
 | [Quanta Magazine (quantum)](https://www.quantamagazine.org/) | `quanta-quantum` | feed · filtered: quantum, qubit, entangle |  |
 | [Physics World (quantum)](https://physicsworld.com/) | `physics-world-quantum` | feed · filtered: quantum, qubit, entangle |  |
 | [APS Physics Magazine](https://physics.aps.org/) | `aps-physics-magazine` | feed · filtered: quantum, qubit, entangle | Disabled. Disabled: mostly commentary on individual papers. Enable if wanted. |
@@ -169,12 +169,12 @@
 | Source | ID | How it is read | Notes |
 |---|---|---|---|
 | [National Quantum Initiative (quantum.gov)](https://www.quantum.gov/news/) | `quantum-gov` | feed |  |
-| [NIST Quantum Information Science](https://www.nist.gov/topics/physics/quantum-information-science) | `nist-quantum` | feed discovery, else listing page |  |
+| [NIST Quantum Information Science](https://www.nist.gov/topics/physics/quantum-information-science) | `nist-quantum` | feed discovery, else listing page · filtered: quantum, qubit, entangle | Topic page moved; keyword filter keeps homepage fallback on-topic. |
 | [SQMS Center (Fermilab)](https://sqms.fnal.gov/news/) | `sqms-fermilab` | feed |  |
 | [Quantum Systems Accelerator (Berkeley Lab)](https://quantumsystemsaccelerator.org/news/) | `quantum-systems-accelerator` | feed |  |
 | [Q-NEXT (Argonne)](https://www.q-next.org/news/) | `q-next` | feed discovery, else listing page |  |
 | [Quantum Science Center (Oak Ridge)](https://qscience.org/news/) | `quantum-science-center` | feed discovery, else listing page |  |
-| [C2QA (Brookhaven)](https://www.bnl.gov/quantumcenter/news/) | `c2qa` | feed discovery, else listing page |  |
+| [C2QA (Brookhaven)](https://www.bnl.gov/quantumcenter/news/) | `c2qa` | feed discovery, else listing page · filtered: quantum, qubit, c2qa | Keyword filter keeps a bnl.gov homepage fallback on-topic. |
 | [UK National Quantum Computing Centre](https://www.nqcc.ac.uk/news/) | `nqcc` | feed |  |
 | [EU Quantum Flagship](https://qt.eu/news) | `eu-quantum-flagship` | feed discovery, else listing page |  |
 | [DARPA (quantum news)](https://www.darpa.mil/news) | `darpa-quantum` | feed discovery, else listing page · filtered: quantum, qubit, qbi |  |
@@ -197,6 +197,6 @@
 | Source | ID | How it is read | Notes |
 |---|---|---|---|
 | [Opinions Libres](https://www.oezratty.net/wordpress/) | `olivier-ezratty` | feed | Long, deeply researched industry analyses. |
-| [Daily Quantum Update](https://drbobsutor.substack.com/) | `daily-quantum-update` | feed | High volume. Daily round-up; catches company news you don't follow individually. |
+| [Daily Quantum Update](https://drbobsutor.substack.com/) | `daily-quantum-update` | feed | High volume. Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting. |
 | [Quantum Computing Report](https://quantumcomputingreport.com/) | `quantum-computing-report` | feed | High volume. |
 | [The Quantum Insider](https://thequantuminsider.com/) | `quantum-insider` | feed | High volume. Very high volume; posted as digests. |
