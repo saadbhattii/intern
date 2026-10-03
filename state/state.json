@@ -1,0 +1,19 @@
+{
+ "meta": {
+  "heartbeat": "2026-10",
+  "version": 1
+ },
+ "sources": {
+  "shtetl-optimized": {
+   "etag": "W/\"78a6cf7db4f1db5081bb4143f342ae16\"",
+   "failures": 0,
+   "initialized": true,
+   "last_modified": "Tue, 29 Sep 2026 16:22:33 GMT",
+   "last_ok": "2026-10-03T08:56:17+00:00",
+   "resolved_feed": "https://scottaaronson.blog/?feed=rss2",
+   "seen": [
+    "3baa0d7249c9a28448a1"
+   ]
+  }
+ }
+}
