@@ -9,7 +9,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Wed, 11 Feb 2026 20:14:22 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://aaronsadventures.blogspot.com/feeds/posts/default",
    "seen": [
     "05547298f1bfa1b9c2c4",
@@ -65,10 +65,10 @@
    ]
   },
   "ahead-of-ai": {
-   "etag": "W/\"295165-ItQWYOyA+PcFsRyQQGsEbf9U5aY\"",
+   "etag": "W/\"295165-AzUiGFC/F/DX+ymtQ/Ux0TiFhsA\"",
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://magazine.sebastianraschka.com/feed",
    "seen": [
     "3c3bfa327de006380ea5",
@@ -94,7 +94,7 @@
    ]
   },
   "ai-guide-thinking-humans": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://aiguide.substack.com/feed: HTTP 403 | https://aiguide.substack.com/: HTTP 403",
    "seen": []
   },
@@ -103,7 +103,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sun, 28 Jun 2026 03:17:11 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://algassert.com/feed.xml",
    "seen": [
     "407b2f23c9c5f1ea7d54",
@@ -121,7 +121,7 @@
   "algorithmiq": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "2e4177a5d3b34d2b7a3b",
     "dcf8a2f10406944845f9",
@@ -141,8 +141,8 @@
    ]
   },
   "alice-and-bob": {
-   "failures": 1,
-   "last_error": "https://alice-bob.com/feed/: not an RSS/Atom feed | https://alice-bob.com/blog/: no article links found (set link_pattern?)",
+   "failures": 2,
+   "last_error": "https://alice-bob.com/feed/: HTTP 403 | https://alice-bob.com/blog/: HTTP 403",
    "seen": []
   },
   "aliro": {
@@ -150,7 +150,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 28 Sep 2026 20:23:47 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://www.aliroquantum.com/blog/rss.xml",
    "seen": [
     "8fb516346c102b741fad",
@@ -169,7 +169,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 16:03:46 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://www.aqt.eu/feed/",
    "seen": [
     "5575f87aac699bcb24b8",
@@ -195,10 +195,10 @@
    ]
   },
   "arg-min": {
-   "etag": "W/\"4586e-BQwe2V3OUWFtHjZJnHIIZD5CJgw\"",
+   "etag": "W/\"4586e-DTi859epUCSf7byYURiiv0HLwfk\"",
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://www.argmin.net/feed",
    "seen": [
     "c556bb964c2785de67b6",
@@ -226,7 +226,7 @@
   "atom-computing": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "1a71f11fddba905fdee7",
     "1b615d9d3dba3b0cf726"
@@ -236,7 +236,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Thu, 01 Oct 2026 00:13:40 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://aws.amazon.com/blogs/quantum-computing/feed/",
    "seen": [
     "01b3095aa3e257faf818",
@@ -264,8 +264,8 @@
   "azimuth": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Tue, 29 Sep 2026 13:54:50 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Tue, 29 Sep 2026 13:55:00 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://johncarlosbaez.wordpress.com/feed/",
    "seen": [
     "9d9ab906c2ed8c7d0ddf",
@@ -315,7 +315,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Wed, 17 Jun 2026 22:55:27 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://azure.microsoft.com/en-us/blog/quantum/feed/",
    "seen": [
     "36325a0db87642eac88a",
@@ -334,14 +334,14 @@
    ]
   },
   "bluefors": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://bluefors.com/news/: no article links found (set link_pattern?)",
    "seen": []
   },
   "bluequbit": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "82a478e26c7a02a671f6",
     "033ced9c0dff84568f1b",
@@ -359,7 +359,7 @@
    "etag": "W/\"7ccd8-b999dBjRZPlLySSNdJOBMtRaekM\"",
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://bounded-regret.ghost.io/rss/",
    "seen": [
     "9bc7a248e365e4af26eb",
@@ -395,22 +395,22 @@
    ]
   },
   "c2qa": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.bnl.gov/quantumcenter/news/: HTTP 404",
    "seen": []
   },
   "cacm-quantum": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://cacm.acm.org/feed/: HTTP 403 | https://cacm.acm.org/: HTTP 403",
    "seen": []
   },
   "chicago-quantum-exchange": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://chicagoquantum.org/news: no article links found (set link_pattern?)",
    "seen": []
   },
   "classiq": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.classiq.io/insights: HTTP 404",
    "seen": []
   },
@@ -418,7 +418,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Thu, 01 Oct 2026 13:01:30 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://blog.cloudflare.com/tag/post-quantum/rss/",
    "seen": [
     "ef1e4a48bb44c9613040",
@@ -468,7 +468,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sat, 03 Oct 2026 08:59:22 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://blog.computationalcomplexity.org/feeds/posts/default",
    "seen": [
     "25167cb32c172cfcbd05",
@@ -524,14 +524,14 @@
    ]
   },
   "cqt-singapore": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.cqt.sg/news: no article links found (set link_pattern?)",
    "seen": []
   },
   "d-wave": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "26024e2b3bf0daa6c5b8",
     "4878825a457f7b8ed663",
@@ -542,14 +542,14 @@
    ]
   },
   "daily-quantum-update": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://drbobsutor.substack.com/feed: HTTP 403 | https://drbobsutor.substack.com/: HTTP 403",
    "seen": []
   },
   "darpa-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "35932e2459c028531fc6",
     "bde997f06815c647fa59",
@@ -562,7 +562,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 22:12:53 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://decentralizedthoughts.github.io/feed",
    "seen": [
     "706829dbf008d54ed932",
@@ -592,7 +592,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 15 Jun 2026 19:04:46 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://differentialprivacy.org/feed.xml",
    "seen": [
     "373a3960b49e8b3adf74",
@@ -608,15 +608,15 @@
    ]
   },
   "diraq": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://diraq.com/news: HTTP 404",
    "seen": []
   },
   "emanuele-viola": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Tue, 22 Sep 2026 05:16:30 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Sat, 26 Sep 2026 04:17:43 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://emanueleviola.wordpress.com/feed/",
    "seen": [
     "51c6d9c3e5977be21945",
@@ -642,11 +642,11 @@
    ]
   },
   "eppstein": {
-   "etag": "W/\"6abdb24e-14af1\"",
+   "etag": "W/\"6abdb24f-14af1\"",
    "failures": 0,
    "initialized": true,
-   "last_modified": "Thu, 01 Oct 2026 01:07:26 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Thu, 01 Oct 2026 01:07:27 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://11011110.github.io/blog/feed.xml",
    "seen": [
     "5703fa6ea00512e9ebd4",
@@ -672,19 +672,19 @@
    ]
   },
   "equal1": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.equal1.com/news: HTTP 404",
    "seen": []
   },
   "ernies-3d-pancakes": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://jeffgerickson.substack.com/feed: HTTP 403 | https://jeffgerickson.substack.com/: HTTP 403",
    "seen": []
   },
   "eu-quantum-flagship": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "c39bfd59fd48bc44d3d2",
     "1d8fffecd5e80cac85fc",
@@ -703,8 +703,8 @@
   "four-gravitons": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Fri, 02 Oct 2026 16:02:04 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Fri, 02 Oct 2026 16:03:00 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://4gravitons.com/feed/",
    "seen": [
     "7b44f323e6926fa7c81c",
@@ -733,7 +733,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 25 Sep 2026 13:08:17 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://francisbach.com/feed/",
    "seen": [
     "e46c83c5b02dda22749e",
@@ -763,7 +763,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 23:52:34 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://statmodeling.stat.columbia.edu/feed/",
    "seen": [
     "30f397737b566d245f5a",
@@ -871,8 +871,8 @@
   "gil-kalai": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Fri, 02 Oct 2026 03:22:39 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Fri, 02 Oct 2026 03:21:36 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://gilkalai.wordpress.com/feed/",
    "seen": [
     "bb47e7603c155c861112",
@@ -902,7 +902,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sun, 03 May 2026 17:13:06 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://rjlipton.com/feed/",
    "seen": [
     "2e14ac4e59203fb19c8e",
@@ -930,7 +930,7 @@
   "google-quantum-ai": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "c44e7f2bbc49ceca54e9"
    ]
@@ -939,7 +939,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 14:57:41 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://research.google/blog/rss/",
    "seen": [
     "13a08db808bbe118af2c",
@@ -1047,8 +1047,8 @@
   "gowers": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Fri, 02 Oct 2026 16:05:26 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Fri, 02 Oct 2026 16:05:28 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://gowers.wordpress.com/feed/",
    "seen": [
     "bcfb6f67f71edc9a950c",
@@ -1108,7 +1108,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 07 Mar 2025 15:50:55 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://gradientscience.org/feed.xml",
    "seen": [
     "f5febd92f6e9dafca71d",
@@ -1126,7 +1126,7 @@
   "haiqu": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "92cc45b851cfaf63d510",
     "17ab3a80c734336ec20d",
@@ -1137,14 +1137,14 @@
    ]
   },
   "harvard-quantum": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://quantum.harvard.edu/news: HTTP 403",
    "seen": []
   },
   "horizon-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "0619d2460c2a7303f62c",
     "7b11131531d9cc8ab666",
@@ -1161,7 +1161,7 @@
   "ibm-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "c0dc0ffa3f4d4fae6043",
     "21c0ebbb48645a517410",
@@ -1186,7 +1186,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Tue, 29 Sep 2026 17:55:51 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://quantum.ieee.org/feed/",
    "seen": [
     "085d76db64a01bfe6001",
@@ -1202,7 +1202,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 13:18:41 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://spectrum.ieee.org/feeds/topic/computing.rss",
    "seen": [
     "757dc7ec93bdca9a55c2",
@@ -1240,8 +1240,8 @@
   "igor-pak": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Fri, 25 Sep 2026 20:33:54 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Sat, 26 Sep 2026 04:14:10 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://igorpak.wordpress.com/feed/",
    "seen": [
     "d56842e26fcc7059df70",
@@ -1267,10 +1267,10 @@
    ]
   },
   "infinitely-more": {
-   "etag": "W/\"3cc48-WuVwM3KY+KTZxcT1kG/C/HFwIUM\"",
+   "etag": "W/\"3cc48-G3+/G0GfNtk43u+aVXWxTTGGS3U\"",
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://www.infinitelymore.xyz/feed",
    "seen": [
     "50b21fe2ba22e6bfda39",
@@ -1300,7 +1300,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 20:32:27 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://infleqtion.com/feed/",
    "seen": [
     "33deb6bf8390566b35ed",
@@ -1326,10 +1326,10 @@
    ]
   },
   "interconnects": {
-   "etag": "W/\"83c05-JQf/HWO85h/0i3lD7UF0LQe2bOE\"",
+   "etag": "W/\"83c05-TzPZHL8mBl79FHMa3/dw6PAU5p8\"",
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://www.interconnects.ai/feed",
    "seen": [
     "6a95d7e9e23e49949a43",
@@ -1357,7 +1357,7 @@
   "ionq": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "e843b70175eac8b75c7d",
     "9484d025b5c1a761ad37",
@@ -1426,7 +1426,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 21:52:05 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://uwaterloo.ca/institute-for-quantum-computing/news/news.xml",
    "seen": [
     "90bdf0fb0ab6945b940c",
@@ -1446,20 +1446,20 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sat, 03 Oct 2026 05:34:35 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://iqm.tech/feed/",
    "seen": []
   },
   "jqi": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://jqi.umd.edu/news: no article links found (set link_pattern?)",
    "seen": []
   },
   "kamathematics": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 01 Jun 2026 15:00:54 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Sat, 26 Sep 2026 04:16:12 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://kamathematics.wordpress.com/feed/",
    "seen": [
     "67582d1bfbf3e7438f90",
@@ -1487,8 +1487,8 @@
   "karpathy": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Fri, 02 Oct 2026 21:14:51 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Sat, 03 Oct 2026 01:13:49 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://karpathy.bearblog.dev/feed/",
    "seen": [
     "30741f584488acaf93f4",
@@ -1506,7 +1506,7 @@
   "kipu-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "32cdcb3419839da23abd",
     "2be6b20c72e9385977d1",
@@ -1523,7 +1523,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Tue, 14 Jul 2026 06:14:59 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://lilianweng.github.io/index.xml",
    "seen": [
     "2c589c3624db62180737",
@@ -1582,21 +1582,21 @@
    ]
   },
   "marcus-on-ai": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://garymarcus.substack.com/feed: HTTP 403 | https://garymarcus.substack.com/: HTTP 403",
    "seen": []
   },
   "maybell": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.maybellquantum.com/blog: HTTP 404",
    "seen": []
   },
   "mit-news-quantum": {
-   "etag": "\"1791017659\"",
+   "etag": "\"1791019479\"",
    "failures": 0,
    "initialized": true,
-   "last_modified": "Sat, 03 Oct 2026 08:54:19 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Sat, 03 Oct 2026 09:24:39 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://news.mit.edu/rss/topic/quantum-computing",
    "seen": [
     "f507b931ce1788cfa6d6",
@@ -1654,7 +1654,7 @@
   "multiverse-computing": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "db253a7b7408d49f0b1c",
     "1edf718c6d8da6800270",
@@ -1683,7 +1683,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sat, 26 Sep 2026 14:12:18 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://mybiasedcoin.blogspot.com/feeds/posts/default",
    "seen": [
     "2a15a50fe647378b728d",
@@ -1743,7 +1743,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 25 Sep 2026 20:38:32 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://golem.ph.utexas.edu/category/atom10.xml",
    "seen": [
     "641e0ef201b80ba79957",
@@ -1783,7 +1783,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 10:19:30 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://nanoscale.blogspot.com/feeds/posts/default",
    "seen": [
     "c532465365af4e37b032",
@@ -1839,7 +1839,7 @@
    ]
   },
   "nist-quantum": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.nist.gov/topics/physics/quantum-information-science: HTTP 404",
    "seen": []
   },
@@ -1848,7 +1848,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 28 Sep 2026 19:16:35 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://www.nordquantique.com/feed/",
    "seen": [
     "df1f701f36e2a408eaf6",
@@ -1878,7 +1878,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Tue, 29 Sep 2026 23:07:07 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://www.math.columbia.edu/~woit/wordpress/?feed=rss2",
    "seen": [
     "36d395ba95da862e417b",
@@ -1896,7 +1896,7 @@
   "nqcc": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "2e924cf49865ac6b38d2",
     "87a2bee830def7426069",
@@ -1908,7 +1908,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Thu, 01 Oct 2026 19:11:00 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://developer.nvidia.com/blog/feed/",
    "seen": [
     "57fe7402c0ac11ed0826",
@@ -2118,7 +2118,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 17 Feb 2023 00:04:54 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "http://www.offconvex.org/feed.xml",
    "seen": [
     "64509d53225b9ae340ec",
@@ -2138,7 +2138,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Wed, 30 Sep 2026 12:43:53 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://www.oezratty.net/wordpress/feed/",
    "seen": [
     "55605c0437527bdfd554",
@@ -2188,7 +2188,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Wed, 30 Sep 2026 09:51:03 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://oqc.tech/feed/",
    "seen": [
     "410cf70305b837cde963",
@@ -2218,7 +2218,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 13:49:02 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://orcacomputing.com/feed/",
    "seen": [
     "480639cc72e96f5d5d2f",
@@ -2246,8 +2246,8 @@
   "osborne-research-notes": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Wed, 09 Sep 2026 17:27:40 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Wed, 09 Sep 2026 17:28:18 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://tjoresearchnotes.wordpress.com/feed/",
    "seen": [
     "95609364dad6ef4db7a4",
@@ -2275,7 +2275,7 @@
   "pasqal": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "0a526321fed8b847a7e2",
     "5538b1342b7f39a95d73",
@@ -2294,7 +2294,7 @@
   "pennylane-blog": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "2cb9d3097fe081c7fc75",
     "be8f500f7284694e8557",
@@ -2306,7 +2306,7 @@
   "perimeter": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "4bafdfc125674dc4753b",
     "ebe66a6a36b33fe7d957",
@@ -2323,15 +2323,40 @@
    ]
   },
   "persiflage": {
-   "failures": 1,
-   "last_error": "https://galoisrepresentations.org/feed/: HTTP 403 | https://galoisrepresentations.org/: HTTP 403",
-   "seen": []
+   "etag": "\"9b92de3ab729e024b3dbb37a808f47ac\"",
+   "failures": 0,
+   "initialized": true,
+   "last_modified": "Sun, 27 Sep 2026 23:52:12 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
+   "resolved_feed": "https://galoisrepresentations.org/feed/",
+   "seen": [
+    "a2e165e0176ee8a52eac",
+    "c81515a1c2e492778486",
+    "bfbd1ee42ed4ea9ff0b8",
+    "eb405bc312aa16f1a59e",
+    "1567245933c8f617a857",
+    "ede313249b1352047067",
+    "3f9677c30fb4b33aa42e",
+    "8fff75911aca4ad1f398",
+    "d57df08f23959f55414f",
+    "e8d2f59638d55008e68b",
+    "d81cb411c299a02be9d7",
+    "d05d87ff35e2b248f875",
+    "e482b10340cdb28c427f",
+    "b026e0a4e7373fe0ffc1",
+    "e1c627064a06ba1bdf9b",
+    "7e09a6a5c6fbc016ce48",
+    "b27164067c539cf91321",
+    "04a9c3abadeee6f67a2a",
+    "ffed2e75179cf8ad1fa5",
+    "307b34f2793fbd132752"
+   ]
   },
   "peter-cameron": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Thu, 01 Oct 2026 15:44:59 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Thu, 01 Oct 2026 15:45:59 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://cameroncounts.wordpress.com/feed/",
    "seen": [
     "abe98fc18657eb2d99ce",
@@ -2357,15 +2382,15 @@
    ]
   },
   "phasecraft": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://phasecraft.io/news/: HTTP 404",
    "seen": []
   },
   "photonic-inc": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Sat, 03 Oct 2026 08:59:42 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Sat, 03 Oct 2026 09:30:38 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://photonic.com/feed/",
    "seen": [
     "e49ecde3dde1652e7b01",
@@ -2395,7 +2420,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 17:25:57 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://physicsworld.com/c/quantum/feed/",
    "seen": [
     "1cc3b8bdc38db0b57ef5",
@@ -2601,7 +2626,7 @@
    ]
   },
   "planqc": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.planqc.eu/en/news: HTTP 404",
    "seen": []
   },
@@ -2610,7 +2635,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 16:21:30 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://pqshield.com/feed/",
    "seen": [
     "a20281ca63b383a787f8",
@@ -2634,14 +2659,14 @@
    ]
   },
   "psiquantum": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.psiquantum.com/news: no article links found (set link_pattern?)",
    "seen": []
   },
   "q-ctrl": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "7b0642b527a6c12defbe",
     "8c0fcc2ae865c8814432",
@@ -2660,24 +2685,24 @@
    ]
   },
   "q-next": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.q-next.org/news/: HTTP 403",
    "seen": []
   },
   "qblox": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.qblox.com/blog: HTTP 404",
    "seen": []
   },
   "qc-ware": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.qcware.com/news: no article links found (set link_pattern?)",
    "seen": []
   },
   "quandela": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "e43f494f8cca7f31eb48",
     "aee5a3465287649a5ecd",
@@ -2698,7 +2723,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 20:25:20 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://www.quantamagazine.org/feed/",
    "seen": [
     "03ee19e45e015e80224c",
@@ -2716,7 +2741,7 @@
   "quantinuum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "c1f17a2826fb4b11b485",
     "e503ea2275433df9b065",
@@ -2735,7 +2760,7 @@
   "quantum-art": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "652e61bda78f6f2e7e3b",
     "1b161468d2957b322f8a",
@@ -2759,8 +2784,9 @@
    ]
   },
   "quantum-computing-report": {
-   "failures": 0,
+   "failures": 1,
    "initialized": true,
+   "last_error": "https://quantumcomputingreport.com/feed/: not an RSS/Atom feed | https://quantumcomputingreport.com/: no article links found (set link_pattern?)",
    "last_ok": "2026-10-03T08:59:40+00:00",
    "seen": [
     "797015aa5b3b413c1d23",
@@ -2792,8 +2818,8 @@
   "quantum-frontiers": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 28 Sep 2026 17:35:04 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Mon, 28 Sep 2026 17:35:23 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://quantumfrontiers.com/feed/",
    "seen": [
     "47c02c98dc52745faa78",
@@ -2821,7 +2847,7 @@
   "quantum-gov": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "0da087e3703f5cb0abbb",
     "a2c06de9b5d1bdea00ba",
@@ -2839,7 +2865,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sat, 03 Oct 2026 07:00:00 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://thequantuminsider.com/feed/",
    "seen": [
     "d1e2099e5cc11de7a170",
@@ -2865,17 +2891,17 @@
    ]
   },
   "quantum-machines": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.quantum-machines.co/feed/: HTTP 403 | https://www.quantum-machines.co/blog/: HTTP 403",
    "seen": []
   },
   "quantum-motion": {
-   "failures": 1,
-   "last_error": "https://quantummotion.tech/news: no article links found (set link_pattern?)",
+   "failures": 2,
+   "last_error": "https://quantummotion.tech/news: HTTP 403",
    "seen": []
   },
   "quantum-science-center": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://qscience.org/news/: no article links found (set link_pattern?)",
    "seen": []
   },
@@ -2884,7 +2910,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Wed, 01 Jul 2026 19:05:08 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://quantumsystemsaccelerator.org/feed/",
    "seen": [
     "7e0604968591bf3b4f5e",
@@ -2916,7 +2942,7 @@
   "quera": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "94ed0b754e4b57d242c4",
     "a55964ed2c20b35afab2",
@@ -2957,7 +2983,7 @@
   "quix-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "421d130c13fa66613fb0",
     "26301ea80368c8afa738",
@@ -2974,15 +3000,15 @@
    ]
   },
   "qunnect": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://www.qunnect.com/news: network error: [Errno 104] Connection reset by peer",
    "seen": []
   },
   "quomodocumque": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Tue, 29 Sep 2026 01:47:06 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Tue, 29 Sep 2026 01:48:23 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://quomodocumque.wordpress.com/feed/",
    "seen": [
     "bb2e487a423f7ceb8877",
@@ -3012,7 +3038,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 02 Oct 2026 14:46:35 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://qutech.nl/feed/",
    "seen": [
     "5d6a8f684650a00c4836",
@@ -3038,14 +3064,14 @@
    ]
   },
   "rigetti": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://investors.rigetti.com/news-releases: network error: The read operation timed out",
    "seen": []
   },
   "riverlane": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "c1162f2e23653cb149ca",
     "4e90587290087fafb76a",
@@ -3070,7 +3096,7 @@
   "sandboxaq": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "4c00354d8bbdeec8c08f",
     "4a9b82e5684c0d155929",
@@ -3139,7 +3165,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Tue, 29 Sep 2026 16:22:33 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://scottaaronson.blog/?feed=rss2",
    "seen": [
     "3baa0d7249c9a28448a1"
@@ -3148,7 +3174,7 @@
   "silicon-quantum-computing": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "f7a9bdb3ed357389d039",
     "aea438c1b846afcbd8a5",
@@ -3206,7 +3232,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Tue, 29 Sep 2026 15:55:13 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://simonwillison.net/atom/entries/",
    "seen": [
     "0dc9ce3083b6cf682baf",
@@ -3231,7 +3257,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Thu, 15 May 2025 21:39:36 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://blog.simons.berkeley.edu/feed/",
    "seen": [
     "d0cf16de107968f50d09",
@@ -3261,7 +3287,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 28 Sep 2026 12:56:36 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://sophie.huiberts.me/feed.xml",
    "seen": [
     "ae7cb370dd95ec1e4a07",
@@ -3276,7 +3302,7 @@
   "sqms-fermilab": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "3601260d2e0d57aa6f0c"
    ]
@@ -3284,8 +3310,8 @@
   "terry-tao": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Sat, 03 Oct 2026 03:45:34 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Sat, 03 Oct 2026 03:45:26 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://terrytao.wordpress.com/feed/",
    "seen": [
     "f3761bad1de1bbc3a031",
@@ -3313,8 +3339,8 @@
   "theory-dish": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Thu, 01 Oct 2026 17:30:47 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Thu, 01 Oct 2026 17:30:43 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://theorydish.blog/feed/",
    "seen": [
     "e0300a502162b042515d",
@@ -3340,15 +3366,15 @@
    ]
   },
   "unitary-foundation": {
-   "failures": 1,
+   "failures": 2,
    "last_error": "https://unitary.foundation/index.xml: HTTP 404 | https://unitary.foundation/posts/index.xml: HTTP 404 | https://unitary.foundation/posts/: HTTP 404",
    "seen": []
   },
   "windows-on-theory": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Fri, 02 Oct 2026 22:07:35 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Fri, 02 Oct 2026 22:08:49 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://windowsontheory.org/feed/",
    "seen": [
     "43451b81c874a3fa9040",
@@ -3376,8 +3402,8 @@
   "xena-project": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Sat, 03 Oct 2026 03:03:35 GMT",
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_modified": "Sat, 03 Oct 2026 03:02:44 GMT",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "resolved_feed": "https://xenaproject.wordpress.com/feed/",
    "seen": [
     "e3efd7d8877000651672",
@@ -3405,7 +3431,7 @@
   "zurich-instruments": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-03T08:59:40+00:00",
+   "last_ok": "2026-10-03T09:30:35+00:00",
    "seen": [
     "257a3d394f3fd363c69c"
    ]
