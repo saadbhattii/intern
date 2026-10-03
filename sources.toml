@@ -44,7 +44,7 @@ stale_after_days = 365
 
 # Website (published by .github/workflows/site.yml). All keys optional.
 [site]
-title = "The Ket"
+title = "Within Quantum"
 tagline = "Quantum computing, mathematics, theory and AI, from the people doing the work."
 # repo_url = "https://github.com/<you>/<repo>"   # adds a link in the page footer
 items_per_source = 30
