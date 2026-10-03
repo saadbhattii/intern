@@ -1,6 +1,6 @@
 # Intern
 
-Posts **new article titles and links** from 120+ research blogs, company blogs and research organizations in quantum computing, mathematics, theoretical computer science and AI to Discord, with **one channel per source or category**. No summaries, no AI, no link previews. Runs entirely on GitHub Actions.
+Posts **new article titles and links** from 120+ research blogs, company blogs and research organizations in quantum computing, mathematics, theoretical computer science and AI to Discord, with **one channel per source or category**. Runs on GitHub Actions.
 
 The full list of sources lives in [`sources.toml`](sources.toml) and is rendered as a table in [`docs/SOURCES.md`](docs/SOURCES.md).
 
@@ -37,63 +37,6 @@ These are the choices that keep it running unattended.
 | Dependencies break | Standard library only. Nothing to `pip install`, no supply-chain risk, nothing to update. |
 | Typos in `sources.toml` | Strict validation (unknown keys, bad URLs, invalid regexes, duplicate ids) runs in CI on every push and pull request. |
 | Leaked webhook URLs | All webhooks live in one encrypted secret; values are masked in logs and never echoed in errors. |
-
-## Setup
-
-You need a GitHub repository (public is fine; public repos get unlimited Actions minutes) and a Discord server where you can manage webhooks.
-
-### 1. Create the repository
-
-Push this folder to a new GitHub repository. In **Settings → Actions → General**, make sure Actions are enabled. Under **Workflow permissions**, choose **Read and write permissions** if your organization defaults to read-only; the posting workflow requests write access explicitly, but an organization policy can override it.
-
-### 2. Create Discord channels and webhooks
-
-You don't need all 120+ channels on day one. Start with the sources you care about; others are simply skipped until they have a webhook.
-
-For each source: create a channel, then **Edit Channel → Integrations → Webhooks → New Webhook → Copy Webhook URL**.
-
-Discord allows 50 channels per category and 500 per server. The bot's categories (researchers, hardware, QEC, ...) map naturally onto Discord categories.
-
-### 3. Build the webhook mapping
-
-```bash
-python -m feedbot webhooks-template > webhooks.json   # one empty entry per source
-# paste each webhook URL next to its source id, leave the rest ""
-python -m feedbot lint --webhooks webhooks.json       # validates without printing URLs
-```
-
-`webhooks.json` is listed in `.gitignore`. Never commit it.
-
-The mapping supports fallbacks, looked up in this order:
-
-```json
-{
-  "shtetl-optimized": "https://discord.com/api/webhooks/...",
-  "category:hardware": "https://discord.com/api/webhooks/...",
-  "default": ""
-}
-```
-
-A source uses its own webhook if present, otherwise its category's webhook, otherwise `default`. So you can start with one channel per category and split later.
-
-### 4. Add the secrets
-
-In **Settings → Secrets and variables → Actions → New repository secret**:
-
-| Secret | Required | Value |
-|---|---|---|
-| `DISCORD_WEBHOOKS` | yes | the entire contents of `webhooks.json` |
-| `DISCORD_STATUS_WEBHOOK` | no | a webhook for an ops channel that receives failure and recovery alerts |
-
-Or with the GitHub CLI: `gh secret set DISCORD_WEBHOOKS < webhooks.json`
-
-### 5. First run
-
-Go to **Actions → Post new articles → Run workflow**. The first run posts nothing: it records what each source currently lists. From then on, new posts appear within about an hour of publication.
-
-To see real output immediately, run the workflow with `only` = `shtetl-optimized` and `force_latest` = `1`. To preview everything without posting or saving state, tick **dry_run**.
-
-Then run **Actions → Check sources** once. Its summary shows, for every source, whether a feed was found, whether it fell back to scraping, how many items it returned, and when it last posted.
 
 ## Workflows
 
