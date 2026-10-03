@@ -4,8 +4,6 @@ Posts **new article titles and links** from 120+ research blogs, company blogs a
 
 The full list of sources lives in [`sources.toml`](sources.toml) and is rendered as a table in [`docs/SOURCES.md`](docs/SOURCES.md).
 
----
-
 ## How it works
 
 Every hour a GitHub Actions workflow:

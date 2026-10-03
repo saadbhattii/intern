@@ -1,10 +1,8 @@
 name: Post new articles
 
 on:
-  schedule:
     # Hourly, at an off-peak minute (GitHub delays jobs queued at :00).
     # Cron is UTC. Missed or delayed runs are harmless: state tracks what was posted.
-    - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
