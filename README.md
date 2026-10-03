@@ -1,6 +1,6 @@
 # Intern
 
-Posts **new article titles and links** from 120+ research blogs, company blogs and research organizations in quantum computing, mathematics, theoretical computer science and AI to Discord, with **one channel per source or category**. Runs on GitHub Actions.
+Posts **new article titles and links** from 120+ research blogs, company blogs and research organizations in quantum computing, mathematics, theoretical computer science and AI to Discord, with **one channel per source**. No summaries, no AI, no link previews. Runs entirely on GitHub Actions.
 
 The full list of sources lives in [`sources.toml`](sources.toml) and is rendered as a table in [`docs/SOURCES.md`](docs/SOURCES.md).
 
@@ -14,7 +14,7 @@ Every hour a GitHub Actions workflow:
 4. Posts each new item's title and link to that source's channel.
 5. Commits the updated state back to the repository.
 
-For each source, the bot tries, in order: the listed feed URL(s); feeds the site advertises in its HTML; and finally the article links on the site's blog or news listing page (for sites like IBM or Riverlane that publish no feed). A moved or mistyped feed URL therefore degrades gracefully instead of breaking.
+For each source, the bot tries, in order: the listed feed URL(s); feeds the site advertises in its HTML; the article links on the site's blog or news listing page (for sites like IBM or Riverlane that publish no feed); and, if that page has moved, the site's homepage. A feed that turns out to be empty is used only as a last resort. A moved or mistyped URL therefore degrades gracefully instead of breaking.
 
 ## Design decisions
 
@@ -44,7 +44,7 @@ These are the choices that keep it running unattended.
 |---|---|---|
 | `post.yml` | hourly, and on demand | posts new items, commits state |
 | `check-sources.yml` | Mondays, and on demand | live health report of every source; never posts |
-| `ci.yml` | every push and pull request | compiles, validates `sources.toml`, runs the offline test suite on Python 3.11–3.13 |
+| `ci.yml` | every push and pull request | compiles, validates `sources.toml`, runs the 62 offline tests on Python 3.11–3.13 |
 
 ## Adding or changing a source
 
@@ -71,7 +71,6 @@ python -m feedbot check --only quera,riverlane
 python -m feedbot run --dry-run --only gil-kalai
 python -m unittest discover -s tests -v
 ```
-
 
 ## License
 

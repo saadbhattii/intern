@@ -276,6 +276,7 @@ author = "Jeff Erickson (UIUC)"
 category = "tcs"
 feed = "https://jeffgerickson.substack.com/feed"
 site = "https://jeffgerickson.substack.com/"
+note = "Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting."
 
 [[source]]
 id = "emanuele-viola"
@@ -309,6 +310,8 @@ author = "Aaron Roth (UPenn)"
 category = "tcs"
 feed = "https://aaronsadventures.blogspot.com/feeds/posts/default"
 site = "https://aaronsadventures.blogspot.com/"
+enabled = false
+note = "Dormant: no post since March 2024 (Check sources, Oct 2026). Re-enable if it revives."
 
 [[source]]
 id = "my-biased-coin"
@@ -317,6 +320,8 @@ author = "Michael Mitzenmacher (Harvard)"
 category = "tcs"
 feed = "https://mybiasedcoin.blogspot.com/feeds/posts/default"
 site = "https://mybiasedcoin.blogspot.com/"
+enabled = false
+note = "Dormant: no post since November 2021 (Check sources, Oct 2026). Re-enable if it revives."
 
 [[source]]
 id = "sophie-huiberts"
@@ -341,6 +346,8 @@ author = "Sanjeev Arora and others"
 category = "tcs"
 feed = "http://www.offconvex.org/feed.xml"
 site = "http://www.offconvex.org/"
+enabled = false
+note = "Dormant: no post since July 2022 (Check sources, Oct 2026). Re-enable if it revives."
 
 [[source]]
 id = "gradient-science"
@@ -349,13 +356,15 @@ author = "Aleksander Mądry's group (MIT)"
 category = "tcs"
 feed = "https://gradientscience.org/feed.xml"
 site = "https://gradientscience.org/"
+enabled = false
+note = "Dormant: no post since March 2025 (Check sources, Oct 2026). Re-enable if it revives."
 
 [[source]]
 id = "simons-institute"
-name = "Simons Institute Blog"
+name = "Simons Institute News"
 category = "tcs"
-feed = "https://blog.simons.berkeley.edu/feed/"
-site = "https://blog.simons.berkeley.edu/"
+site = "https://simons.berkeley.edu/news"
+note = "The old blog.simons.berkeley.edu feed stopped in May 2025; news moved here."
 
 [[source]]
 id = "theory-dish"
@@ -425,6 +434,7 @@ author = "Melanie Mitchell (Santa Fe Institute)"
 category = "ai"
 feed = "https://aiguide.substack.com/feed"
 site = "https://aiguide.substack.com/"
+note = "Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting."
 
 [[source]]
 id = "gelman-stat-modeling"
@@ -445,7 +455,7 @@ category = "ai"
 feed = "https://garymarcus.substack.com/feed"
 site = "https://garymarcus.substack.com/"
 high_volume = true
-note = "Near-daily commentary; more polemic than research."
+note = "Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting."
 
 [[source]]
 id = "simon-willison"
@@ -773,9 +783,9 @@ note = "Filtered to quantum topics."
 id = "unitary-foundation"
 name = "Unitary Foundation"
 category = "software"
-feed = ["https://unitary.foundation/index.xml", "https://unitary.foundation/posts/index.xml"]
-site = "https://unitary.foundation/posts/"
-note = "Open-source quantum software nonprofit (formerly Unitary Fund)."
+site = "https://unitary.foundation/blog"
+link_pattern = "unitary\\.foundation/posts/[^/]+/?$"
+note = "Open-source quantum software nonprofit (formerly Unitary Fund). Posts live at /posts/<slug>/."
 
 [[source]]
 id = "qiskit-medium"
@@ -872,7 +882,8 @@ id = "ieee-quantum"
 name = "IEEE Quantum"
 category = "publications"
 site = "https://quantum.ieee.org/"
-note = "Low volume; mostly events (IEEE Quantum Week)."
+enabled = false
+note = "Dormant: no post since August 2025 (Check sources, Oct 2026). Re-enable if it revives."
 
 [[source]]
 id = "quanta-quantum"
@@ -924,6 +935,8 @@ id = "nist-quantum"
 name = "NIST Quantum Information Science"
 category = "government"
 site = "https://www.nist.gov/topics/physics/quantum-information-science"
+include_keywords = ["quantum", "qubit", "entangle"]
+note = "Topic page moved; keyword filter keeps homepage fallback on-topic."
 
 [[source]]
 id = "sqms-fermilab"
@@ -956,6 +969,8 @@ id = "c2qa"
 name = "C2QA (Brookhaven)"
 category = "government"
 site = "https://www.bnl.gov/quantumcenter/news/"
+include_keywords = ["quantum", "qubit", "c2qa"]
+note = "Keyword filter keeps a bnl.gov homepage fallback on-topic."
 
 [[source]]
 id = "nqcc"
@@ -1054,7 +1069,7 @@ category = "analysts"
 feed = "https://drbobsutor.substack.com/feed"
 site = "https://drbobsutor.substack.com/"
 high_volume = true
-note = "Daily round-up; catches company news you don't follow individually."
+note = "Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting."
 
 [[source]]
 id = "quantum-computing-report"
