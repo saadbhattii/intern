@@ -323,12 +323,12 @@ class DiscordTests(unittest.TestCase):
         self.assertGreater(len(msgs), 1)
         self.assertIn("+3 older", msgs[0])
 
-    def test_payload_never_pings_and_suppresses_previews(self):
+    def test_payload_never_pings_and_allows_previews(self):
         post = FakePost()
         client(post).send(HOOK, "hello", "Discord Bot")
         payload = post.payloads[0]
         self.assertEqual(payload["allowed_mentions"], {"parse": []})
-        self.assertEqual(payload["flags"], 4)
+        self.assertNotIn("flags", payload)  # no SUPPRESS_EMBEDS: Discord shows link previews
         self.assertNotIn("discord", payload["username"].lower())
 
     def test_rate_limit_then_success(self):

@@ -1,7 +1,7 @@
-"""Discord webhook delivery: titles and links only, never summaries.
+"""Discord webhook delivery: the bot posts titles and links only.
 
-- Link previews are suppressed with the SUPPRESS_EMBEDS flag, so Discord does not
-  unfurl the site's own description text underneath the title.
+- Discord shows its normal link preview (the site's own title, image and
+  description card) under each link. The bot itself never writes summaries.
 - `?wait=true` makes Discord confirm the message was stored before we mark an
   item as seen. No confirmation, no "seen": a failed post is retried next run.
 - 429 responses are honoured using Discord's retry_after; the per-webhook bucket
@@ -20,7 +20,6 @@ from .http import post_json
 from .util import Item, format_date, truncate
 
 MESSAGE_LIMIT = 1900  # Discord allows 2000; keep headroom
-SUPPRESS_EMBEDS = 1 << 2
 _MD_SPECIAL = re.compile(r"([\\\[\]*_~`|<>#])")
 _FORBIDDEN_NAME = re.compile(r"discord|clyde|everyone|here", re.I)
 
@@ -106,7 +105,6 @@ class DiscordClient:
             "content": content,
             "username": safe_username(username),
             "allowed_mentions": {"parse": []},
-            "flags": SUPPRESS_EMBEDS,
         }
         last_problem = "unknown error"
         for attempt in range(6):
