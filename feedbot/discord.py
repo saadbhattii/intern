@@ -1,7 +1,10 @@
 """Discord webhook delivery: the bot posts titles and links only.
 
-- Discord shows its normal link preview (the site's own title, image and
-  description card) under each link. The bot itself never writes summaries.
+- Single posts are a bold title plus the bare URL on its own line. A bare URL is
+  the form Discord always unfurls into its normal preview card; a masked link
+  ([title](url)) hides the URL and does not reliably get a preview.
+- Digests (several items at once) list masked links with previews switched
+  off, otherwise up to five cards would stack under one message.
 - `?wait=true` makes Discord confirm the message was stored before we mark an
   item as seen. No confirmation, no "seen": a failed post is retried next run.
 - 429 responses are honoured using Discord's retry_after; the per-webhook bucket
@@ -20,6 +23,7 @@ from .http import post_json
 from .util import Item, format_date, truncate
 
 MESSAGE_LIMIT = 1900  # Discord allows 2000; keep headroom
+SUPPRESS_EMBEDS = 1 << 2
 _MD_SPECIAL = re.compile(r"([\\\[\]*_~`|<>#])")
 _FORBIDDEN_NAME = re.compile(r"discord|clyde|everyone|here", re.I)
 
@@ -47,12 +51,14 @@ def safe_username(name: str) -> str:
 
 
 def format_item(item: Item) -> str:
+    """Bold title, then the bare URL so Discord shows its link preview."""
     title = escape_markdown(truncate(item.title, 250))
-    lines = [f"**[{title}]({safe_url(item.link)})**"]
-    date = format_date(item.published)
-    if date:
-        lines.append(f"-# {date}")
-    return "\n".join(lines)
+    return f"**{title}**\n{bare_url(item.link)}"
+
+
+def bare_url(url: str) -> str:
+    """A URL Discord will auto-link and preview: no spaces, no wrapping brackets."""
+    return url.strip().replace(" ", "%20").replace("<", "%3C").replace(">", "%3E")
 
 
 def format_digest(source_name: str, items: list[Item], skipped: int = 0) -> list[str]:
@@ -94,7 +100,7 @@ class DiscordClient:
         self._blocked_until: dict[str, float] = {}
         self.sent_count = 0
 
-    def send(self, webhook_url: str, content: str, username: str) -> None:
+    def send(self, webhook_url: str, content: str, username: str, previews: bool = True) -> None:
         if self.dry_run:
             print(f"  [dry-run] as {username!r}:\n    " + content.replace("\n", "\n    "))
             self.sent_count += 1
@@ -106,6 +112,8 @@ class DiscordClient:
             "username": safe_username(username),
             "allowed_mentions": {"parse": []},
         }
+        if not previews:
+            payload["flags"] = SUPPRESS_EMBEDS
         last_problem = "unknown error"
         for attempt in range(6):
             status, body, headers = self._post(url, payload)

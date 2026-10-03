@@ -309,9 +309,10 @@ class DiscordTests(unittest.TestCase):
     def test_format_item_escapes_markdown(self):
         text = format_item(Item(title="A [weird] *title* @everyone", link="https://ex.com/a_(b)", published=NOW))
         self.assertIn("\\[weird\\]", text)
-        self.assertIn("%28b%29", text)
         self.assertNotIn("@everyone", text)
-        self.assertIn("Oct 3, 2026", text)
+        title_line, url_line = text.split("\n")
+        self.assertEqual(url_line, "https://ex.com/a_(b)")  # bare URL on its own line -> Discord preview
+        self.assertTrue(title_line.startswith("**") and "](" not in title_line)
 
     def test_chunking_respects_limit(self):
         chunks = chunk_lines(["x" * 500] * 10)
@@ -483,7 +484,7 @@ class EndToEndTests(unittest.TestCase):
         # Run 1: seeds silently, broken source isolated, unhooked source not polled.
         report = run(self.config, self.hooks, state, client=client(post), fetch=fetch, workers=2)
         statuses = {o.source.id: o.status for o in report.outcomes}
-        self.assertEqual(statuses, {"good": "seeded", "broken": "failed", "unhooked": "no-webhook"})
+        self.assertEqual(statuses, {"good": "seeded", "broken": "failed", "unhooked": "archived"})
         self.assertEqual(post.payloads, [])
         state.save()
 

@@ -70,11 +70,20 @@ class Source:
         return True
 
 
+SITE_DEFAULTS = {
+    "title": "The Ket",
+    "tagline": "Quantum computing, mathematics, theory and AI, from the people doing the work.",
+    "repo_url": "",
+    "items_per_source": 30,
+}
+
+
 @dataclass
 class Config:
     defaults: dict
     sources: list[Source]
     categories: dict[str, str]
+    site: dict = field(default_factory=lambda: dict(SITE_DEFAULTS))
 
     def by_id(self) -> dict[str, Source]:
         return {s.id: s for s in self.sources}
@@ -119,7 +128,23 @@ def load_config(path: str | Path = "sources.toml") -> Config:
         errors.append("[categories] must map category ids to display names")
         categories = {}
 
-    unknown_top = set(raw) - {"defaults", "categories", "source"}
+    site_settings = dict(SITE_DEFAULTS)
+    for key, value in (raw.get("site") or {}).items():
+        if key not in SITE_DEFAULTS:
+            errors.append(f"[site] unknown key '{key}'")
+        elif key == "items_per_source":
+            if not isinstance(value, int) or isinstance(value, bool) or not 1 <= value <= 40:
+                errors.append("[site] items_per_source must be an integer from 1 to 40")
+            else:
+                site_settings[key] = value
+        elif not isinstance(value, str):
+            errors.append(f"[site] {key} must be a string")
+        elif key == "repo_url" and value and not _is_url(value):
+            errors.append("[site] repo_url must be an http(s) URL")
+        else:
+            site_settings[key] = value.strip()
+
+    unknown_top = set(raw) - {"defaults", "categories", "source", "site"}
     for key in sorted(unknown_top):
         errors.append(f"unknown top-level key '{key}' (did you mean [[source]]?)")
 
@@ -246,7 +271,7 @@ def load_config(path: str | Path = "sources.toml") -> Config:
         errors.append("no [[source]] entries found")
     if errors:
         raise ConfigError(errors)
-    return Config(defaults=defaults, sources=sources, categories=categories)
+    return Config(defaults=defaults, sources=sources, categories=categories, site=site_settings)
 
 
 @dataclass

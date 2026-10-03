@@ -4,6 +4,12 @@ Posts **new article titles and links** from 120+ research blogs, company blogs a
 
 The full list of sources lives in [`sources.toml`](sources.toml) and is rendered as a table in [`docs/SOURCES.md`](docs/SOURCES.md).
 
+## The website
+
+Every run also saves titles and links to `state/archive.json`, and a second workflow publishes them as a newspaper-style website on GitHub Pages: a front page with the latest headlines and every section at a glance, one page per section with each source as a newspaper column, search, and an "unread only" view. Each reader's browser remembers which headlines they have opened and flags what is new since their last visit; nothing about readers leaves their browser.
+
+Every enabled source appears on the website, even ones without a Discord webhook.
+
 ## How it works
 
 Every hour a GitHub Actions workflow:
@@ -28,7 +34,7 @@ These are the choices that keep it running unattended.
 | A post fails to send | Items are only marked seen after Discord **confirms delivery** (`?wait=true`). Failed items are retried next run. |
 | One broken site or deleted webhook | Every source is isolated. Failures are recorded and shown in the run summary. The status channel gets **one** alert after 3 consecutive failures and one when the source recovers. The workflow itself stays green, so you don't get an email every hour. |
 | Discord rate limits | Per-webhook pacing, honours `retry_after` and rate-limit bucket headers. |
-| Link previews show the site's description | Messages are sent with Discord's `SUPPRESS_EMBEDS` flag. Titles and links only. |
+| Link previews | Each post is the title in bold plus the bare link on its own line, which Discord always turns into its normal preview card. Digests (several items at once) are a compact list with previews off, so one message never stacks five cards. |
 | `@everyone` in a title | `allowed_mentions` is empty and `@` is neutralised; markdown in titles is escaped. |
 | Busy sources | `max_per_run` caps each source per run; more than three new items are combined into one list message. |
 | Two runs overlap | `concurrency` in the workflow guarantees one posting job at a time. |
@@ -43,8 +49,9 @@ These are the choices that keep it running unattended.
 | Workflow | When | What |
 |---|---|---|
 | `post.yml` | hourly, and on demand | posts new items, commits state |
+| `site.yml` | after every posting run, and on demand | rebuilds and publishes the website (only once `SITE_ENABLED` is `true`) |
 | `check-sources.yml` | Mondays, and on demand | live health report of every source; never posts |
-| `ci.yml` | every push and pull request | compiles, validates `sources.toml`, runs the 62 offline tests on Python 3.11–3.13 |
+| `ci.yml` | every push and pull request | compiles, validates `sources.toml`, runs the 72 offline tests on Python 3.11–3.13 |
 
 ## Adding or changing a source
 
@@ -69,6 +76,7 @@ Requires Python 3.11+ and nothing else.
 python -m feedbot lint                       # validate configuration
 python -m feedbot check --only quera,riverlane
 python -m feedbot run --dry-run --only gil-kalai
+python -m feedbot site && open _site/index.html  # build the website locally
 python -m unittest discover -s tests -v
 ```
 

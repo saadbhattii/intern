@@ -25,6 +25,7 @@ from dataclasses import dataclass, field
 from datetime import timedelta
 from typing import Callable
 
+from .archive import Archive
 from .config import Config, Source, Webhooks
 from .discord import DiscordClient, WebhookError, chunk_lines, format_digest, format_item
 from .feeds import FeedParseError, looks_like_feed, parse_feed
@@ -269,9 +270,17 @@ def run(
     client: DiscordClient | None = None,
     fetch: Callable = http_fetch,
     workers: int = 12,
+    archive: Archive | None = None,
 ) -> RunReport:
+    """Fetch every enabled source, archive what it lists, post what is new to Discord.
+
+    Sources without a webhook are still fetched and archived (they appear on the
+    website); their Discord state is left untouched so that adding a webhook
+    later starts with a silent seed, exactly like a brand-new source.
+    """
     now = utcnow()
-    report = RunReport(warnings=list(state.warnings) + list(webhooks.problems))
+    report = RunReport(warnings=list(state.warnings) + list(webhooks.problems)
+                       + (list(archive.warnings) if archive else []))
     client = client or DiscordClient(dry_run=dry_run)
 
     selected: list[tuple[Source, str | None]] = []
@@ -281,17 +290,25 @@ def run(
         if not source.enabled:
             report.outcomes.append(Outcome(source, "skipped", "disabled in sources.toml"))
             continue
-        hook = webhooks.for_source(source)
-        if not hook and not dry_run:
-            report.outcomes.append(Outcome(source, "no-webhook", "no webhook configured"))
-            continue
-        selected.append((source, hook))
+        selected.append((source, webhooks.for_source(source)))
 
     def task(pair):
         source, _ = pair
         st = state.sources.get(source.id) or SourceState()
+        # Conditional GET ("has it changed since?") only for routine runs of a source
+        # that already has a Discord baseline. A forced re-send needs the items even
+        # if nothing changed, and a source being seeded needs a full listing.
+        # A source missing from the website archive also needs one full listing.
+        conditional = (st.initialized and not force_latest
+                       and (archive is None or source.id in archive.sources))
         try:
-            return collect(source, st.get("resolved_feed"), st.get("etag"), st.get("last_modified"), fetch=fetch)
+            return collect(
+                source,
+                st.get("resolved_feed"),
+                st.get("etag") if conditional else None,
+                st.get("last_modified") if conditional else None,
+                fetch=fetch,
+            )
         except SourceError as exc:
             return exc
         except Exception as exc:  # noqa: BLE001 - isolate unexpected bugs per source
@@ -302,8 +319,14 @@ def run(
 
     for (source, hook), result in zip(selected, results):
         st = state.source(source.id)
+        if archive is not None and isinstance(result, Collected) and not result.not_modified:
+            try:
+                archive.merge(source.id, [i for i in result.items if source.keyword_ok(i.title)], now)
+            except Exception as exc:  # noqa: BLE001 - the website must never break posting
+                report.warnings.append(f"{source.id}: could not archive items: {exc}")
         try:
-            outcome = _process(source, hook, result, st, config.defaults, client, now, force_latest, report)
+            outcome = _process(source, hook, result, st, config.defaults, client, now, force_latest,
+                               report, dry_run)
         except Exception as exc:  # noqa: BLE001 - last line of defence
             outcome = Outcome(source, "failed", f"internal error: {type(exc).__name__}: {exc}")
             if st.record_failure(outcome.detail, config.defaults["alert_after_failures"]):
@@ -311,12 +334,15 @@ def run(
         report.outcomes.append(outcome)
 
     if not only:
-        state.prune({s.id for s in config.sources})
+        keep = {s.id for s in config.sources}
+        state.prune(keep)
+        if archive is not None:
+            archive.prune({s.id for s in config.sources if s.enabled})
     state.heartbeat(now)
     return report
 
 
-def _process(source, hook, result, st, defaults, client, now, force_latest, report) -> Outcome:
+def _process(source, hook, result, st, defaults, client, now, force_latest, report, dry_run=False) -> Outcome:
     alert_after = defaults["alert_after_failures"]
     if isinstance(result, SourceError):
         detail = str(result)
@@ -325,6 +351,14 @@ def _process(source, hook, result, st, defaults, client, now, force_latest, repo
         return Outcome(source, "failed", detail)
 
     collected: Collected = result
+    if collected.note:
+        report.warnings.append(f"{source.id}: {collected.note} (update `site` in sources.toml)")
+
+    if not hook and not dry_run:
+        # Website only: archived above; Discord state deliberately untouched.
+        _success(source, st, now, report)
+        return Outcome(source, "archived", "no webhook: shown on the website only", method=collected.method)
+
     if collected.method == "feed":
         st.set("resolved_feed", collected.url)
         st.set("etag", collected.etag)
@@ -334,17 +368,20 @@ def _process(source, hook, result, st, defaults, client, now, force_latest, repo
         st.set("etag", None)
         st.set("last_modified", None)
 
-    if collected.note:
-        report.warnings.append(f"{source.id}: {collected.note} (update `site` in sources.toml)")
-
-    if collected.not_modified and not force_latest:
+    if collected.not_modified:
         _success(source, st, now, report)
         return Outcome(source, "not-modified", "feed unchanged (HTTP 304)", method=collected.method)
 
     if force_latest:
         relevant = [i for i in collected.items if source.keyword_ok(i.title)]
-        selection = Selection(to_post=list(reversed(_newest_first(relevant)[:force_latest])), mark_without_posting=[])
-        st.mark_initialized()
+        newest = _newest_first(relevant)[:force_latest]
+        # On a source that was never seeded, record everything it lists right now;
+        # otherwise its other recent posts would be announced as new later.
+        selection = Selection(
+            to_post=list(reversed(newest)),
+            mark_without_posting=[] if st.initialized else list(collected.items),
+            note=f"forced re-send of newest {len(newest)}",
+        )
     else:
         selection = select_new(source, collected.items, st, defaults, now)
 
@@ -374,6 +411,8 @@ def _process(source, hook, result, st, defaults, client, now, force_latest, repo
 
     _success(source, st, now, report)
     note = f"posted {posted}"
+    if force_latest:
+        note += " (forced re-send)"
     if selection.skipped_over_limit:
         note += f", {selection.skipped_over_limit} older items skipped (max_per_run={source.max_per_run})"
     return Outcome(source, "posted", note, posted=posted, method=collected.method)
@@ -389,7 +428,7 @@ def _deliver(source: Source, hook: str | None, selection: Selection, st: SourceS
     if mode == "digest":
         messages = format_digest(source.name, items, selection.skipped_over_limit)
         for message in messages:
-            client.send(hook or "", message, source.display_name)
+            client.send(hook or "", message, source.display_name, previews=False)
         for item in items:
             st.mark_seen(item.keys())
         return len(items)
@@ -411,7 +450,7 @@ def _success(source: Source, st: SourceState, now, report: RunReport) -> None:
 # --------------------------------------------------------------------------
 
 STATUS_ICON = {
-    "posted": "📬", "ok": "✅", "not-modified": "✅", "seeded": "🌱",
+    "posted": "📬", "ok": "✅", "not-modified": "✅", "seeded": "🌱", "archived": "🗞️",
     "failed": "❌", "no-webhook": "⚪", "skipped": "⏸️",
 }
 
@@ -432,9 +471,9 @@ def summary_markdown(report: RunReport, title: str = "Feed run") -> str:
         for o in sorted(interesting, key=lambda o: (o.status != "failed", o.source.id)):
             detail = o.detail.replace("|", "\\|").replace("\n", " ")[:300]
             lines.append(f"| {STATUS_ICON.get(o.status, '')} | `{o.source.id}` | {o.method or '-'} | {detail} |")
-    quiet = [o.source.id for o in report.outcomes if o.status == "no-webhook"]
+    quiet = [o.source.id for o in report.outcomes if o.status == "archived"]
     if quiet:
-        lines += ["", f"<details><summary>{len(quiet)} sources without a webhook (not polled)</summary>", "",
+        lines += ["", f"<details><summary>{len(quiet)} sources without a webhook (website only)</summary>", "",
                   ", ".join(f"`{q}`" for q in quiet), "", "</details>"]
     return "\n".join(lines) + "\n"
 

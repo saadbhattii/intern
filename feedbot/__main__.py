@@ -5,6 +5,7 @@
     python -m feedbot check               # live health check of every source (never posts)
     python -m feedbot lint                # offline validation of sources.toml (used by CI)
     python -m feedbot docs                # regenerate docs/SOURCES.md
+    python -m feedbot site                # build the website into _site/
     python -m feedbot webhooks-template   # JSON skeleton for the DISCORD_WEBHOOKS secret
 
 Exit codes: 0 success (individual source failures do NOT fail the run; they are
@@ -19,6 +20,7 @@ import os
 import sys
 from pathlib import Path
 
+from .archive import Archive
 from .config import Config, ConfigError, load_config, parse_webhooks
 from .discord import DiscordClient
 from .runner import run, send_alerts, summary_markdown, write_step_summary
@@ -72,9 +74,10 @@ def cmd_run(args) -> int:
         print(f"::warning::{problem}" if os.environ.get("GITHUB_ACTIONS") else f"warning: {problem}")
 
     state = State.load(args.state)
+    archive = Archive.load(args.archive)
     client = DiscordClient(dry_run=args.dry_run)
     report = run(config, webhooks, state, only=only, dry_run=args.dry_run,
-                 force_latest=max(0, args.force_latest), client=client)
+                 force_latest=max(0, args.force_latest), client=client, archive=archive)
 
     for outcome in report.outcomes:
         if outcome.status in ("posted", "failed", "seeded"):
@@ -93,6 +96,10 @@ def cmd_run(args) -> int:
     except OSError as exc:
         print(f"::error::could not save state: {exc}")
         return 3
+    try:
+        archive.save()
+    except OSError as exc:  # the website is secondary: never fail the posting run for it
+        print(f"::warning::could not save archive: {exc}")
     send_alerts(report.alerts, status_hook, DiscordClient())
     return 0
 
@@ -143,6 +150,16 @@ def cmd_docs(args) -> int:
     return 0
 
 
+def cmd_site(args) -> int:
+    from .site import build_site
+
+    config = _load(args)
+    archive = Archive.load(args.archive)
+    out = build_site(config, archive, Path(args.out))
+    print(f"wrote {out}")
+    return 0
+
+
 def cmd_template(args) -> int:
     sys.stdout.write(webhook_template(_load(args)))
     return 0
@@ -155,6 +172,7 @@ def main(argv: list[str] | None = None) -> int:
 
     p_run = sub.add_parser("run", help="fetch sources and post new items")
     p_run.add_argument("--state", default="state/state.json")
+    p_run.add_argument("--archive", default="state/archive.json")
     p_run.add_argument("--only", help="comma-separated source ids")
     p_run.add_argument("--dry-run", action="store_true", help="print instead of posting; do not save state")
     p_run.add_argument("--force-latest", type=int, default=0, metavar="N",
@@ -175,6 +193,11 @@ def main(argv: list[str] | None = None) -> int:
     p_docs.add_argument("--output", default="docs/SOURCES.md")
     p_docs.add_argument("--check", action="store_true", help="fail if the file is out of date")
     p_docs.set_defaults(func=cmd_docs)
+
+    p_site = sub.add_parser("site", help="build the static website from the archive")
+    p_site.add_argument("--archive", default="state/archive.json")
+    p_site.add_argument("--out", default="_site")
+    p_site.set_defaults(func=cmd_site)
 
     p_tpl = sub.add_parser("webhooks-template", help="print a JSON skeleton for DISCORD_WEBHOOKS")
     p_tpl.set_defaults(func=cmd_template)
