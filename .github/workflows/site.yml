@@ -6,9 +6,6 @@ name: Publish website
 # "GitHub Actions" as the Pages source (Settings > Pages). Until then this
 # workflow is skipped, so it can never fail or send you failure emails.
 on:
-  workflow_run:
-    workflows: ["Post new articles"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
