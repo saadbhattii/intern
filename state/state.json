@@ -65,10 +65,10 @@
    ]
   },
   "ahead-of-ai": {
-   "etag": "W/\"2952a2-mE6Jf/nLuMd2R9xt1ibtE4osFlg\"",
+   "etag": "W/\"2952a2-0WjAKsRW7Y8e5mdXKGOvdlbiP9w\"",
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://magazine.sebastianraschka.com/feed",
    "seen": [
     "3c3bfa327de006380ea5",
@@ -95,16 +95,16 @@
   },
   "ai-guide-thinking-humans": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://aiguide.substack.com/feed: HTTP 403 | https://aiguide.substack.com/: HTTP 403",
    "seen": []
   },
   "algorithmic-assertions": {
-   "etag": "W/\"6a409237-1fde\"",
+   "etag": "W/\"6a409238-1fde\"",
    "failures": 0,
    "initialized": true,
-   "last_modified": "Sun, 28 Jun 2026 03:17:11 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Sun, 28 Jun 2026 03:17:12 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://algassert.com/feed.xml",
    "seen": [
     "407b2f23c9c5f1ea7d54",
@@ -122,7 +122,7 @@
   "algorithmiq": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "2e4177a5d3b34d2b7a3b",
     "dcf8a2f10406944845f9",
@@ -143,7 +143,7 @@
   },
   "alice-and-bob": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://alice-bob.com/feed/: HTTP 403 | https://alice-bob.com/blog/: HTTP 403",
    "seen": []
   },
@@ -152,7 +152,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 28 Sep 2026 20:23:47 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://www.aliroquantum.com/blog/rss.xml",
    "seen": [
     "8fb516346c102b741fad",
@@ -171,7 +171,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sun, 04 Oct 2026 22:29:37 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://www.aqt.eu/feed/",
    "seen": [
     "5575f87aac699bcb24b8",
@@ -197,10 +197,10 @@
    ]
   },
   "arg-min": {
-   "etag": "W/\"4586e-E/d7+UqOA+Ykc+DWSYdhc95QpWQ\"",
+   "etag": "W/\"4586e-UOft2+znpAAkF/BDSGQ5YJSP7W8\"",
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://www.argmin.net/feed",
    "seen": [
     "c556bb964c2785de67b6",
@@ -228,7 +228,7 @@
   "atom-computing": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "1a71f11fddba905fdee7",
     "1b615d9d3dba3b0cf726"
@@ -238,7 +238,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Thu, 01 Oct 2026 00:13:40 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://aws.amazon.com/blogs/quantum-computing/feed/",
    "seen": [
     "01b3095aa3e257faf818",
@@ -266,8 +266,8 @@
   "azimuth": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Tue, 29 Sep 2026 13:55:27 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Tue, 29 Sep 2026 13:54:50 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://johncarlosbaez.wordpress.com/feed/",
    "seen": [
     "9d9ab906c2ed8c7d0ddf",
@@ -317,7 +317,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Wed, 17 Jun 2026 22:55:27 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://azure.microsoft.com/en-us/blog/quantum/feed/",
    "seen": [
     "36325a0db87642eac88a",
@@ -338,7 +338,7 @@
   "bluefors": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "877ceabd6ef748af22f1",
     "a4372313bd849962a33b",
@@ -371,7 +371,7 @@
   "bluequbit": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "82a478e26c7a02a671f6",
     "033ced9c0dff84568f1b",
@@ -389,7 +389,7 @@
    "etag": "W/\"7ccd8-jPgbODznsYx6EtrXmDUZ/yRpwUk\"",
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://bounded-regret.ghost.io/rss/",
    "seen": [
     "9bc7a248e365e4af26eb",
@@ -427,21 +427,21 @@
   "c2qa": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "46562caf4d8e08efa617"
    ]
   },
   "cacm-quantum": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://cacm.acm.org/feed/: HTTP 403 | https://cacm.acm.org/: HTTP 403",
    "seen": []
   },
   "chicago-quantum-exchange": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "2f152469c5f8e26a181b",
     "de42f667033ccb9d990a",
@@ -457,7 +457,7 @@
   "classiq": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "db53cf400b57ae15e0c3",
     "58313f126f16a40fbb9e",
@@ -468,7 +468,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 18:44:41 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://blog.cloudflare.com/tag/post-quantum/rss/",
    "seen": [
     "ef1e4a48bb44c9613040",
@@ -518,7 +518,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 15:28:50 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://blog.computationalcomplexity.org/feeds/posts/default",
    "seen": [
     "25167cb32c172cfcbd05",
@@ -578,7 +578,7 @@
   "cqt-singapore": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "044f60afa2bf5328a590",
     "319993304708738a92cb",
@@ -608,7 +608,7 @@
   "d-wave": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "26024e2b3bf0daa6c5b8",
     "4878825a457f7b8ed663",
@@ -621,14 +621,14 @@
   },
   "daily-quantum-update": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://drbobsutor.substack.com/feed: HTTP 403 | https://drbobsutor.substack.com/: HTTP 403",
    "seen": []
   },
   "darpa-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "35932e2459c028531fc6",
     "bde997f06815c647fa59",
@@ -641,7 +641,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 14:38:20 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://decentralizedthoughts.github.io/feed",
    "seen": [
     "706829dbf008d54ed932",
@@ -671,7 +671,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 15 Jun 2026 19:04:46 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://differentialprivacy.org/feed.xml",
    "seen": [
     "373a3960b49e8b3adf74",
@@ -689,7 +689,7 @@
   "diraq": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "a806f281919762977012",
     "d03dca749323193bcc0f",
@@ -702,8 +702,8 @@
   "emanuele-viola": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Tue, 22 Sep 2026 05:36:09 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Tue, 22 Sep 2026 05:16:30 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://emanueleviola.wordpress.com/feed/",
    "seen": [
     "51c6d9c3e5977be21945",
@@ -729,11 +729,11 @@
    ]
   },
   "eppstein": {
-   "etag": "W/\"6abdb24f-14af1\"",
+   "etag": "W/\"6abdb24e-14af1\"",
    "failures": 0,
    "initialized": true,
-   "last_modified": "Thu, 01 Oct 2026 01:07:27 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Thu, 01 Oct 2026 01:07:26 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://11011110.github.io/blog/feed.xml",
    "seen": [
     "5703fa6ea00512e9ebd4",
@@ -760,20 +760,20 @@
   },
   "equal1": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://www.equal1.com/news: HTTP 404 | https://www.equal1.com/: no article links found",
    "seen": []
   },
   "ernies-3d-pancakes": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://jeffgerickson.substack.com/feed: HTTP 403 | https://jeffgerickson.substack.com/: HTTP 403",
    "seen": []
   },
   "eu-quantum-flagship": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "c39bfd59fd48bc44d3d2",
     "1d8fffecd5e80cac85fc",
@@ -792,8 +792,8 @@
   "four-gravitons": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 05 Oct 2026 11:04:55 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 05 Oct 2026 11:03:19 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://4gravitons.com/feed/",
    "seen": [
     "7b44f323e6926fa7c81c",
@@ -822,7 +822,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 25 Sep 2026 13:08:17 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://francisbach.com/feed/",
    "seen": [
     "e46c83c5b02dda22749e",
@@ -852,7 +852,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 14:01:23 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://statmodeling.stat.columbia.edu/feed/",
    "seen": [
     "30f397737b566d245f5a",
@@ -968,8 +968,8 @@
   "gil-kalai": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 05 Oct 2026 09:29:17 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 05 Oct 2026 09:28:14 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://gilkalai.wordpress.com/feed/",
    "seen": [
     "bb47e7603c155c861112",
@@ -1001,7 +1001,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sun, 03 May 2026 17:13:06 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://rjlipton.com/feed/",
    "seen": [
     "2e14ac4e59203fb19c8e",
@@ -1029,7 +1029,7 @@
   "google-quantum-ai": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "c44e7f2bbc49ceca54e9"
    ]
@@ -1038,7 +1038,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 21:08:31 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://research.google/blog/rss/",
    "seen": [
     "13a08db808bbe118af2c",
@@ -1146,8 +1146,8 @@
   "gowers": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Sun, 04 Oct 2026 20:08:38 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Sun, 04 Oct 2026 20:07:04 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://gowers.wordpress.com/feed/",
    "seen": [
     "bcfb6f67f71edc9a950c",
@@ -1225,7 +1225,7 @@
   "haiqu": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "92cc45b851cfaf63d510",
     "17ab3a80c734336ec20d",
@@ -1237,14 +1237,14 @@
   },
   "harvard-quantum": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://quantum.harvard.edu/news: HTTP 403",
    "seen": []
   },
   "horizon-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "0619d2460c2a7303f62c",
     "7b11131531d9cc8ab666",
@@ -1261,7 +1261,7 @@
   "ibm-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "c0dc0ffa3f4d4fae6043",
     "21c0ebbb48645a517410",
@@ -1303,7 +1303,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 13:21:04 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://spectrum.ieee.org/feeds/topic/computing.rss",
    "seen": [
     "757dc7ec93bdca9a55c2",
@@ -1341,8 +1341,8 @@
   "igor-pak": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Fri, 25 Sep 2026 20:33:55 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Fri, 25 Sep 2026 20:33:54 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://igorpak.wordpress.com/feed/",
    "seen": [
     "d56842e26fcc7059df70",
@@ -1371,7 +1371,7 @@
    "etag": "W/\"3cc48-xpUNPiRQoeV1axnozP61nuXeDUo\"",
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://www.infinitelymore.xyz/feed",
    "seen": [
     "50b21fe2ba22e6bfda39",
@@ -1397,11 +1397,11 @@
    ]
   },
   "infleqtion": {
-   "etag": "\"798a653346f031dee5de99a9c01704af\"",
+   "etag": "\"e0a751386d308eb595d0d14945cf925b\"",
    "failures": 0,
    "initialized": true,
-   "last_modified": "Fri, 02 Oct 2026 20:32:27 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 05 Oct 2026 21:30:15 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://infleqtion.com/feed/",
    "seen": [
     "33deb6bf8390566b35ed",
@@ -1427,10 +1427,10 @@
    ]
   },
   "interconnects": {
-   "etag": "W/\"83c05-CxynuvSFf9zEPs9I2W1ZnWCRouU\"",
+   "etag": "W/\"83c05-EuOs7/oRxEC206XTrEkYmI9QzWM\"",
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://www.interconnects.ai/feed",
    "seen": [
     "6a95d7e9e23e49949a43",
@@ -1458,7 +1458,7 @@
   "ionq": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "e843b70175eac8b75c7d",
     "9484d025b5c1a761ad37",
@@ -1527,7 +1527,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 19:13:09 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://uwaterloo.ca/institute-for-quantum-computing/news/news.xml",
    "seen": [
     "90bdf0fb0ab6945b940c",
@@ -1545,7 +1545,7 @@
   "iqm": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "a446def080d1853fc46e",
     "ce2f67b089047030b811",
@@ -1568,7 +1568,7 @@
   "jqi": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "b809b9df11e648303952",
     "03353fffdca1059ef8a4",
@@ -1587,8 +1587,8 @@
   "kamathematics": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 01 Jun 2026 14:59:56 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 01 Jun 2026 15:00:54 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://kamathematics.wordpress.com/feed/",
    "seen": [
     "67582d1bfbf3e7438f90",
@@ -1616,8 +1616,8 @@
   "karpathy": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 05 Oct 2026 15:18:24 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 05 Oct 2026 21:30:05 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://karpathy.bearblog.dev/feed/",
    "seen": [
     "30741f584488acaf93f4",
@@ -1635,7 +1635,7 @@
   "kipu-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "32cdcb3419839da23abd",
     "2be6b20c72e9385977d1",
@@ -1648,11 +1648,11 @@
    ]
   },
   "lilian-weng": {
-   "etag": "W/\"6a55d3e3-13718\"",
+   "etag": "W/\"6a55d3e4-13718\"",
    "failures": 0,
    "initialized": true,
-   "last_modified": "Tue, 14 Jul 2026 06:14:59 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Tue, 14 Jul 2026 06:15:00 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://lilianweng.github.io/index.xml",
    "seen": [
     "2c589c3624db62180737",
@@ -1712,14 +1712,14 @@
   },
   "marcus-on-ai": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://garymarcus.substack.com/feed: HTTP 403 | https://garymarcus.substack.com/: HTTP 403",
    "seen": []
   },
   "maybell": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "8d06f625c2434ae2a0e1",
     "7f7a454adefb24011df5",
@@ -1727,11 +1727,11 @@
    ]
   },
   "mit-news-quantum": {
-   "etag": "\"1791234160\"",
+   "etag": "\"1791236311\"",
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 05 Oct 2026 21:02:40 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 05 Oct 2026 21:38:31 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://news.mit.edu/rss/topic/quantum-computing",
    "seen": [
     "f507b931ce1788cfa6d6",
@@ -1789,7 +1789,7 @@
   "multiverse-computing": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "db253a7b7408d49f0b1c",
     "1edf718c6d8da6800270",
@@ -1878,7 +1878,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Fri, 25 Sep 2026 20:38:32 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://golem.ph.utexas.edu/category/atom10.xml",
    "seen": [
     "641e0ef201b80ba79957",
@@ -1918,7 +1918,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 17:58:40 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://nanoscale.blogspot.com/feeds/posts/default",
    "seen": [
     "c532465365af4e37b032",
@@ -1978,7 +1978,7 @@
   "nist-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "8a3d9decec2776946e6a",
     "c7a9d8fcaeef757cd2d7",
@@ -1991,7 +1991,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 28 Sep 2026 19:16:35 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://www.nordquantique.com/feed/",
    "seen": [
     "df1f701f36e2a408eaf6",
@@ -2021,7 +2021,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Tue, 29 Sep 2026 23:07:07 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://www.math.columbia.edu/~woit/wordpress/?feed=rss2",
    "seen": [
     "36d395ba95da862e417b",
@@ -2039,7 +2039,7 @@
   "nqcc": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "2e924cf49865ac6b38d2",
     "87a2bee830def7426069",
@@ -2051,7 +2051,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 21:10:42 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://developer.nvidia.com/blog/feed/",
    "seen": [
     "57fe7402c0ac11ed0826",
@@ -2281,7 +2281,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sun, 04 Oct 2026 14:32:45 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://www.oezratty.net/wordpress/feed/",
    "seen": [
     "55605c0437527bdfd554",
@@ -2333,7 +2333,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Wed, 30 Sep 2026 09:51:03 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://oqc.tech/feed/",
    "seen": [
     "410cf70305b837cde963",
@@ -2363,7 +2363,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 11:40:21 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://orcacomputing.com/feed/",
    "seen": [
     "480639cc72e96f5d5d2f",
@@ -2391,8 +2391,8 @@
   "osborne-research-notes": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Wed, 09 Sep 2026 17:45:35 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Wed, 09 Sep 2026 17:27:40 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://tjoresearchnotes.wordpress.com/feed/",
    "seen": [
     "95609364dad6ef4db7a4",
@@ -2420,7 +2420,7 @@
   "pasqal": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "0a526321fed8b847a7e2",
     "5538b1342b7f39a95d73",
@@ -2439,7 +2439,7 @@
   "pennylane-blog": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "2cb9d3097fe081c7fc75",
     "be8f500f7284694e8557",
@@ -2451,7 +2451,7 @@
   "perimeter": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "4bafdfc125674dc4753b",
     "ebe66a6a36b33fe7d957",
@@ -2473,7 +2473,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 11:57:47 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://galoisrepresentations.org/feed/",
    "seen": [
     "a2e165e0176ee8a52eac",
@@ -2503,8 +2503,8 @@
   "peter-cameron": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 05 Oct 2026 14:51:33 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 05 Oct 2026 14:49:57 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://cameroncounts.wordpress.com/feed/",
    "seen": [
     "abe98fc18657eb2d99ce",
@@ -2531,15 +2531,15 @@
   },
   "phasecraft": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://phasecraft.io/news/: HTTP 404 | https://phasecraft.io/: no article links found",
    "seen": []
   },
   "photonic-inc": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 05 Oct 2026 21:22:53 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 05 Oct 2026 22:00:20 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://photonic.com/feed/",
    "seen": [
     "e49ecde3dde1652e7b01",
@@ -2569,7 +2569,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 14:54:54 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://physicsworld.com/c/quantum/feed/",
    "seen": [
     "1cc3b8bdc38db0b57ef5",
@@ -2777,7 +2777,7 @@
   "planqc": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "11a9579cb60b1ee52f83",
     "3b1dc3d70f7027491e24",
@@ -2801,7 +2801,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 14:11:47 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://pqshield.com/feed/",
    "seen": [
     "a20281ca63b383a787f8",
@@ -2827,7 +2827,7 @@
   "psiquantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "17028fca8040043c68f7",
     "a14109276c04ab63243e",
@@ -2838,7 +2838,7 @@
   "q-ctrl": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "7b0642b527a6c12defbe",
     "8c0fcc2ae865c8814432",
@@ -2859,7 +2859,7 @@
   "q-next": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "09a29c919ae981ec3448"
    ]
@@ -2867,7 +2867,7 @@
   "qblox": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "fff4cca0276fd916687d",
     "e0bf2d977990f4e96acb",
@@ -2876,14 +2876,14 @@
   },
   "qc-ware": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://www.qcware.com/news: no article links found | https://www.qcware.com/: no article links found",
    "seen": []
   },
   "quandela": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "e43f494f8cca7f31eb48",
     "aee5a3465287649a5ecd",
@@ -2904,7 +2904,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 13:44:21 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://www.quantamagazine.org/feed/",
    "seen": [
     "03ee19e45e015e80224c",
@@ -2922,7 +2922,7 @@
   "quantinuum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "c1f17a2826fb4b11b485",
     "e503ea2275433df9b065",
@@ -2941,7 +2941,7 @@
   "quantum-art": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "652e61bda78f6f2e7e3b",
     "1b161468d2957b322f8a",
@@ -2965,12 +2965,9 @@
    ]
   },
   "quantum-computing-report": {
-   "etag": "W/\"f1fb2394f7bbf0046ddfff80a2c630e4\"",
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 05 Oct 2026 15:18:12 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
-   "resolved_feed": "https://quantumcomputingreport.com/feed/",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "797015aa5b3b413c1d23",
     "1d3ae6e834a11f422a9b",
@@ -3017,8 +3014,8 @@
   "quantum-frontiers": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 28 Sep 2026 17:38:19 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 28 Sep 2026 17:35:04 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://quantumfrontiers.com/feed/",
    "seen": [
     "47c02c98dc52745faa78",
@@ -3046,7 +3043,7 @@
   "quantum-gov": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "0da087e3703f5cb0abbb",
     "a2c06de9b5d1bdea00ba",
@@ -3064,7 +3061,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 19:11:30 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://thequantuminsider.com/feed/",
    "seen": [
     "d1e2099e5cc11de7a170",
@@ -3117,19 +3114,19 @@
   },
   "quantum-machines": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://www.quantum-machines.co/feed/: HTTP 403 | https://www.quantum-machines.co/blog/: HTTP 403",
    "seen": []
   },
   "quantum-motion": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://quantummotion.tech/news: HTTP 403",
    "seen": []
   },
   "quantum-science-center": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://qscience.org/news/: no article links found | https://qscience.org/: no article links found",
    "seen": []
   },
@@ -3138,7 +3135,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Wed, 01 Jul 2026 19:05:08 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://quantumsystemsaccelerator.org/feed/",
    "seen": [
     "7e0604968591bf3b4f5e",
@@ -3170,7 +3167,7 @@
   "quera": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "94ed0b754e4b57d242c4",
     "a55964ed2c20b35afab2",
@@ -3211,7 +3208,7 @@
   "quix-quantum": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "421d130c13fa66613fb0",
     "26301ea80368c8afa738",
@@ -3229,15 +3226,15 @@
   },
   "qunnect": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://www.qunnect.com/news: network error: [Errno 104] Connection reset by peer",
    "seen": []
   },
   "quomodocumque": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 05 Oct 2026 03:55:02 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 05 Oct 2026 03:48:30 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://quomodocumque.wordpress.com/feed/",
    "seen": [
     "bb2e487a423f7ceb8877",
@@ -3271,7 +3268,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Mon, 05 Oct 2026 14:13:52 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://qutech.nl/feed/",
    "seen": [
     "5d6a8f684650a00c4836",
@@ -3298,14 +3295,14 @@
   },
   "rigetti": {
    "alerted": true,
-   "failures": 128,
+   "failures": 129,
    "last_error": "https://investors.rigetti.com/news-releases: network error: The read operation timed out",
    "seen": []
   },
   "riverlane": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "c1162f2e23653cb149ca",
     "4e90587290087fafb76a",
@@ -3330,7 +3327,7 @@
   "sandboxaq": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "4c00354d8bbdeec8c08f",
     "4a9b82e5684c0d155929",
@@ -3399,7 +3396,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sun, 04 Oct 2026 22:13:33 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://scottaaronson.blog/?feed=rss2",
    "seen": [
     "3baa0d7249c9a28448a1",
@@ -3418,7 +3415,7 @@
   "silicon-quantum-computing": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "f7a9bdb3ed357389d039",
     "aea438c1b846afcbd8a5",
@@ -3476,7 +3473,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sat, 03 Oct 2026 23:34:02 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://simonwillison.net/atom/entries/",
    "seen": [
     "0dc9ce3083b6cf682baf",
@@ -3502,7 +3499,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Thu, 15 May 2025 21:39:36 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://blog.simons.berkeley.edu/feed/",
    "seen": [
     "d0cf16de107968f50d09",
@@ -3532,7 +3529,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Sun, 04 Oct 2026 17:06:50 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://sophie.huiberts.me/feed.xml",
    "seen": [
     "ae7cb370dd95ec1e4a07",
@@ -3546,7 +3543,7 @@
   },
   "sqms-fermilab": {
    "alerted": true,
-   "failures": 121,
+   "failures": 122,
    "initialized": true,
    "last_error": "https://sqms.fnal.gov/feed/: not an RSS/Atom feed | https://sqms.fnal.gov/news/: no article links found | https://sqms.fnal.gov/: no article links found",
    "last_ok": "2026-10-03T10:11:05+00:00",
@@ -3557,8 +3554,8 @@
   "terry-tao": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 05 Oct 2026 19:57:30 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 05 Oct 2026 21:55:08 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://terrytao.wordpress.com/feed/",
    "seen": [
     "f3761bad1de1bbc3a031",
@@ -3594,8 +3591,8 @@
   "theory-dish": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Sun, 04 Oct 2026 16:33:40 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Sun, 04 Oct 2026 16:35:26 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://theorydish.blog/feed/",
    "seen": [
     "e0300a502162b042515d",
@@ -3625,7 +3622,7 @@
    "failures": 0,
    "initialized": true,
    "last_modified": "Wed, 30 Sep 2026 14:39:39 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://unitary.foundation/posts/feed.xml",
    "seen": [
     "6f0a626a904b7d3f71a2",
@@ -3733,8 +3730,8 @@
   "windows-on-theory": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Fri, 02 Oct 2026 22:06:58 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Fri, 02 Oct 2026 22:07:35 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://windowsontheory.org/feed/",
    "seen": [
     "43451b81c874a3fa9040",
@@ -3762,8 +3759,8 @@
   "xena-project": {
    "failures": 0,
    "initialized": true,
-   "last_modified": "Mon, 05 Oct 2026 07:27:46 GMT",
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_modified": "Mon, 05 Oct 2026 07:27:13 GMT",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "resolved_feed": "https://xenaproject.wordpress.com/feed/",
    "seen": [
     "e3efd7d8877000651672",
@@ -3791,7 +3788,7 @@
   "zurich-instruments": {
    "failures": 0,
    "initialized": true,
-   "last_ok": "2026-10-05T21:30:25+00:00",
+   "last_ok": "2026-10-05T22:00:18+00:00",
    "seen": [
     "257a3d394f3fd363c69c"
    ]
