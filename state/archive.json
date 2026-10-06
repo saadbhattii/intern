@@ -3862,6 +3862,126 @@
   ],
   "ionq": [
    {
+    "id": "e843b70175eac8b75c7d",
+    "title": "From Signal to Insight — Evaluating Quantum Generative Models on Real Satellite Radar",
+    "url": "https://www.ionq.com/blog/from-signal-to-insight-evaluating-quantum-generative-models-on-real-satellite-radar",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "9484d025b5c1a761ad37",
+    "title": "Innovating, Manufacturing, and Scaling: Highlights from IonQ Investor Day 2026",
+    "url": "https://www.ionq.com/blog/innovating-manufacturing-and-scaling-highlights-from-ionq-investor-day-2026",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "cf9f596ef675d5ba9d13",
+    "title": "The Four Clocks of PQC Migration — and Why They Don't Agree",
+    "url": "https://www.ionq.com/blog/the-four-clocks-of-pqc-migration-and-why-they-dont-agree",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "4f672f77481bf0e3e67d",
+    "title": "Bridging a Historical Divide in Quantum Computing",
+    "url": "https://www.ionq.com/blog/bridging-a-historical-divide-in-quantum-computing",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "603ab558016e59bd9048",
+    "title": "We Just Published the First Full-Stack Blueprint for Breaking 256-Bit Elliptic-Curve Signatures — Here’s What That Means",
+    "url": "https://www.ionq.com/blog/the-first-full-stack-blueprint-for-breaking-256-bit-elliptic-curve-signatures",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "22b54530ed961e9680a0",
+    "title": "A Platform Solution to the Deep Trotter Dilemma: Improving Quantum Chemistry Simulations",
+    "url": "https://www.ionq.com/blog/a-platform-solution-to-the-deep-trotter-dilemma-improving-quantum-chemistry-simulations",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "b640efb1d84401862106",
+    "title": "Executive Orders Move Quantum from Research to Real Life—and It’s Truly a Watershed Moment",
+    "url": "https://www.ionq.com/blog/executive-orders-move-quantum-from-research-to-real-life--and-its-truly-a-watershed-moment",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "35bb9a1d01ce017b25ca",
+    "title": "Why Quantum Fine-Tuning is the Scalable Answer to AI's Power Crisis",
+    "url": "https://www.ionq.com/blog/why-quantum-fine-tuning-is-the-scalable-answer-to-ais-power-crisis",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "da25bc65fb09d8bc1a70",
+    "title": "Bypassing the Horizon: How Space-Based Laser Networks Are Rewriting the Rules of Satellite Intelligence",
+    "url": "https://www.ionq.com/blog/bypassing-the-horizon-how-space-based-laser-networks-are-rewriting-the-rules-of-satellite-intelligence",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "126ff540c61cb1768366",
+    "title": "From Wall Street Hypothesis to NYSE Production: The Real-World Arrival of Quantum Finance",
+    "url": "https://www.ionq.com/blog/from-wall-street-hypothesis-to-nyse-production-the-real-world-arrival-ofquantum-finance",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "f0a46dd6b5f677239eb6",
+    "title": "Mind the Gaps: Quantum Optimization for Efficient Electric and Autonomous Freight Dispatch with IonQ and Einride",
+    "url": "https://www.ionq.com/blog/mind-the-gaps-quantum-optimization-for-efficient-electric-and-autonomous-freight-dispatch-with-ionq-and-einride",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "3605334ea16f6f8f583e",
+    "title": "Blueprint for Fault-Tolerant Trapped-Ion Quantum Computing: The Walking Cat Architecture",
+    "url": "https://www.ionq.com/blog/blueprint-for-fault-tolerant-trapped-ion-quantum-computing-the-walking-cat-architecture",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "bf36ac5c6f1edaf2858c",
+    "title": "Beyond Qubit Counts: Introducing IonQ’s Application-Centric Benchmarking Framework",
+    "url": "https://www.ionq.com/blog/beyond-qubit-counts-introducing-ionqs-application-centric-benchmarking-framework",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "895c33cc1e6b061670ab",
+    "title": "Quantum Computing Meets Wall Street: Running Real Portfolio Optimization on Trapped-Ion Hardware",
+    "url": "https://www.ionq.com/blog/quantum-computing-meets-wall-street-running-real-portfolio-optimization-on-trapped-ion-hardware",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "4c1c19b8b5b5475bccf7",
+    "title": "Breaking the decoding bottleneck: Fast and accurate software decoding for Quantum LDPC codes",
+    "url": "https://www.ionq.com/blog/breaking-the-decoding-bottleneck-fast-and-accurate-software-decoding-for-quantum-ldpc-codes",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "790ae5aff0fcf76ee6d1",
+    "title": "The Birth of Quantum Computers: How Dr. Chris Monroe Ignited the Quantum Computing Revolution",
+    "url": "https://www.ionq.com/blog/the-birth-of-quantum-computers-how-dr-chris-monroe-ignited-the-quantum-computing-revolution",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "b8d04befc5d98f3ed0ec",
+    "title": "Demystifying Logical Qubits and Fault Tolerance",
+    "url": "https://www.ionq.com/blog/demystifying-logical-qubits-and-fault-tolerance",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "8e2c3cc1100a5233ac35",
+    "title": "Reimagining Error Correction for Modular Quantum Computing",
+    "url": "https://www.ionq.com/blog/reimagining-error-correction-for-modular-quantum-computing",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "f48cc15c834b35af28a2",
+    "title": "Accelerating Towards Fault Tolerance: Unlocking 99.99% Two-Qubit Gate Fidelities",
+    "url": "https://www.ionq.com/blog/accelerating-towards-fault-tolerance-unlocking-99-99-two-qubit-gate",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "a42fce12e4f78eff396d",
+    "title": "IonQ Hits #AQ 64 Milestone Ahead of Schedule — And Sets Its Sights Even Higher",
+    "url": "https://www.ionq.com/blog/ionq-hits-aq-64-milestone-ahead-of-schedule-and-sets-its-sights-even-higher",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
     "id": "4bd3c18429a8ef3c406b",
     "title": "Diamond Thin Films Unlock Foundry-Scale Production for Quantum Technologies",
     "url": "https://www.ionq.com/blog/diamond-thin-films-unlock-foundry-scale-production-for-quantum-technologies",
@@ -3980,126 +4100,6 @@
     "title": "IonQ Employee Profile: Nicolas Delfosse, Principal Researcher",
     "url": "https://www.ionq.com/blog/ionq-employee-profile-nicolas-delfosse-principal-researcher",
     "seen": "2026-10-06T21:00:20+00:00"
-   },
-   {
-    "id": "cfdfad86f7dc744a50e3",
-    "title": "How qLDPC with Scheduled Error Correction Unlocks Faster Fault-Tolerant Quantum Computers",
-    "url": "https://www.ionq.com/blog/how-qldpc-with-scheduled-error-correction-unlocks-faster-fault-tolerant-quantum-computers",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "c1daaf0129d71f8a2593",
-    "title": "IonQ and DESY Tackle the Gate Assignment Problem",
-    "url": "https://www.ionq.com/blog/ionq-and-desy-tackle-the-gate-assignment-problem",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "7bcb543597676d5988dd",
-    "title": "Enabling Networked Quantum Computing with Ion-Photon Entanglement",
-    "url": "https://www.ionq.com/blog/enabling-networked-quantum-computing-with-ion-photon-entanglement",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "83c7d7f55fdec324ff41",
-    "title": "How We Achieved Our 2024 Performance Target of #AQ 35",
-    "url": "https://www.ionq.com/blog/how-we-achieved-our-2024-performance-target-of-aq-35",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "6e637d94b42079376c13",
-    "title": "IonQ at AWS re:Invent: Expanded Commercial and Public Availability of IonQ Forte and IonQ Application Support now available on Amazon",
-    "url": "https://www.ionq.com/blog/ionq-at-aws-re-invent-expanded-commercial-and-public-availability-of-ionq",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "c2802c5f1dfd47ed4b94",
-    "title": "The Impact of Quantum Computing on Machine Learning",
-    "url": "https://www.ionq.com/blog/the-impact-of-quantum-computing-on-machine-learning-post",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "7be2b5b961fc0ce9ffca",
-    "title": "IonQ to Participate in SuperCompute 2023",
-    "url": "https://www.ionq.com/blog/ionq-to-participate-in-supercompute-2023",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "797e3da73455b1dbf67d",
-    "title": "IonQ Participates in Quantum World Congress 2023",
-    "url": "https://www.ionq.com/blog/ionq-participates-in-quantum-world-congress-2023",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "c58b58ff7bb92db6e62c",
-    "title": "Security Enhancement: IonQ API keys no longer visible after creation",
-    "url": "https://www.ionq.com/blog/security-enhancement-ionq-api-keys-no-longer-visible-after-creations",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "f9121bed08815d2f8c06",
-    "title": "Why Quantum Computing Is the New Space Race",
-    "url": "https://www.ionq.com/blog/why-quantum-computing-is-the-new-space-race",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "42f5216295ca30f48532",
-    "title": "IonQ to Participate in the IEEE International Conference on Quantum Computing and Engineering",
-    "url": "https://www.ionq.com/blog/ionq-participated-in-the-ieee-international-conference-on-quantum-computing",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "8c14f47db96f4e83d908",
-    "title": "IonQ to Participate In Quantum World Congress 2023",
-    "url": "https://www.ionq.com/blog/ionq-to-participate-in-quantum-world-congress-2023",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "27188ab8aaf57b7c7953",
-    "title": "What Is the Relationship Between Quantum Computing and Machine Learning",
-    "url": "https://www.ionq.com/blog/the-impact-of-quantum-computing-on-machine-learning",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "73ca54ba515092bf041e",
-    "title": "Orbital-optimized pair-correlated electron simulations on trapped-ion quantum computers",
-    "url": "https://www.ionq.com/blog/orbital-optimized-pair-correlated-electron-simulations-on-trapped-ion",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "280de0a7ce9ee1053656",
-    "title": "IonQ Participates in Q2B Tokyo 2023",
-    "url": "https://www.ionq.com/blog/ionq-participates-in-q2b-tokyo-2023",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "9b45b2c3931b30eeff27",
-    "title": "How Does Quantum Machine Learning Work?",
-    "url": "https://www.ionq.com/blog/how-does-quantum-machine-learning-work",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "8c41e08410ea63d95041",
-    "title": "IonQ Participates In Quantum Korea 2023",
-    "url": "https://www.ionq.com/blog/ionq-participates-in-quantum-korea-2023",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "09f78f611c2832c96a4c",
-    "title": "IonQ Forte: Our Highest Performing, Commercially Available Quantum Computer",
-    "url": "https://www.ionq.com/blog/ionq-forte-our-highest-performing-commercially-available-quantum-computer",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "81d4313245e4d8ecaa9a",
-    "title": "IonQ Achieves New Performance Milestone of 29 Algorithmic Qubits (#AQ) on IonQ Forte",
-    "url": "https://www.ionq.com/blog/ionq-achieves-new-performance-milestone-of-29-algorithmic-qubits-aq-on-ionq",
-    "seen": "2026-10-06T20:30:22+00:00"
-   },
-   {
-    "id": "750c650559ffbb9f73ca",
-    "title": "Quantum Computing, Monte Carlo Algorithms, & Financial Modeling",
-    "url": "https://www.ionq.com/blog/quantum-computing-monte-carlo-algorithms-and-financial-modeling",
-    "seen": "2026-10-06T20:30:22+00:00"
    }
   ],
   "iqc-waterloo": [
@@ -7540,6 +7540,18 @@
   ],
   "quantum-computing-report": [
    {
+    "id": "105d618f7310aa39e91c",
+    "title": "Pasqal Transitions €50 Million Q-PLANET Pilot Line into Execution Phase for European Neutral-Atom Chips",
+    "url": "https://quantumcomputingreport.com/pasqal-transitions-e50-million-q-planet-pilot-line-into-execution-phase-for-european-neutral-atom-chips/",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "0a822b7c6bb9559359bd",
+    "title": "SEALSQ Leads $10 Million PIPE Investment in WISeSat to Accelerate Post-Quantum Space Cybersecurity Infrastructure",
+    "url": "https://quantumcomputingreport.com/sealsq-leads-10-million-pipe-investment-in-wisesat-to-accelerate-post-quantum-space-cybersecurity-infrastructure/",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
     "id": "21bf270f5821f915f36c",
     "title": "Infleqtion, Honeywell Aerospace, and UC Santa Barbara Develop Chip-Scale Silicon Nitride Optical Cavity for Handheld Quantum Hardware",
     "url": "https://quantumcomputingreport.com/infleqtion-honeywell-aerospace-and-uc-santa-barbara-develop-chip-scale-silicon-nitride-optical-cavity-for-handheld-quantum-hardware/",
@@ -9006,6 +9018,72 @@
   ],
   "silicon-quantum-computing": [
    {
+    "id": "2802356d7a3633cc35b5",
+    "title": "Sqc fast company next big things in tech",
+    "url": "https://sqc.com/news/sqc-fast-company-next-big-things-in-tech",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "f7a9bdb3ed357389d039",
+    "title": "Sqc and schneider electric energy forecasting",
+    "url": "https://sqc.com/news/sqc-and-schneider-electric-energy-forecasting",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "aea438c1b846afcbd8a5",
+    "title": "Sqc nyse the cube",
+    "url": "https://sqc.com/news/sqc-nyse-the-cube",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "e52700bf37d4dcb8661a",
+    "title": "Sqc appoints john hollister chief financial officer",
+    "url": "https://sqc.com/news/sqc-appoints-john-hollister-chief-financial-officer",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "06d60f036a35cd308ac2",
+    "title": "Automating atomic precision semiconductor manufacturing",
+    "url": "https://sqc.com/news/automating-atomic-precision-semiconductor-manufacturing",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "a6ed9a5e98040f798346",
+    "title": "Sqc the economist quantum and ai",
+    "url": "https://sqc.com/news/sqc-the-economist-quantum-and-ai",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "79c0b33e9b389bf11519",
+    "title": "Sqc strengthens executive team chief legal officer",
+    "url": "https://sqc.com/news/sqc-strengthens-executive-team-chief-legal-officer",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "f2837b38bbc3fa88a6ef",
+    "title": "Atomic precision experiments redefine our understanding of quantum tunnelling",
+    "url": "https://sqc.com/news/atomic-precision-experiments-redefine-our-understanding-of-quantum-tunnelling",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "864e2a6f1d869d428180",
+    "title": "High fidelity cnot gate for donor electron spin qubits in silicon",
+    "url": "https://sqc.com/news/high-fidelity-cnot-gate-for-donor-electron-spin-qubits-in-silicon",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "005d23d725ffeba97ab5",
+    "title": "Unique high precision long range qubit read out sensors",
+    "url": "https://sqc.com/news/unique-high-precision-long-range-qubit-read-out-sensors",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
+    "id": "311d3262acfbd0a96967",
+    "title": "Sqc uses entanglement to precisely map the exact location of nuclear spins in a silicon chip",
+    "url": "https://sqc.com/news/sqc-uses-entanglement-to-precisely-map-the-exact-location-of-nuclear-spins-in-a-silicon-chip",
+    "seen": "2026-10-06T21:30:32+00:00"
+   },
+   {
     "id": "3684ededb4be91c8ae85",
     "title": "Firgun ventures sqc investment",
     "url": "https://sqc.com/news/firgun-ventures-sqc-investment",
@@ -9178,72 +9256,6 @@
     "title": "Silicon quantum computing shares a stage with nvidia to highlight ais role in advancing tech design",
     "url": "https://sqc.com/news/silicon-quantum-computing-shares-a-stage-with-nvidia-to-highlight-ais-role-in-advancing-tech-design",
     "seen": "2026-10-06T20:00:17+00:00"
-   },
-   {
-    "id": "eb7e8e0976fd96dc465a",
-    "title": "Googles former top quantum scientist professor john martinis has joined the sqc team",
-    "url": "https://sqc.com/news/googles-former-top-quantum-scientist-professor-john-martinis-has-joined-the-sqc-team",
-    "seen": "2026-10-06T20:00:17+00:00"
-   },
-   {
-    "id": "f9867bb0e724fd2e67cb",
-    "title": "Quantum leap from australian research promises super fast computing power",
-    "url": "https://sqc.com/news/quantum-leap-from-australian-research-promises-super-fast-computing-power",
-    "seen": "2026-10-06T20:00:17+00:00"
-   },
-   {
-    "id": "e3f3142e81fe3551f8f2",
-    "title": "Harnessing the power of spin orbit coupling in silicon scaling up quantum computation",
-    "url": "https://sqc.com/news/harnessing-the-power-of-spin-orbit-coupling-in-silicon-scaling-up-quantum-computation",
-    "seen": "2026-10-06T20:00:17+00:00"
-   },
-   {
-    "id": "f87d8a58e9281552ffbd",
-    "title": "Australian of the year named as quantum physicist michelle yvonne simmons",
-    "url": "https://sqc.com/news/australian-of-the-year-named-as-quantum-physicist-michelle-yvonne-simmons",
-    "seen": "2026-10-06T20:00:17+00:00"
-   },
-   {
-    "id": "52c8076f05a8bea932fc",
-    "title": "Sam gorman awarded prestigious arc industry fellowship",
-    "url": "https://sqc.com/news/sam-gorman-awarded-prestigious-arc-industry-fellowship",
-    "seen": "2026-10-06T19:30:16+00:00"
-   },
-   {
-    "id": "37a39854936142d0f7e9",
-    "title": "Silicon quantum computing demonstrates high fidelity initialisation of nuclear spins in a 4 qubit device",
-    "url": "https://sqc.com/news/silicon-quantum-computing-demonstrates-high-fidelity-initialisation-of-nuclear-spins-in-a-4-qubit-device",
-    "seen": "2026-10-06T19:30:16+00:00"
-   },
-   {
-    "id": "61e0d7e678cbcd2b2b16",
-    "title": "Silicon quantum computing announces simon segars former arm ceo as its new chair and welcomes fiona pak poy as a new director",
-    "url": "https://sqc.com/news/silicon-quantum-computing-announces-simon-segars-former-arm-ceo-as-its-new-chair-and-welcomes-fiona-pak-poy-as-a-new-director",
-    "seen": "2026-10-06T19:30:16+00:00"
-   },
-   {
-    "id": "280ac8f08c55ca94d2ad",
-    "title": "The 2023 boyer lectures michelle simmons",
-    "url": "https://sqc.com/news/the-2023-boyer-lectures-michelle-simmons",
-    "seen": "2026-10-06T19:30:16+00:00"
-   },
-   {
-    "id": "86bd91cd6ccead56e3d4",
-    "title": "Sqc ceo awarded 2023 prime ministers prize for science",
-    "url": "https://sqc.com/news/sqc-ceo-awarded-2023-prime-ministers-prize-for-science",
-    "seen": "2026-10-06T19:30:16+00:00"
-   },
-   {
-    "id": "9f81d022d7825d925b97",
-    "title": "Silicon quantum computing raises 50 4m",
-    "url": "https://sqc.com/news/silicon-quantum-computing-raises-50-4m",
-    "seen": "2026-10-06T19:30:16+00:00"
-   },
-   {
-    "id": "74dcfabc904ef70e325a",
-    "title": "Exquisite control of qubit wavefunctions in devices",
-    "url": "https://sqc.com/news/exquisite-control-of-qubit-wavefunctions-in-devices",
-    "seen": "2026-10-06T19:30:16+00:00"
    }
   ],
   "simon-willison": [
