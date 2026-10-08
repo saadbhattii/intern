@@ -1727,6 +1727,24 @@
    "s": "dwarkesh",
    "t": "Si Sheppard – How did a few hundred Spanish soldiers topple two empires?",
    "u": "https://www.dwarkesh.com/p/si-sheppard"
+  },
+  {
+   "c": "institutes",
+   "id": "a9f7864a56860f4a4276",
+   "n": "Max Planck Institute of Quantum Optics",
+   "p": "2026-10-08T11:51:52+00:00",
+   "s": "mpq",
+   "t": "PRX Quantum",
+   "u": "https://www.mpq.mpg.de/7265315/measurement-induced-entanglement-in-noisy-2d-random-circuits?c=2337"
+  },
+  {
+   "c": "institutes",
+   "id": "67ea3e1861aee5f7ecbd",
+   "n": "Max Planck Institute of Quantum Optics",
+   "p": "2026-10-08T11:51:52+00:00",
+   "s": "mpq",
+   "t": "PRX Quantum",
+   "u": "https://www.mpq.mpg.de/7265315/measurement-induced-entanglement-in-noisy-2d-random-circuits"
   }
  ],
  "meta": {}
