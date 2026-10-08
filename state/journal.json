@@ -5609,6 +5609,38 @@
    "t": "Unimaginative Uncertainty",
    "u": "https://www.argmin.net/p/unimaginative-uncertainty",
    "w": "8cd4c4ca9e9b9649dc04"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T16:33:17+00:00",
+   "id": "b8f05009e3ef8ac5ff82",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T17:30:58+00:00",
+   "s": "quantum-insider",
+   "t": "NVIDIA Commits $1 Billion to U.S. Science and Quantum Computing",
+   "u": "https://thequantuminsider.com/2026/10/08/nvidia-commits-1-billion-advance-us-science-next-five-years/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T17:15:00+00:00",
+   "id": "828d837c9a7af2682ba2",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T17:30:58+00:00",
+   "s": "quantum-insider",
+   "t": "NTT DOCOMO BUSINESS and Classiq Partner on Enterprise Quantum Computing in Japan",
+   "u": "https://thequantuminsider.com/2026/10/08/ntt-docomo-business-classiq-quantum-computing-japan/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "ai",
+   "id": "d0113c0cdfc861ace98e",
+   "n": "Anthropic News",
+   "p": "2026-10-08T17:30:58+00:00",
+   "s": "anthropic",
+   "t": "Announcements 2026 Usage Policy update",
+   "u": "https://www.anthropic.com/news/2026-usage-policy-update",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
