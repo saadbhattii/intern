@@ -7459,6 +7459,78 @@
    "t": "Si Sheppard – How did a few hundred Spanish soldiers topple two empires?",
    "u": "https://www.dwarkesh.com/p/si-sheppard",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "analysts",
+   "id": "17bee78f9759b984eba2",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-08T19:00:58+00:00",
+   "s": "quantum-computing-report",
+   "t": "Neutral-Atom Developer Oratomic Secures $775 Million in Cumulative Funding for Fault-Tolerant System R&D",
+   "u": "https://quantumcomputingreport.com/neutral-atom-developer-oratomic-secures-775-million-in-cumulative-funding-for-fault-tolerant-system-rd/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "id": "bb4b72a0c4fbd640ef07",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-08T19:00:58+00:00",
+   "s": "quantum-computing-report",
+   "t": "Universal Quantum Closes $100 Million Series A to Accelerate Modular Trapped-Ion Architecture Scaling",
+   "u": "https://quantumcomputingreport.com/trapped-ion-developer-universal-quantum-closes-100-million-series-a-round-to-scale-modular-hardware/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "id": "261a0d2d03f88150e228",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-08T19:00:58+00:00",
+   "s": "quantum-computing-report",
+   "t": "Quantum Source Introduces Memory-Assisted Photonic Interconnect to Unify Multi-Modal Quantum Computing",
+   "u": "https://quantumcomputingreport.com/quantum-source-introduces-memory-assisted-photonic-interconnect-to-unify-multi-modal-quantum-computing/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "id": "b08b01e693a0431860d8",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-08T19:00:58+00:00",
+   "s": "quantum-computing-report",
+   "t": "PsiQuantum Secures Conditional $150 Million Loan Commitment from U.S. Office of Strategic Capital",
+   "u": "https://quantumcomputingreport.com/psiquantum-secures-conditional-150-million-loan-commitment-from-u-s-office-of-strategic-capital/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "id": "e2a8661f9ea47f53c668",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-08T19:00:58+00:00",
+   "s": "quantum-computing-report",
+   "t": "NVIDIA Commits $1 Billion over Five Years to Accelerate U.S. Scientific Computing and Quantum Infrastructure",
+   "u": "https://quantumcomputingreport.com/nvidia-commits-1-billion-over-five-years-to-accelerate-u-s-scientific-computing-and-quantum-infrastructure/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T18:33:29+00:00",
+   "id": "aa69c76b276e52af31d3",
+   "n": "AWS Machine Learning Blog",
+   "p": "2026-10-08T19:00:58+00:00",
+   "s": "aws-machine-learning",
+   "t": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments",
+   "u": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-10-08T18:20:29+00:00",
+   "id": "8078f74333bc4baaf847",
+   "n": "Math ∩ Programming",
+   "p": "2026-10-08T19:00:58+00:00",
+   "s": "jeremy-kun",
+   "t": "Hotword detection in FHE on GPU in 350ms",
+   "u": "https://www.jeremykun.com/shortform/2026-10-08-1120/",
+   "w": "8cd4c4ca9e9b9649dc04"
   }
  ],
  "meta": {}
