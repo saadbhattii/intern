@@ -1258,18 +1258,6 @@ site = "https://www.technologyreview.com/"
 include_keywords = ["quantum", "qubit"]
 
 [[source]]
-id = "hpcwire-quantum"
-name = "HPCwire (quantum)"
-category = "publications"
-feed = "https://www.hpcwire.com/feed/"
-site = "https://www.hpcwire.com/"
-mode = "digest"
-max_per_run = 10
-high_volume = true
-note = "Topic feed was stuck in 2015; main feed filtered to quantum instead."
-include_keywords = ["quantum", "qubit"]
-
-[[source]]
 id = "the-next-platform"
 name = "The Next Platform (quantum)"
 category = "publications"
@@ -1949,6 +1937,7 @@ name = "Benedict Evans"
 category = "analysts"
 feed = "https://www.ben-evans.com/benedictevans?format=rss"
 site = "https://www.ben-evans.com/"
+enabled = false
 
 [[source]]
 id = "stratechery"
@@ -1958,6 +1947,7 @@ category = "analysts"
 feed = "https://stratechery.com/feed/"
 site = "https://stratechery.com/"
 note = "Mostly paywalled; titles still post."
+enabled = false
 
 [[source]]
 id = "fact-based-insight"
@@ -1983,6 +1973,18 @@ category = "analysts"
 site = "https://www.global-qi.com/"
 enabled = false
 note = "Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page."
+
+[[source]]
+id = "hpcwire-quantum"
+name = "HPCwire (quantum)"
+category = "analysts"
+feed = "https://www.hpcwire.com/feed/"
+site = "https://www.hpcwire.com/"
+mode = "digest"
+max_per_run = 10
+high_volume = true
+note = "Topic feed was stuck in 2015; main feed filtered to quantum instead."
+include_keywords = ["quantum", "qubit"]
 
 # =============================================================================
 # PODCASTS (filed under their subject categories)
