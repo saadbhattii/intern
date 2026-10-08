@@ -1774,6 +1774,1543 @@
    "s": "quantum-insider",
    "t": "Qubo Consulting and Mitacs Offer Quantum Workshops for Canadian Students",
    "u": "https://thequantuminsider.com/2026/10/08/qubo-consulting-mitacs-quantum-workshops-canadian-students/"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-10-04T22:13:33+00:00",
+   "id": "6b62d0cb70473661816e",
+   "n": "Shtetl-Optimized",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "shtetl-optimized",
+   "t": "My new course at UT Austin: AI Alignment Theory",
+   "u": "https://scottaaronson.blog/?p=10125"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-09-20T16:49:32+00:00",
+   "id": "791e082272425e9868ee",
+   "n": "Quantum Frontiers",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quantum-frontiers",
+   "t": "Quantum Computers Need More than “Magic”",
+   "u": "https://quantumfrontiers.com/2026/09/20/quantum-computers-need-more-than-magic/"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-08-15T11:11:30+00:00",
+   "id": "5608d27e9cdecbb1aca8",
+   "n": "Tobias J. Osborne's research notes",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "osborne-research-notes",
+   "t": "Why I Won’t Use Your Crappy Quantum Programming Language (Or Mine Either)",
+   "u": "https://tjoresearchnotes.wordpress.com/2026/08/15/why-i-wont-use-your-crappy-quantum-programming-language-or-mine-either/"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-10-07T02:35:52+00:00",
+   "id": "f27cab10e5fd22b0d19d",
+   "n": "Combinatorics and More",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "gil-kalai",
+   "t": "Updates: Sharing AI progress on mathematics (amazing!); and my lecture plans",
+   "u": "https://gilkalai.wordpress.com/2026/10/07/updates-sharing-ai-progress-on-mathematics-amazing-and-my-lecture-plans/"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-06-01T18:10:10+00:00",
+   "id": "b8884cb4b5d5e983159f",
+   "n": "Algorithmic Assertions",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "algorithmic-assertions",
+   "t": "The French have the Quantum Circuits",
+   "u": "http://algassert.com/post/2602"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-09-29T13:41:11+00:00",
+   "id": "c532465365af4e37b032",
+   "n": "Nanoscale Views",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "nanoscale-views",
+   "t": "Annual Nobel speculation thread",
+   "u": "https://nanoscale.blogspot.com/2026/09/annual-nobel-speculation-thread.html"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-09-25T19:07:28+00:00",
+   "id": "36d395ba95da862e417b",
+   "n": "Not Even Wrong",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "not-even-wrong",
+   "t": "Some HEP-TH News",
+   "u": "https://www.math.columbia.edu/~woit/wordpress/?p=15881"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-09-06T09:29:33+00:00",
+   "id": "db043148cf250ee1b53a",
+   "n": "Azimuth",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "azimuth",
+   "t": "The E6 Root Polytope",
+   "u": "https://johncarlosbaez.wordpress.com/2026/09/06/the-e6-root-polytope/"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-09-25T18:06:22+00:00",
+   "id": "0c25362c397aba5518fd",
+   "n": "4 gravitons",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "four-gravitons",
+   "t": "It Got to My Field",
+   "u": "https://4gravitons.com/2026/09/25/it-got-to-my-field/"
+  },
+  {
+   "c": "math",
+   "d": "2026-10-07T18:13:51+00:00",
+   "id": "466189412d2907f32030",
+   "n": "What's new",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "terry-tao",
+   "t": "The barriers of perception",
+   "u": "https://terrytao.wordpress.com/2026/10/07/the-barriers-of-perception/"
+  },
+  {
+   "c": "math",
+   "d": "2026-08-12T10:00:33+00:00",
+   "id": "8a514fdb6390d1896f65",
+   "n": "Gowers's Weblog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "gowers",
+   "t": "What sort of maths are LLMs good at?",
+   "u": "https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/"
+  },
+  {
+   "c": "math",
+   "d": "2026-09-04T18:30:42+00:00",
+   "id": "55c9a4d228f80a02b8fd",
+   "n": "Xena",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "xena-project",
+   "t": "FLT: Anthropic has beaten me to it",
+   "u": "https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/"
+  },
+  {
+   "c": "math",
+   "d": "2026-10-05T11:57:47+00:00",
+   "id": "8eca03ad8e68d36d186e",
+   "n": "Persiflage",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "persiflage",
+   "t": "Journals",
+   "u": "https://galoisrepresentations.org/2026/10/05/journals/"
+  },
+  {
+   "c": "math",
+   "d": "2026-09-08T18:20:04+00:00",
+   "id": "3818a9634e7f2e405d12",
+   "n": "The n-Category Café",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "n-category-cafe",
+   "t": "The E6 Root Polytope",
+   "u": "https://golem.ph.utexas.edu/category/2026/09/the_e6_root_polytope.html"
+  },
+  {
+   "c": "math",
+   "d": "2026-10-05T02:50:11+00:00",
+   "id": "b3f8b78ef566db7cfcfa",
+   "n": "Quomodocumque",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quomodocumque",
+   "t": "Eigenvalues of random p-adic matrices",
+   "u": "https://quomodocumque.wordpress.com/2026/10/04/eigenvalues-of-random-p-adic-matrices/"
+  },
+  {
+   "c": "math",
+   "d": "2026-08-27T10:04:53+00:00",
+   "id": "46e9a784a6a5311daef1",
+   "n": "Peter Cameron's Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "peter-cameron",
+   "t": "Complete mappings of semigroups",
+   "u": "https://cameroncounts.wordpress.com/2026/08/27/complete-mappings-of-semigroups/"
+  },
+  {
+   "c": "math",
+   "d": "2026-09-20T14:17:34+00:00",
+   "id": "c57aa5780b293ef0dace",
+   "n": "Infinitely More",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "infinitely-more",
+   "t": "Ordinal definability—how did Gödel do it?",
+   "u": "https://www.infinitelymore.xyz/p/ordinal-definability-historical-conundrum"
+  },
+  {
+   "c": "math",
+   "d": "2026-09-15T21:17:05+00:00",
+   "id": "dcbe5a518a428a5babde",
+   "n": "Igor Pak's blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "igor-pak",
+   "t": "What to expect in the AI era",
+   "u": "https://igorpak.wordpress.com/2026/09/15/what-to-expect-in-the-ai-era/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-10-04T20:14:32+00:00",
+   "id": "e4c97b34855bf495e392",
+   "n": "Computational Complexity",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "computational-complexity",
+   "t": "How many humans does it take to make tech seem human? Do you want to be one of them?",
+   "u": "https://blog.computationalcomplexity.org/2026/10/how-many-humans-does-it-take-to-make.html"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-08-24T14:34:50+00:00",
+   "id": "650427cbf76b92d477e8",
+   "n": "Windows on Theory",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "windows-on-theory",
+   "t": "Math after AI",
+   "u": "https://windowsontheory.org/2026/08/24/math-after-ai/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-04-22T14:27:43+00:00",
+   "id": "a7d06db319608202d4b6",
+   "n": "Gödel's Lost Letter and P=NP",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "godels-lost-letter",
+   "t": "Rabin has just passed away",
+   "u": "https://rjlipton.com/2026/04/22/rabin-has-just-passed-away/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-10-01T14:17:09+00:00",
+   "id": "c556bb964c2785de67b6",
+   "n": "arg min",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "arg-min",
+   "t": "The Keynesian Subtweet",
+   "u": "https://www.argmin.net/p/the-keynesian-subtweet"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-09-21T17:08:33+00:00",
+   "id": "51c6d9c3e5977be21945",
+   "n": "Thoughts (Emanuele Viola)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "emanuele-viola",
+   "t": "The heroic age of mathematical exploration: circa 3000 BCE — 2026 CE",
+   "u": "https://emanueleviola.wordpress.com/2026/09/21/the-heroic-age-of-mathematical-exploration-circa-3000-bce-2026-ce/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-05-27T20:09:26+00:00",
+   "id": "a9482368e9b024a217fe",
+   "n": "Kamathematics",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "kamathematics",
+   "t": "Making a talk, without and with AI",
+   "u": "https://kamathematics.wordpress.com/2026/05/27/making-a-talk-without-and-with-ai/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-03-05T06:49:07+00:00",
+   "id": "a4a809814ee2f10ac725",
+   "n": "Machine Learning Research Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "francis-bach",
+   "t": "Closed-form dynamics beyond quadratics",
+   "u": "https://francisbach.com/closed-form-dynamics/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-09-01T00:00:00+00:00",
+   "id": "6bf31f7e0dd3cfa71b19",
+   "n": "Sophie Huiberts",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "sophie-huiberts",
+   "t": "Games Done Quick",
+   "u": "https://sophie.huiberts.me/blog/2026/gdq/index.html"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-09-30T09:00:00+00:00",
+   "id": "706829dbf008d54ed932",
+   "n": "Decentralized Thoughts",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "decentralized-thoughts",
+   "t": "Information Checking Protocols",
+   "u": "https://decentralizedthoughts.github.io/2026-09-30-information-checking-protocols/"
+  },
+  {
+   "c": "tcs",
+   "d": "2025-02-27T16:22:52+00:00",
+   "id": "e6d49b9263ac39dd7a9f",
+   "n": "Simons Institute News",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "simons-institute",
+   "t": "Theory at the Institute and Beyond, February 2025",
+   "u": "https://blog.simons.berkeley.edu/2025/02/theory-at-the-institute-and-beyond-february-2025/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-09-25T22:24:38+00:00",
+   "id": "605ac91ea71057ebaa93",
+   "n": "Theory Dish",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "theory-dish",
+   "t": "Quantum Speedups Require Structure or Depth",
+   "u": "https://theorydish.blog/2026/09/25/quantum-speedups-require-structure-or-depth/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-01-01T20:00:00+00:00",
+   "id": "56a92a9b3130da8007e5",
+   "n": "DifferentialPrivacy.org",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "differential-privacy",
+   "t": "Call for Papers - TPDP 2026",
+   "u": "https://differentialprivacy.org/tpdp2026/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-06-24T00:00:00+00:00",
+   "id": "93544bde158e1490c12f",
+   "n": "Lil'Log",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "lilian-weng",
+   "t": "Scaling Laws, Carefully",
+   "u": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/"
+  },
+  {
+   "c": "ai",
+   "d": "2025-12-19T18:00:00+00:00",
+   "id": "5fda508cf74ae78cbc07",
+   "n": "Andrej Karpathy",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "karpathy",
+   "t": "2025 LLM Year in Review",
+   "u": "https://karpathy.bearblog.dev/year-in-review-2025/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-09T11:14:25+00:00",
+   "id": "4ef1fa7cd05791656365",
+   "n": "Ahead of AI",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "ahead-of-ai",
+   "t": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
+   "u": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-22T13:37:45+00:00",
+   "id": "6a95d7e9e23e49949a43",
+   "n": "Interconnects",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "interconnects",
+   "t": "Debating RSI, the US-China Gap, and Jaggedness with JS Denain of Epoch AI",
+   "u": "https://www.interconnects.ai/p/debating-rsi-the-us-china-gap-and"
+  },
+  {
+   "c": "ai",
+   "d": "2026-02-18T18:25:43+00:00",
+   "id": "8bbfdaf9608ce6cf6cdb",
+   "n": "Bounded Regret",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "bounded-regret",
+   "t": "Building Technology to Drive AI Governance",
+   "u": "https://bounded-regret.ghost.io/building-technology-to-drive-ai-governance/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-06T20:00:30+00:00",
+   "id": "d9b1f591cbe6680dddc7",
+   "n": "Statistical Modeling, Causal Inference, and Social Science",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "gelman-stat-modeling",
+   "t": "Survey Statistics: 2 different uses of simulated data",
+   "u": "https://statmodeling.stat.columbia.edu/2026/10/06/survey-statistics-2-different-uses-of-simulated-data/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-03T23:34:02+00:00",
+   "id": "47be91cd52d348ebb727",
+   "n": "Simon Willison's Weblog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "simon-willison",
+   "t": "We're going to need default hard budget caps on pretty much everything",
+   "u": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
+  },
+  {
+   "c": "big-tech",
+   "d": "2026-03-31T02:03:00+00:00",
+   "id": "e16fea01b5b16bfde2e7",
+   "n": "Google Research (quantum posts)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "google-research-quantum",
+   "t": "Safeguarding cryptocurrency by disclosing quantum vulnerabilities responsibly",
+   "u": "https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/"
+  },
+  {
+   "c": "big-tech",
+   "d": "2026-09-23T15:47:54+00:00",
+   "id": "992e925e9ff1e5cf61d5",
+   "n": "AWS Quantum Technologies Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "aws-quantum",
+   "t": "Demonstrating genuine multipartite non-locality on quantum processors using Amazon Braket",
+   "u": "https://aws.amazon.com/blogs/quantum-computing/demonstrating-genuine-multipartite-non-locality-on-quantum-processors-using-amazon-braket/"
+  },
+  {
+   "c": "big-tech",
+   "d": "2026-01-22T16:00:00+00:00",
+   "id": "0de8d89fa859debab2df",
+   "n": "Microsoft Azure Quantum Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "azure-quantum",
+   "t": "Powerful new developer tools increase the versatility of the Microsoft Quantum platform",
+   "u": "https://azure.microsoft.com/en-us/blog/quantum/2026/01/22/powerful-new-developer-tools-increase-the-versatility-of-the-microsoft-quantum-platform/"
+  },
+  {
+   "c": "hardware",
+   "id": "e503ea2275433df9b065",
+   "n": "Quantinuum Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quantinuum",
+   "t": "Read our blogpost",
+   "u": "https://www.quantinuum.com/blog/quantum-world-congress-2026-cutting-through-the-noise-to-deliver-the-next-era-of-compute"
+  },
+  {
+   "c": "hardware",
+   "id": "e843b70175eac8b75c7d",
+   "n": "IonQ Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "ionq",
+   "t": "From Signal to Insight — Evaluating Quantum Generative Models on Real Satellite Radar",
+   "u": "https://www.ionq.com/blog/from-signal-to-insight-evaluating-quantum-generative-models-on-real-satellite-radar"
+  },
+  {
+   "c": "hardware",
+   "d": "2026-09-29T11:30:25+00:00",
+   "id": "765b380c4a502051f4f3",
+   "n": "Alpine Quantum Technologies (AQT)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "aqt",
+   "t": "AQT Selected as One of Seven Partners in €122 Million German High-Tech Quantum Computing Agenda",
+   "u": "https://www.aqt.eu/aqt-joins-e122-mio-project-on-germanys-high-tech-agenda/"
+  },
+  {
+   "c": "hardware",
+   "id": "1b161468d2957b322f8a",
+   "n": "Quantum Art",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quantum-art",
+   "t": "Quantum Art Validates a Scalable Path to Fault-Tolerant Quantum Computing Using Multi-Qubit Gates",
+   "u": "https://www.quantum-art.tech/resources/quantum-art-validates-a-scalable-path-to-fault-tolerant-quantum-computing-using-multi-qubit-gates"
+  },
+  {
+   "c": "hardware",
+   "id": "a55964ed2c20b35afab2",
+   "n": "QuEra Computing",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quera",
+   "t": "Two Years, Not Ten: QuEra's Case for When Quantum Computing Gets Useful",
+   "u": "https://www.quera.com/blog-posts/two-years-not-ten-queras-case-for-when-quantum-computing-gets-useful"
+  },
+  {
+   "c": "hardware",
+   "id": "1b615d9d3dba3b0cf726",
+   "n": "Atom Computing",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "atom-computing",
+   "t": "Atom Computing Unveils First-Generation Quantum Computing System — Appoints New CEO After Closing $15 Million in Series A Funding",
+   "u": "https://atom-computing.com/news-resources/media-resources/"
+  },
+  {
+   "c": "hardware",
+   "d": "2026-09-29T12:00:00+00:00",
+   "id": "33deb6bf8390566b35ed",
+   "n": "Infleqtion",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "infleqtion",
+   "t": "Infleqtion and Riverlane Sign MOU to Advance Quantum Error Correction and Fault-Tolerant Computing in the UK",
+   "u": "https://infleqtion.com/infleqtion-and-riverlane-sign-mou-to-advance-quantum-error-correction-and-fault-tolerant-computing-in-the-uk/"
+  },
+  {
+   "c": "hardware",
+   "id": "3b1dc3d70f7027491e24",
+   "n": "planqc",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "planqc",
+   "t": "Made in Europe Award 2026: planqc wins in the Commercialising category",
+   "u": "https://planqc.eu/news/made-in-europe-award-2026-planqc-wins-in-the-commercialising-category"
+  },
+  {
+   "c": "hardware",
+   "id": "ce2f67b089047030b811",
+   "n": "IQM Quantum Computers",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "iqm",
+   "t": "Nature is quantum. And messy, dammit.",
+   "u": "https://iqm.tech/blog/nature-is-quantum-and-messy-dammit/"
+  },
+  {
+   "c": "hardware",
+   "d": "2026-09-24T10:00:38+00:00",
+   "id": "7054db77542a76afa4d2",
+   "n": "Oxford Quantum Circuits",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "oqc",
+   "t": "OQC appoints Simon Phillips as Chief Product Officer as company accelerates enterprise-ready quantum products",
+   "u": "https://oqc.tech/company/newsroom/oqc-appoints-simon-phillips-as-cpo"
+  },
+  {
+   "c": "hardware",
+   "d": "2026-08-04T16:35:44+00:00",
+   "id": "96b4e5332d1b7c54f96d",
+   "n": "Nord Quantique",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "nord-quantique",
+   "t": "Phillipe St-Jean, Chief Business Officer and Co-founder, fireside chat at Canaccord Genuity’s 46th Annual Growth Conference",
+   "u": "https://www.nordquantique.com/articles/canaccord-genuity-growth-conference/"
+  },
+  {
+   "c": "hardware",
+   "id": "0dc9130aae7a83d13eaa",
+   "n": "D-Wave",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "d-wave",
+   "t": "D-Wave Partners with University of Arkansas to Establish Quantum Supply Chain Initiative",
+   "u": "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-partners-with-university-of-arkansas-to-establish-quantum-supply-chain-initiative/"
+  },
+  {
+   "c": "hardware",
+   "id": "a14109276c04ab63243e",
+   "n": "PsiQuantum",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "psiquantum",
+   "t": "PsiQuantum Finalizes $100 Million Award with the U.S. Department of Commerce",
+   "u": "https://www.psiquantum.com/news-import/psiquantum-finalizes-100-million-award-with-the-us-department-of-commerce"
+  },
+  {
+   "c": "hardware",
+   "id": "aee5a3465287649a5ecd",
+   "n": "Quandela",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quandela",
+   "t": "Quantum computing glossary Explore and understand the quantum vocabulary",
+   "u": "https://www.quandela.com/resources/quantum-computing-glossary/"
+  },
+  {
+   "c": "hardware",
+   "d": "2026-07-23T10:26:20+00:00",
+   "id": "c542fd021fb7ec17f414",
+   "n": "ORCA Computing",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "orca-computing",
+   "t": "The trainability of photonic quantum circuits",
+   "u": "https://orcacomputing.com/the-trainability-of-photonic-quantum-circuits/"
+  },
+  {
+   "c": "hardware",
+   "id": "26301ea80368c8afa738",
+   "n": "QuiX Quantum",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quix-quantum",
+   "t": "Quix quantum advances photonic quantum error correction",
+   "u": "https://www.quixquantum.com/news/quix-quantum-advances-photonic-quantum-error-correction"
+  },
+  {
+   "c": "hardware",
+   "d": "2026-09-01T16:07:52+00:00",
+   "id": "853b6fe821806b9b6d5f",
+   "n": "Photonic Inc.",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "photonic-inc",
+   "t": "What is Quantum Resource Estimation?",
+   "u": "https://photonic.com/blog/what-is-quantum-resource-estimation/?utm_source=rss&utm_medium=rss&utm_campaign=what-is-quantum-resource-estimation"
+  },
+  {
+   "c": "hardware",
+   "id": "d03dca749323193bcc0f",
+   "n": "Diraq",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "diraq",
+   "t": "Spin-qubit control with a milli-kelvin CMOS chip",
+   "u": "https://www.diraq.com/research-papers/spin-qubit-control-with-a-milli-kelvin-cmos-chip"
+  },
+  {
+   "c": "hardware",
+   "id": "2802356d7a3633cc35b5",
+   "n": "Silicon Quantum Computing",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "silicon-quantum-computing",
+   "t": "Sqc fast company next big things in tech",
+   "u": "https://sqc.com/news/sqc-fast-company-next-big-things-in-tech"
+  },
+  {
+   "c": "qec",
+   "id": "4e90587290087fafb76a",
+   "n": "Riverlane",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "riverlane",
+   "t": "Infleqtion and Riverlane Sign MOU to Advance Quantum Error Correction and Fault-Tolerant Computing in the UK",
+   "u": "https://www.riverlane.com/press-release/infleqtion-and-riverlane-sign-mou-to-advance-qec"
+  },
+  {
+   "c": "qec",
+   "id": "8c0fcc2ae865c8814432",
+   "n": "Q-CTRL",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "q-ctrl",
+   "t": "Simulation: the latest module in Black Opal’s applications suite",
+   "u": "https://q-ctrl.com/blog/simulation-the-latest-module-in-black-opals-applications-suite"
+  },
+  {
+   "c": "software",
+   "id": "dcf8a2f10406944845f9",
+   "n": "Algorithmiq",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "algorithmiq",
+   "t": "Introducing monoprop: propagation at escape velocity",
+   "u": "https://algorithmiq.fi/news/introducing-monoprop-propagation-at-escape-velocity/"
+  },
+  {
+   "c": "software",
+   "id": "2be6b20c72e9385977d1",
+   "n": "Kipu Quantum",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "kipu-quantum",
+   "t": "Kipu: Quantum-centric Intelligence",
+   "u": "https://kipu-quantum.com/news/quantum-centric-intelligence"
+  },
+  {
+   "c": "software",
+   "id": "0e81fd0a0ca50eb8df29",
+   "n": "Haiqu",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "haiqu",
+   "t": "Haiqu’s Agentic Research Workflow helps Reconstruct Quantum Materials’ Fingerprints",
+   "u": "https://haiqu.ai/blog/haiqus-ai-reconstructs-quantum-materials-fingerprints"
+  },
+  {
+   "c": "software",
+   "id": "f4d28dc94abc0ac3d659",
+   "n": "Horizon Quantum",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "horizon-quantum",
+   "t": "Horizon Quantum clarifies certain information regarding the Company",
+   "u": "https://www.horizonquantum.com/resources/newsroom/horizon-quantum-clarifies-certain-information-regarding-the-company"
+  },
+  {
+   "c": "software",
+   "id": "1edf718c6d8da6800270",
+   "n": "Multiverse Computing",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "multiverse-computing",
+   "t": "Multiverse Computing and Muxunav join forces to develop and launch a new family of AI models for regulated financial services and unattended commerce",
+   "u": "https://multiversecomputing.com/resources/multiverse-computing-and-muxunav-join-forces-to-develop-and-launch-a-new-family-of-ai-models-for"
+  },
+  {
+   "c": "software",
+   "id": "4b6b88e8bdccd331c39b",
+   "n": "SandboxAQ",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "sandboxaq",
+   "t": "Inside the SandboxAQ Scholarship Conference: Building the Next Generation of AI & Quantum Leaders",
+   "u": "https://www.sandboxaq.com/post/inside-the-sandboxaq-scholarship-conference-building-the-next-generation-of-ai-quantum-leaders"
+  },
+  {
+   "c": "software",
+   "d": "2026-09-30T00:00:00+00:00",
+   "id": "6f0a626a904b7d3f71a2",
+   "n": "Unitary Foundation",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "unitary-foundation",
+   "t": "An open leaderboard for human- and AI-discovered quantum codes",
+   "u": "https://unitary.foundation/posts/2026_qec_challenge/"
+  },
+  {
+   "c": "control",
+   "id": "e0bf2d977990f4e96acb",
+   "n": "Qblox",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "qblox",
+   "t": "Step inside the Qblox Qubit Lab",
+   "u": "https://qblox.com/newsroom/step-inside-the-qblox-qubit-lab"
+  },
+  {
+   "c": "control",
+   "id": "a4372313bd849962a33b",
+   "n": "Bluefors",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "bluefors",
+   "t": "Bluefors Research Derives the Limits of Quantum Computer Wiring Density",
+   "u": "https://bluefors.com/news/bluefors-research-derives-the-limits-of-quantum-computer-wiring-density/"
+  },
+  {
+   "c": "networking",
+   "d": "2026-04-23T15:44:00+00:00",
+   "id": "6f0a2bd1ced0d64baf9f",
+   "n": "Aliro Quantum",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "aliro",
+   "t": "What is entanglement swapping?",
+   "u": "https://www.aliroquantum.com/blog/what-is-entanglement-swapping"
+  },
+  {
+   "c": "networking",
+   "d": "2026-10-02T14:10:35+00:00",
+   "id": "a20281ca63b383a787f8",
+   "n": "PQShield",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "pqshield",
+   "t": "How AI can help defend against future quantum attacks",
+   "u": "https://pqshield.com/how-ai-can-help-defend-against-future-quantum-attacks-forbes-tech-council/"
+  },
+  {
+   "c": "networking",
+   "d": "2026-09-29T13:00:00+00:00",
+   "id": "bbc02058f544d672ad52",
+   "n": "Cloudflare (post-quantum)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "cloudflare-post-quantum",
+   "t": "Using AI to chart a course for our post-quantum migration",
+   "u": "https://blog.cloudflare.com/ai-driven-cryptography-discovery/"
+  },
+  {
+   "c": "publications",
+   "d": "2026-09-17T21:02:26+00:00",
+   "id": "f63765a0e015d4c06d08",
+   "n": "IEEE Spectrum (quantum)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "ieee-spectrum-quantum",
+   "t": "Superconducting Transistors to Solve Quantum Computing Woes",
+   "u": "https://spectrum.ieee.org/superconducting-transistors"
+  },
+  {
+   "c": "publications",
+   "d": "2026-09-25T08:20:12+00:00",
+   "id": "ea3e120c48203f64fa56",
+   "n": "Physics World (quantum)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "physics-world-quantum",
+   "t": "Single-photon measurements confirm Richard Feynman’s vision of quantum mechanics",
+   "u": "https://physicsworld.com/a/single-photon-measurements-confirm-richard-feynmans-vision-of-quantum-mechanics/"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-07T10:00:00+00:00",
+   "id": "c4c65dab36da5b78a0b7",
+   "n": "APS Physics Magazine",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "aps-physics-magazine",
+   "t": "Quantum Light Leaves Its Fingerprint on Electrons",
+   "u": "http://link.aps.org/doi/10.1103/Physics.19.s123"
+  },
+  {
+   "c": "government",
+   "id": "a2c06de9b5d1bdea00ba",
+   "n": "National Quantum Initiative (quantum.gov)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quantum-gov",
+   "t": "Eight NSF Quantum Leap Challenge Institutes announced",
+   "u": "https://www.quantum.gov/eight-nsf-research-institutes-propel-us-quantum-science-290m/"
+  },
+  {
+   "c": "government",
+   "d": "2026-03-09T18:00:32+00:00",
+   "id": "b641319c9f815c510a54",
+   "n": "Quantum Systems Accelerator (Berkeley Lab)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quantum-systems-accelerator",
+   "t": "QSA at the 2026 APS Global Physics Summit",
+   "u": "https://quantumsystemsaccelerator.org/2026/03/09/2026-aps/"
+  },
+  {
+   "c": "government",
+   "id": "efed17647a63c73ac5e8",
+   "n": "UK National Quantum Computing Centre",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "nqcc",
+   "t": "In the media",
+   "u": "https://www.nqcc.ac.uk/in-the-news/"
+  },
+  {
+   "c": "government",
+   "id": "c39bfd59fd48bc44d3d2",
+   "n": "EU Quantum Flagship",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "eu-quantum-flagship",
+   "t": "© Charlesdeluvio - Unsplash September 19, 2026 | News 2026 phase II public consultation open: Help us fine-tune the updated SRIA for quantum technologies",
+   "u": "https://qt.eu/news/2026/2026-09-19-phase-2-public-consultation-open-help-fine-tune-updated-SRIA.php"
+  },
+  {
+   "c": "institutes",
+   "d": "2026-09-02T20:25:00+00:00",
+   "id": "4546ba65600cacfebe05",
+   "n": "MIT News (quantum computing)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "mit-news-quantum",
+   "t": "From MIT to IBM, expediting AI and quantum deployment",
+   "u": "https://news.mit.edu/2026/from-mit-to-ibm-expediting-ai-and-quantum-deployment-0902"
+  },
+  {
+   "c": "institutes",
+   "d": "2026-09-09T08:00:28+00:00",
+   "id": "59537841902a868634fb",
+   "n": "QuTech (Delft)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "qutech",
+   "t": "Diamond spin quantum computing takes a step toward optical scaling",
+   "u": "https://qutech.nl/2026/09/09/diamond-spin-quantum-computing-takes-a-step-toward-optical-scaling/"
+  },
+  {
+   "c": "institutes",
+   "d": "2026-09-24T12:00:00+00:00",
+   "id": "90bdf0fb0ab6945b940c",
+   "n": "Institute for Quantum Computing (Waterloo)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "iqc-waterloo",
+   "t": "Enhancing scientific literacy through quantum outreach",
+   "u": "https://uwaterloo.ca/institute-for-quantum-computing/news/enhancing-scientific-literacy-through-quantum-outreach"
+  },
+  {
+   "c": "institutes",
+   "id": "47cc3ca9e59f52c4689d",
+   "n": "Perimeter Institute",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "perimeter",
+   "t": "Perimeter and Two Small Fish Ventures co-host AI-centred event in Toronto",
+   "u": "https://perimeterinstitute.ca/news/perimeter-and-two-small-fish-ventures-co-host-ai-centred-event-toronto"
+  },
+  {
+   "c": "institutes",
+   "id": "2f152469c5f8e26a181b",
+   "n": "Chicago Quantum Exchange",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "chicago-quantum-exchange",
+   "t": "Building the world’s premier discovery-to-deployment quantum ecosystem",
+   "u": "https://chicagoquantum.org/quantum-economy/quantum-companies-region"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-09-28T06:59:06+00:00",
+   "id": "55605c0437527bdfd554",
+   "n": "Opinions Libres",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "olivier-ezratty",
+   "t": "Understanding Quantum Technologies 2026",
+   "u": "https://www.oezratty.net/wordpress/2026/understanding-quantum-technologies-2026/"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-07T23:23:10+00:00",
+   "id": "7eb9ffcfa02c72c41e0e",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quantum-computing-report",
+   "t": "Cisco Releases Quantum Network Controller and Network-Aware Compiler v0.2.0 for Distributed Quantum Infrastructure",
+   "u": "https://quantumcomputingreport.com/cisco-releases-quantum-network-controller-and-network-aware-compiler-v0-2-0-for-distributed-quantum-infrastructure/"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-10-04T15:00:00+00:00",
+   "id": "fa5988a2ca4b2c653124",
+   "n": "Backreaction",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "backreaction",
+   "t": "Quantum Effects Can Shape Human Thought, Physicist Shows",
+   "u": "https://backreaction.blogspot.com/2026/10/quantum-effects-can-shape-human-thought.html"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-09-26T22:50:28+00:00",
+   "id": "1fe5b8f0a8e699abf782",
+   "n": "Chris Ferrie",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "chris-ferrie",
+   "t": "You will never understand how quantum computers work",
+   "u": "https://csferrie.medium.com/you-will-never-understand-how-quantum-computers-work-9c2c316813d3?source=rss-3d49ce7652d5------2"
+  },
+  {
+   "c": "quantum-researchers",
+   "id": "0dae77ef6ab134c98b8c",
+   "n": "Michael Nielsen's notebook",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "michael-nielsen",
+   "t": "The Unimagined Good July 31, 2026",
+   "u": "https://michaelnotebook.com/unimaginedgood/index.html"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-09-29T05:39:43+00:00",
+   "id": "a5ee9c1150cc59a1530e",
+   "n": "Condensed Concepts",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "condensed-concepts",
+   "t": "What are the assumptions of science?",
+   "u": "https://condensedconcepts.blogspot.com/2026/09/what-are-assumptions-of-science.html"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-07T12:00:01+00:00",
+   "id": "6876fcdfe4a5c3cdfc24",
+   "n": "Phys.org (quantum physics)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "physorg-quantum",
+   "t": "Quantum computing shortcut makes particle collisions easier to simulate",
+   "u": "https://phys.org/news/2026-10-quantum-shortcut-particle-collisions-easier.html"
+  },
+  {
+   "c": "publications",
+   "d": "2026-09-21T16:00:00+00:00",
+   "id": "1776e613e7fd9524a40e",
+   "n": "New Scientist (physics, quantum)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "new-scientist-physics",
+   "t": "Swimmer made of quantum light breaks Newton’s third law",
+   "u": "https://www.newscientist.com/article/2589721-swimmer-made-of-quantum-light-breaks-newtons-third-law/?utm_campaign=RSS|NSNS&utm_content=physics&utm_medium=RSS&utm_source=NSNS"
+  },
+  {
+   "c": "publications",
+   "d": "2026-09-23T02:00:35+00:00",
+   "id": "921ac74352f2afb0039f",
+   "n": "The Next Platform (quantum)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "the-next-platform",
+   "t": "Improving Quantum Error Correction By Meshing Surface Code With IBM’s Heavy-Hex Architecture",
+   "u": "https://www.nextplatform.com/compute/2026/09/23/improving-quantum-error-correction-by-meshing-surface-code-with-ibms-heavy-hex-architecture/5298457"
+  },
+  {
+   "c": "publications",
+   "d": "2026-09-10T14:27:36+00:00",
+   "id": "fe626092ce7ee8f4ae1d",
+   "n": "Quanta Magazine (computer science)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quanta-computer-science",
+   "t": "The Four-Color Theorem Gets a Rare New Proof",
+   "u": "https://www.quantamagazine.org/the-four-color-theorem-gets-a-rare-new-proof-20260910/"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-01T13:20:29+00:00",
+   "id": "9b1caa9439eaff9df58b",
+   "n": "Quanta Magazine (mathematics)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quanta-mathematics",
+   "t": "What Does the Fourth Dimension Actually Look Like?",
+   "u": "https://www.quantamagazine.org/what-does-the-fourth-dimension-actually-look-like-20261001/"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-07T14:00:16+00:00",
+   "id": "bf6f433c35fe9fa376e2",
+   "n": "Inside Quantum Technology",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "inside-quantum-technology",
+   "t": "Future Product Development in Quantum Chemistry & Quantum Life Sciences & Expected Timelines to Market",
+   "u": "https://www.insidequantumtechnology.com/news-archive/product-development-in-quantum-chemistry-quantum-life-sciences-expected-timelines-to-market/"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-08T00:00:24+00:00",
+   "id": "9a0e21136fa4830bc960",
+   "n": "Ars Technica (AI)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "ars-technica-ai",
+   "t": "Microsoft event debuts new AI-friendly hardware and Windows changes",
+   "u": "https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-08T08:17:32+00:00",
+   "id": "6483937d0bd1ec28d269",
+   "n": "MIT Technology Review (AI)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "mit-tech-review-ai",
+   "t": "Building a safer path to autonomous industrial AI",
+   "u": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-07T07:00:00+00:00",
+   "id": "4e324623ab7ca6fee0e1",
+   "n": "OpenAI News",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "openai",
+   "t": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+   "u": "https://openai.com/index/radisson"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-30T20:01:45+00:00",
+   "id": "b49099cde7e97e60f531",
+   "n": "Google DeepMind",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "google-deepmind",
+   "t": "Gemini 4 Argon: our next era of frontier intelligence",
+   "u": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-02T15:00:00+00:00",
+   "id": "aacb8ca8a4a96bc0cfec",
+   "n": "Google AI (The Keyword)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "google-ai",
+   "t": "The latest AI news we announced in September 2026",
+   "u": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-06T15:05:11+00:00",
+   "id": "d100e7052f5d6239d808",
+   "n": "Google Research Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "google-research",
+   "t": "Unlocking Earth AI’s planetary geospatial foundation models for global public health",
+   "u": "https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/"
+  },
+  {
+   "c": "ai",
+   "id": "b79d22df6b0123ab2c96",
+   "n": "Anthropic News",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "anthropic",
+   "t": "Announcements Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+   "u": "https://www.anthropic.com/news/claude-frontier-academy"
+  },
+  {
+   "c": "ai",
+   "id": "d1b1ae3ebcfcedeb4814",
+   "n": "Anthropic Research",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "anthropic-research",
+   "t": "Project Swap: What happens when agents trade for us?",
+   "u": "https://www.anthropic.com/research/project-swap"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-06T16:19:06+00:00",
+   "id": "093b644e2ae44a1fbac2",
+   "n": "Microsoft Research Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "microsoft-research",
+   "t": "What AI gets wrong and what failure teaches us",
+   "u": "https://www.microsoft.com/en-us/research/podcast/what-ai-gets-wrong-and-what-failure-teaches-us/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-05T00:00:00+00:00",
+   "id": "031c3906bd6f632eb5d2",
+   "n": "Apple Machine Learning Research",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "apple-ml-research",
+   "t": "Negotiating Ontological Boundaries in User-Authored Personal Sensing Systems",
+   "u": "https://machinelearning.apple.com/research/ontological-boundary-negotiation"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-25T14:55:00+00:00",
+   "id": "4ec2b03f58bc1a118bcb",
+   "n": "Amazon Science",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "amazon-science",
+   "t": "A kernel-centric path to real-time video generation on Trainium",
+   "u": "https://www.amazon.science/blog/a-kernel-centric-path-to-real-time-video-generation-on-trainium"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-06T13:00:19+00:00",
+   "id": "33e718013b81e9f4cb7d",
+   "n": "NVIDIA Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "nvidia-blog",
+   "t": "Why Telecom Operators Are Building Their AI Strategy on Open Models",
+   "u": "https://blogs.nvidia.com/blog/telecom-operators-open-models/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-28T15:57:59+00:00",
+   "id": "ee4dc087c20018324226",
+   "n": "Mistral AI News",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "mistral",
+   "t": "Hallo, Deutschland!",
+   "u": "https://mistral.ai/news/hallo-deutschland/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-07T12:45:31+00:00",
+   "id": "67f5f61696a2949df273",
+   "n": "Hugging Face Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "hugging-face",
+   "t": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+   "u": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-07T18:34:44+00:00",
+   "id": "28e7ba2670cd654fe2e5",
+   "n": "AWS Machine Learning Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "aws-machine-learning",
+   "t": "Rethinking access control for RAG with Amazon Quick and Amazon Bedrock",
+   "u": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-05T16:30:00+00:00",
+   "id": "2af2d1f732b38e3849a4",
+   "n": "IBM Research Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "ibm-research",
+   "t": "Directed execution: same performance, more control",
+   "u": "https://research.ibm.com/blog/directed-execution?utm_medium=rss&utm_source=rss"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-02T09:00:29+00:00",
+   "id": "82bc78e5d75e190fdec5",
+   "n": "Engineering at Meta (AI)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "meta-engineering",
+   "t": "An Organizational Second Brain: Building an AI That Learns From Experts",
+   "u": "https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-02T08:00:00+00:00",
+   "id": "d185427efe0f19141d19",
+   "n": "Ai2 (Allen Institute for AI)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "ai2",
+   "t": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+   "u": "https://allenai.org/blog/astabrief"
+  },
+  {
+   "c": "ai",
+   "id": "e98ded276d495532a9d2",
+   "n": "Transformer Circuits Thread",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "transformer-circuits",
+   "t": "Verbalizable Representations Form a Global Workspace in Language Models",
+   "u": "https://transformer-circuits.pub/2026/workspace/index.html"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-28T12:32:03+00:00",
+   "id": "a529f11d07c2a0d67e1b",
+   "n": "Import AI",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "import-ai",
+   "t": "Import AI 474: Platonic mindspace; TPUs in space; Zhipu starts an outer RSI loop",
+   "u": "https://jack-clark.net/2026/09/28/import-ai-474-platonic-mindspace-tpus-in-space-zhipu-starts-an-outer-rsi-loop/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-18T17:54:32+00:00",
+   "id": "6f2d54085a2beb616948",
+   "n": "One Useful Thing",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "one-useful-thing",
+   "t": "The Overhang",
+   "u": "https://www.oneusefulthing.org/p/the-overhang"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-28T11:13:47+00:00",
+   "id": "673658b40af18bd25833",
+   "n": "AI as Normal Technology",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "ai-as-normal-technology",
+   "t": "AI existential risk probabilities are (still) too unreliable to inform policy",
+   "u": "https://www.normaltech.ai/p/p-doom"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-05T17:19:00+00:00",
+   "id": "d86edf9c6114f936c26b",
+   "n": "Understanding AI",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "understanding-ai",
+   "t": "Why agent swarms could be the next “scaling law”",
+   "u": "https://www.understandingai.org/p/why-agent-swarms-could-be-the-next"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-06T21:58:48+00:00",
+   "id": "f0c8541a8393e6ddb051",
+   "n": "Don't Worry About the Vase",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "zvi",
+   "t": "Childhood and Education #21: Grades and Standards",
+   "u": "https://thezvi.wordpress.com/2026/10/06/childhood-and-education-21-grades-and-standards/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-05-27T00:00:00+00:00",
+   "id": "fc359769654d904cccf7",
+   "n": "Eugene Yan",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "eugene-yan",
+   "t": "Using LLMs to Secure Source Code",
+   "u": "https://eugeneyan.com//writing/secure-source-code/"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-11T15:36:50+00:00",
+   "id": "987b7faae6929acb9ee7",
+   "n": "Yoshua Bengio",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "yoshua-bengio",
+   "t": "Why are AI agents lying, cheating and coordinating?",
+   "u": "https://yoshuabengio.org/en/blog/why-are-ai-agents-lying-cheating-and-coordinating"
+  },
+  {
+   "c": "institutes",
+   "d": "2026-10-07T20:10:00+00:00",
+   "id": "eb7eb8762462fed16142",
+   "n": "MIT News (artificial intelligence)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "mit-news-ai",
+   "t": "Discovering the value of humanistic inquiry",
+   "u": "https://news.mit.edu/2026/discovering-value-humanistic-inquiry-1007"
+  },
+  {
+   "c": "institutes",
+   "d": "2026-07-26T09:00:00+00:00",
+   "id": "f3e90fbaf2deefd1ebf4",
+   "n": "Berkeley AI Research (BAIR) Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "bair",
+   "t": "Teaching LLMs to Update Beliefs for Efficient Long-Horizon Interaction",
+   "u": "http://bair.berkeley.edu/blog/2026/07/26/abbel/"
+  },
+  {
+   "c": "institutes",
+   "id": "6d1f434f5b867093e62b",
+   "n": "Stanford HAI News",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "stanford-hai",
+   "t": "AI Legal Review Says Millions Live Under Discriminatory Local Laws",
+   "u": "https://hai.stanford.edu/news/ai-legal-review-says-millions-live-under-discriminatory-local-laws"
+  },
+  {
+   "c": "institutes",
+   "d": "2026-09-18T13:29:16+00:00",
+   "id": "73d88a19116dabcf413c",
+   "n": "Freedom to Tinker",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "freedom-to-tinker",
+   "t": "Making Community Governance Legible: A Semester with Bonfire",
+   "u": "https://blog.citp.princeton.edu/2026/09/18/making-community-governance-legible-a-semester-with-bonfire/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-08-21T14:56:59+00:00",
+   "id": "5ccd4fbb3974e9d136f3",
+   "n": "Process Algebra Diary",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "process-algebra-diary",
+   "t": "Interview with Krishnendu Chatterjee, Tom Henzinger and Nir Piterman, CONCUR 2026 ToT Award recipients",
+   "u": "https://processalgebra.blogspot.com/2026/08/interview-with-krishnendu-chatterjee.html"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-09-15T18:30:35+00:00",
+   "id": "550d5d23bd21d61ae73e",
+   "n": "Property Testing Review",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "property-testing-review",
+   "t": "News for August 2026",
+   "u": "https://ptreview.sublinear.info/2026/09/news-for-august-2026/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-09-04T18:53:40+00:00",
+   "id": "3ca83c8211db644d4221",
+   "n": "Math ∩ Programming",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "jeremy-kun",
+   "t": "Updates on HEIR, the homomorphic encryption compiler project",
+   "u": "https://www.jeremykun.com/2026/09/04/updates-on-heir-homomorphic-encryption/"
+  },
+  {
+   "c": "tcs",
+   "d": "2026-04-13T22:00:00+00:00",
+   "id": "0543b870c4a94c48caab",
+   "n": "Mathematics and Computation",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "andrej-bauer",
+   "t": "Claude and I",
+   "u": "https://math.andrej.com/2026/04/14/claude-and-i/"
+  },
+  {
+   "c": "math",
+   "d": "2026-08-11T22:49:34+00:00",
+   "id": "8a9cebb6e4fa0f0399f2",
+   "n": "Daniel Litt",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "daniel-litt",
+   "t": "The End of Mathematics",
+   "u": "https://www.daniellitt.com/blog/2026/8/11/the-end-of-mathematics/"
+  },
+  {
+   "c": "math",
+   "d": "2026-10-07T21:41:47+00:00",
+   "id": "2e8a2169a1fc102c8eda",
+   "n": "The Endeavour",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "john-d-cook",
+   "t": "Faster Fourier Transform",
+   "u": "https://www.johndcook.com/blog/2026/10/07/faster-fourier-transform/"
+  },
+  {
+   "c": "math",
+   "d": "2026-08-24T00:46:52+00:00",
+   "id": "22973c9707324e419638",
+   "n": "Matt Baker's Math Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "matt-baker",
+   "t": "Mathematical Discourse: A new peer-reviewed journal for math talks",
+   "u": "https://mattbaker.blog/2026/08/24/mathematical-discourse-a-new-peer-reviewed-journal-for-math-talks/"
+  },
+  {
+   "c": "math",
+   "d": "2026-10-06T09:47:12+00:00",
+   "id": "b8b87af77536a97ac639",
+   "n": "The Aperiodical",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "aperiodical",
+   "t": "Carnival of Maths 255",
+   "u": "https://aperiodical.com/2026/10/carnival-of-maths-255/"
+  },
+  {
+   "c": "math",
+   "d": "2026-03-03T03:35:00+00:00",
+   "id": "b4e9be1f19c2b4656521",
+   "n": "Lean Community Blog",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "lean-community",
+   "t": "The Sphere Packing Project | Post 1 - The Story",
+   "u": "https://leanprover-community.github.io/blog/posts/SpherePacking-1/"
+  },
+  {
+   "c": "government",
+   "d": "2026-09-25T20:58:47+00:00",
+   "id": "8276c0483fbcad6134fc",
+   "n": "Fermilab News (quantum)",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "fermilab-news",
+   "t": "DOE releases national quantum computing roadmap following field-wide effort led by SCAC subcommittee",
+   "u": "https://news.fnal.gov/2026/09/doe-releases-national-quantum-computing-roadmap-following-field-wide-effort-led-by-scac-subcommittee/"
+  },
+  {
+   "c": "government",
+   "d": "2026-10-07T13:01:20+00:00",
+   "id": "0423240f065f2296ca2a",
+   "n": "DLR Quantum Computing Initiative",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "dlr-qci",
+   "t": "HAPEQS",
+   "u": "https://qci.dlr.de/en/hapeqs/"
+  },
+  {
+   "c": "institutes",
+   "id": "72979b6565926695311f",
+   "n": "UChicago Pritzker School of Molecular Engineering",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "uchicago-pme",
+   "t": "Developing quantum sensors for better health",
+   "u": "https://pme.uchicago.edu/news-events/news/developing-quantum-sensors-better-health"
+  },
+  {
+   "c": "institutes",
+   "id": "89d7cf6bac82c9c197a2",
+   "n": "Illinois IQUIST",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "illinois-iquist",
+   "t": "Quantum summer camp gets teens on the same wavelength",
+   "u": "https://iquist.illinois.edu/news/quantum-summer-camp-2026"
+  },
+  {
+   "c": "institutes",
+   "d": "2026-08-25T00:00:00+00:00",
+   "id": "26eee7bd382a7e5004ea",
+   "n": "Duke Quantum Center",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "duke-quantum",
+   "t": "NSF Renews $37.5M Quantum Simulation Institute",
+   "u": "https://pratt.duke.edu/news/nsf-quantum-simulation-institute/"
+  },
+  {
+   "c": "institutes",
+   "id": "7de1d8b545f336f48070",
+   "n": "Max Planck Institute of Quantum Optics",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "mpq",
+   "t": "Hohe Auszeichnung für Immanuel Bloch: Pionier der Quantensimulation erhält Wolf-Preis",
+   "u": "https://www.mpq.mpg.de/7265106/09-wolf-prize-for-immanuel-bloch"
+  },
+  {
+   "c": "hardware",
+   "id": "48b3133cc8030768cee6",
+   "n": "QuantWare",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quantware",
+   "t": "QuantWare and Maybell partner to maximize compute-per-watt performance of VIO-40K systems press-releases",
+   "u": "https://quantware.com/news/quantware-and-maybell-partner-to-maximize-compute-per-watt-performance-of-vio-40k-systems"
+  },
+  {
+   "c": "hardware",
+   "d": "2026-07-14T00:11:35+00:00",
+   "id": "e3b48cbe05fcd1d77fbd",
+   "n": "Quantum Brilliance",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "quantum-brilliance",
+   "t": "Honeywell Aerospace-led consortium to develop compact quantum space magnetometer to advance research into Earth’s magnetic field",
+   "u": "https://quantumbrilliance.com/news/honeywell-aerospace-led-consortium-to-develop-compact-quantum-space-magnetometer-to-advance-research-into-earths-magnetic-field/"
+  },
+  {
+   "c": "hardware",
+   "id": "930cf5e934e615d7789f",
+   "n": "C12 Quantum Electronics",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "c12",
+   "t": "C12 unveils Pick & Place: a nanoassembly process to scale carbon nanotube quantum chip manufacturing",
+   "u": "https://www.c12qe.com/news/pick-and-place-carbon-nanotube-quantum-chip-manufacturing"
+  },
+  {
+   "c": "software",
+   "id": "4cdf207fcf480b5e9dcf",
+   "n": "QunaSys",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "qunasys",
+   "t": "QunaSys Develops Foundational Algorithms with Mitsubishi Electric for Quantum Computing Applications in Manufacturing",
+   "u": "https://qunasys.com/en/news/posts/20260831-project-ai-en"
+  },
+  {
+   "c": "software",
+   "id": "c8dc99cd2a9f0e3020a2",
+   "n": "Terra Quantum",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "terra-quantum",
+   "t": "News cryptocurrencies quantum age migration paths pqc",
+   "u": "https://terraquantum.swiss/news/news-cryptocurrencies-quantum-age-migration-paths-pqc"
+  },
+  {
+   "c": "control",
+   "id": "0a1ddb93a44ffc58efba",
+   "n": "Qruise",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "qruise",
+   "t": "News 21. April 2026 Qruise demonstrates automated bring-up workflows at IQCC using Quantum Machines' OPX1000",
+   "u": "https://www.qruise.com/news-and-events/news/qruiseos-at-iqcc"
+  },
+  {
+   "c": "control",
+   "id": "6762c5abca36d1ebf519",
+   "n": "Delft Circuits",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "delft-circuits",
+   "t": "HAVIK Project Update: Advancing Quantum Performance Together",
+   "u": "https://delft-circuits.com/dc_news_article/havik-project-cryogenic-io-two-qubit-fidelity/"
+  },
+  {
+   "c": "networking",
+   "id": "dcd68dd33b763ad59891",
+   "n": "Nu Quantum",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "nu-quantum",
+   "t": "Atom Computing and Nu Quantum partner to unlock utility-scale quantum computing",
+   "u": "https://www.nu-quantum.com/news/atom-computing-and-nu-quantum-partner-to-unlock-utility-scale-quantum-computing"
+  },
+  {
+   "c": "networking",
+   "d": "2026-09-29T18:12:07+00:00",
+   "id": "8e8b03c34b36c4207de3",
+   "n": "memQ",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "memq",
+   "t": "Quantum Computing Report Covers memQ’s Open-Source Distributed Quantum Compiler",
+   "u": "https://memq.tech/quantum-computing-report-covers-memqs-open-source-distributed-quantum-compiler/"
+  },
+  {
+   "c": "networking",
+   "d": "2026-09-02T05:00:00+00:00",
+   "id": "fff85725765fb4737cb6",
+   "n": "QuSecure",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "qusecure",
+   "t": "QuSecure Delivers Field-Ready Post-Quantum Cryptography and Crypto-Agility for U.S. Army at Project Convergence Capstone 6",
+   "u": "https://www.qusecure.com/qusecure-army-project-convergence-capstone-6-trl-7/"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-07T08:25:17+00:00",
+   "id": "7a5e536947c4e484f346",
+   "n": "PostQuantum.com",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "postquantum",
+   "t": "US Agencies Had Until May 2023 to Inventory Quantum-Vulnerable Cryptography. Auditors Found One of 24 Inventories Complete.",
+   "u": "https://postquantum.com/security-pqc/us-cryptographic-inventory-audit/"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-07-09T14:15:51+00:00",
+   "id": "ec7746d947819c50c7aa",
+   "n": "Benedict Evans",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "benedict-evans",
+   "t": "Ways to think about token pricing",
+   "u": "https://www.ben-evans.com/benedictevans/2026/7/9/ways-to-think-about-token-pricing"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-07T10:01:39+00:00",
+   "id": "7fc22180a17de9dbb5e5",
+   "n": "Stratechery",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "stratechery",
+   "t": "Apple and LG, The House For Everyone Else, Agent Standards and Amazon",
+   "u": "https://stratechery.com/2026/apple-and-lg-the-house-for-everyone-else-agent-standards-and-amazon/"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-09-28T10:51:13+00:00",
+   "id": "9f4bc8ea6e42528468c7",
+   "n": "Mindscape",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "mindscape",
+   "t": "369 | Gregg Caruso on Living Well Without Free Will",
+   "u": "https://preposterousuniverse.com/podcast/2026/09/28/369-gregg-caruso-on-living-well-without-free-will/"
+  },
+  {
+   "c": "publications",
+   "d": "2026-09-28T14:55:00+00:00",
+   "id": "433ff349383dceca7853",
+   "n": "The New Quantum Era",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "new-quantum-era",
+   "t": "Quantum Venture Investing from the Lab to the Market with Marie Lepske",
+   "u": "https://www.newquantumera.com/podcast/quantum-venture-investing-from-the-lab-to-the-market-with-marie-lepske"
+  },
+  {
+   "c": "ai",
+   "d": "2026-09-17T15:38:13+00:00",
+   "id": "a40301257964550b0a99",
+   "n": "Dwarkesh Podcast",
+   "p": "2026-10-08T12:21:45+00:00",
+   "s": "dwarkesh",
+   "t": "Noam Brown – Agent swarms, alignment, & recursive self-improvement",
+   "u": "https://www.dwarkesh.com/p/noam-brown"
   }
  ],
  "meta": {}
