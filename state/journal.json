@@ -1745,6 +1745,35 @@
    "s": "mpq",
    "t": "PRX Quantum",
    "u": "https://www.mpq.mpg.de/7265315/measurement-induced-entanglement-in-noisy-2d-random-circuits"
+  },
+  {
+   "c": "hardware",
+   "id": "067b5c8de69a3a89b9d2",
+   "n": "Pasqal",
+   "p": "2026-10-08T12:17:03+00:00",
+   "s": "pasqal",
+   "t": "Turning Ideas into QPU Experiments: How Agentic Workflows Make Quantum Computing More Accessible",
+   "u": "https://www.pasqal.com/blog/turning-ideas-into-qpu-experiments-how-agentic-workflows-make-quantum-computing-more-accessible/"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T11:40:25+00:00",
+   "id": "d35a8f2b19f8d821ae54",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T12:17:03+00:00",
+   "s": "quantum-insider",
+   "t": "Diraq Advances to Stage C of DARPA Quantum Benchmarking Initiative",
+   "u": "https://thequantuminsider.com/2026/10/08/diraq-advances-to-final-stage-of-darpa-quantum-benchmarking-initiative/"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T12:05:27+00:00",
+   "id": "198abc9b10fc6abe74d8",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T12:17:03+00:00",
+   "s": "quantum-insider",
+   "t": "Qubo Consulting and Mitacs Offer Quantum Workshops for Canadian Students",
+   "u": "https://thequantuminsider.com/2026/10/08/qubo-consulting-mitacs-quantum-workshops-canadian-students/"
   }
  ],
  "meta": {}
