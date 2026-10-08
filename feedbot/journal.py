@@ -75,7 +75,8 @@ class Journal:
 
     # ---- recording -------------------------------------------------------
     def add(self, *, title: str, url: str, source_id: str, source_name: str, category: str,
-            when: datetime, published: datetime | None = None, firehose: bool = False) -> None:
+            when: datetime, published: datetime | None = None, firehose: bool = False,
+            channel: str = "") -> None:
         entry = {
             "id": hash_key(normalize_url(url)),
             "t": title,
@@ -89,15 +90,19 @@ class Journal:
             entry["d"] = published.isoformat(timespec="seconds")
         if firehose:
             entry["f"] = 1
+        if channel:
+            entry["w"] = channel  # fingerprint of the destination channel (never the webhook itself)
         self.entries.append(entry)
 
     # ---- duplicate detection ----------------------------------------------
     def find_duplicate(self, title: str, url: str, now: datetime, hours: int,
-                       category: str | None = None) -> dict | None:
+                       category: str | None = None, channel: str | None = None) -> dict | None:
         """An earlier post of the same story (same link or near-identical headline).
 
-        With `category`, only that category's channel is considered; without it,
-        everything posted anywhere counts (used for the firehose channel).
+        With `channel`, only posts that went to that same Discord channel count, so
+        two sections sharing one channel are still de-duplicated against each
+        other. Older entries recorded without a channel fall back to `category`.
+        With neither, everything posted anywhere counts (used for the firehose).
         """
         if hours <= 0:
             return None
@@ -108,7 +113,13 @@ class Journal:
             posted = parse_date(entry["p"])
             if posted is None or posted < cutoff:
                 continue
-            if category is not None and entry.get("c") != category:
+            if channel is not None:
+                if entry.get("w"):
+                    if entry["w"] != channel:
+                        continue
+                elif category is not None and entry.get("c") != category:
+                    continue
+            elif category is not None and entry.get("c") != category:
                 continue
             if entry.get("id") == key or similar_titles(tokens, title_tokens(entry.get("t", ""))):
                 return entry

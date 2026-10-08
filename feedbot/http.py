@@ -160,8 +160,16 @@ def fetch(
     raise FetchError("request failed")  # pragma: no cover (loop always returns/raises)
 
 
-def post_json(url: str, payload: dict | None, timeout: float = 20.0, method: str = "POST") -> tuple[int, bytes, dict]:
-    """Send JSON (POST, PATCH or DELETE). Never raises for HTTP/network errors; status 0 means network failure."""
+AMBIGUOUS = -1  # the request may have reached the server; the outcome is unknown
+
+
+def post_json(url: str, payload: dict | None, timeout: float = 30.0, method: str = "POST") -> tuple[int, bytes, dict]:
+    """Send JSON (POST, PATCH, GET or DELETE). Never raises for HTTP/network errors.
+
+    Status 0: the request never reached the server (safe to retry).
+    Status AMBIGUOUS (-1): it was sent but no reply came back (a timeout or a dropped
+    connection), so the server may have acted on it.
+    """
     data = json.dumps(payload).encode("utf-8") if payload is not None else None
     headers = {"User-Agent": USER_AGENT}
     if data is not None:
@@ -178,5 +186,7 @@ def post_json(url: str, payload: dict | None, timeout: float = 20.0, method: str
             pass
         headers = {k.lower(): v for k, v in (exc.headers.items() if exc.headers else [])}
         return exc.code, body, headers
+    except (TimeoutError, http.client.RemoteDisconnected, http.client.IncompleteRead):
+        return AMBIGUOUS, b"", {}  # sent, but the reply was lost: Discord may have stored the message
     except _NETWORK_ERRORS:
         return 0, b"", {}

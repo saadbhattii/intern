@@ -29,7 +29,7 @@ import re
 import time
 from urllib.parse import urlsplit
 
-from .http import post_json
+from .http import AMBIGUOUS, post_json
 from .util import Item, format_date, truncate
 
 MESSAGE_LIMIT = 1900  # Discord allows 2000 characters of content; keep headroom
@@ -238,6 +238,8 @@ class DiscordClient:
         self._post = post
         self._request = request or (post if post is not post_json else post_json)
         self._last_sent: dict[str, float] = {}
+        # Posts whose delivery Discord did not confirm (not retried, to avoid duplicates).
+        self.unconfirmed: list[str] = []
         self._blocked_until: dict[str, float] = {}
         self.sent_count = 0
 
@@ -267,7 +269,11 @@ class DiscordClient:
             self.sent_count += 1
             return "dry-run"
         url = webhook_url + ("&" if "?" in webhook_url else "?") + "wait=true"
-        status, response = self._call(webhook_url, lambda: self._post(url, body))
+        status, response = self._call(webhook_url, lambda: self._post(url, body), creates_message=True)
+        if status == AMBIGUOUS:
+            self.unconfirmed.append(body.get("username", ""))
+            self.sent_count += 1
+            return None
         self.sent_count += 1
         try:
             return str(json.loads(response.decode("utf-8", "replace")).get("id") or "") or None
@@ -311,7 +317,14 @@ class DiscordClient:
         except WebhookError:
             pass  # already gone: nothing to do
 
-    def _call(self, webhook_url: str, do) -> tuple[int, bytes]:
+    def _call(self, webhook_url: str, do, creates_message: bool = False) -> tuple[int, bytes]:
+        """Send with retries. Creating a message is never retried after an ambiguous failure.
+
+        A timeout, a dropped connection or a 500/504 can mean Discord stored the
+        message but the reply was lost. Retrying would post it twice, so for new
+        messages those cases return AMBIGUOUS instead. Edits, reads and deletes are
+        safe to repeat and are retried as usual.
+        """
         self._pace(webhook_url)
         last_problem = "unknown error"
         for attempt in range(6):
@@ -329,8 +342,10 @@ class DiscordClient:
                 raise WebhookError("HTTP 404: Unknown Message")
             if status in (401, 403, 404):
                 raise WebhookError(f"webhook rejected with HTTP {status} (deleted or revoked?)", permanent=True)
-            if status == 0 or status >= 500:
-                last_problem = "network error" if status == 0 else f"HTTP {status}"
+            if creates_message and (status == AMBIGUOUS or status in (500, 504)):
+                return AMBIGUOUS, b""
+            if status in (0, AMBIGUOUS) or status >= 500:
+                last_problem = "network error" if status in (0, AMBIGUOUS) else f"HTTP {status}"
                 self._sleep(min(2 ** attempt, 20))
                 continue
             detail = body[:200].decode("utf-8", "replace")

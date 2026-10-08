@@ -518,7 +518,7 @@ class EndToEndTests(unittest.TestCase):
         run(self.config, self.hooks, state, only={"good"}, client=client(), fetch=fetch)  # seed
         fetch.routes["https://good.com/feed"] = self.feed(item(2, 0.1), item(1, 0.5))
 
-        failing = FakePost([500] * 6)
+        failing = FakePost([503] * 6)  # 503: Discord's edge rejected it, so nothing was stored
         report = run(self.config, self.hooks, state, only={"good"}, client=client(failing), fetch=fetch)
         self.assertEqual(report.outcomes[0].status, "failed")
 

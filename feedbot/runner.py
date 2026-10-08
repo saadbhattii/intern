@@ -28,7 +28,7 @@ from typing import Callable
 
 from .config import Config, Source, Webhooks
 from .discord import (DEFAULT_COLOR, DiscordClient, WebhookError, card_embed, chunk_lines, digest_embeds,
-                      favicon_url, format_digest, format_item, group_embeds, preview_embed)
+                      bare_url, favicon_url, format_digest, format_item, group_embeds, preview_embed)
 from .journal import Journal
 from .preview import find_image
 from .feeds import FeedParseError, looks_like_feed, parse_feed
@@ -37,7 +37,7 @@ from .pages import discover_feeds, extract_links
 from .state import SourceState, State
 from urllib.parse import urlsplit
 
-from .util import Item, normalize_url, utcnow
+from .util import Item, hash_key, normalize_url, utcnow
 
 
 class SourceError(Exception):
@@ -95,6 +95,15 @@ class DeliveryContext:
 
     def category_name(self, category: str) -> str:
         return self.categories.get(category, category)
+
+    @staticmethod
+    def channel_key(hook: str | None) -> str:
+        """A fingerprint of the destination channel's webhook (the URL itself is never stored)."""
+        if not hook:
+            return ""
+        parts = hook.split("?")[0].rstrip("/").split("/")
+        webhook_id = parts[-2] if len(parts) >= 2 else hook
+        return hash_key("webhook:" + webhook_id)
 
     def role_once(self, category: str) -> str:
         """The category's role, but only for the first message in this run (no ping storms)."""
@@ -248,6 +257,7 @@ class Selection:
     skipped_over_limit: int = 0
     note: str = ""
     reseeded: bool = False
+    forced: bool = False  # a manual re-send: post even if it was posted before
 
 
 def select_new(source: Source, items: list[Item], st: SourceState, defaults: dict, now) -> Selection:
@@ -382,6 +392,11 @@ def run(
                 report.alerts.append(f"⚠️ **{source.name}** (`{source.id}`) failing: {outcome.detail}")
         report.outcomes.append(outcome)
 
+    if getattr(client, "unconfirmed", None):
+        report.warnings.append(
+            f"{len(client.unconfirmed)} post(s) sent but not confirmed by Discord (timeout or server error). "
+            "They were not retried, to avoid double posts; check the channel if one seems missing.")
+
     if ctx.preview_checks and not dry_run:
         try:
             ensure_previews(ctx, client)
@@ -429,6 +444,7 @@ def _process(source, hook, result, st, defaults, client, now, force_latest, repo
             to_post=list(reversed(newest)),
             mark_without_posting=[] if st.initialized else list(collected.items),
             note=f"forced re-send of newest {len(newest)}",
+            forced=True,
         )
     else:
         selection = select_new(source, collected.items, st, defaults, now)
@@ -486,9 +502,13 @@ def _deliver(source: Source, hook: str | None, selection: Selection, st: SourceS
     hours = ctx.discord.get("dedupe_hours", 72)
     category = source.category
 
+    channel = ctx.channel_key(hook)
     kept, dupes = [], 0
     for item in selection.to_post:
-        if ctx.journal and ctx.journal.find_duplicate(item.title, item.link, ctx.now, hours, category=category):
+        if selection.forced:
+            kept.append(item)  # a manual re-send always goes out
+        elif ctx.journal and ctx.journal.find_duplicate(item.title, item.link, ctx.now, hours,
+                                                        category=category, channel=channel):
             st.mark_seen(item.keys())
             dupes += 1
         else:
@@ -522,6 +542,8 @@ def _deliver(source: Source, hook: str | None, selection: Selection, st: SourceS
                 ctx.report.warnings.append(f"firehose channel: {exc}")
 
     def is_firehose_duplicate(item: Item) -> bool:
+        if selection.forced:
+            return False
         return bool(ctx.journal and ctx.journal.find_duplicate(item.title, item.link, ctx.now, hours))
 
     if mode == "digest":
@@ -538,7 +560,7 @@ def _deliver(source: Source, hook: str | None, selection: Selection, st: SourceS
             st.mark_seen(item.keys())
             if ctx.journal:
                 ctx.journal.add(title=item.title, url=item.link, source_id=source.id, source_name=source.name,
-                                category=category, when=ctx.now, published=item.published,
+                                category=category, when=ctx.now, published=item.published, channel=channel,
                                 firehose=item in fresh_for_firehose and bool(ctx.firehose))
         if fresh_for_firehose:
             if card:
@@ -562,7 +584,7 @@ def _deliver(source: Source, hook: str | None, selection: Selection, st: SourceS
             ctx.preview_checks.append((hook or "", mid, item, source, time.monotonic()))
         if ctx.journal:
             ctx.journal.add(title=item.title, url=item.link, source_id=source.id, source_name=source.name,
-                            category=category, when=ctx.now, published=item.published,
+                            category=category, when=ctx.now, published=item.published, channel=channel,
                             firehose=to_firehose and bool(ctx.firehose))
         if to_firehose:
             firehose_copy([payload], item)
@@ -596,7 +618,13 @@ def ensure_previews(ctx: DeliveryContext, client: DiscordClient, wait: float = P
         if message is None or message.get("embeds"):
             continue  # unreadable, or Discord made its own preview
         box = preview_embed(item, site_name=source.name, site_url=source.site, image=ctx.image_for(item), large=large)
-        if client.edit(hook, mid, {"embeds": [box]}):
+        # Wrap the link in <...> so Discord never adds its own preview later: if it did,
+        # the message would show two previews and look like a double post.
+        link = bare_url(item.link)
+        content = message.get("content") or format_item(item)
+        if f"<{link}>" not in content:
+            content = content.replace(link, f"<{link}>")
+        if client.edit(hook, mid, {"content": content, "embeds": [box]}):
             added += 1
     if added and ctx.report is not None:
         ctx.report.warnings.append(f"added a preview box to {added} post(s) where Discord made none")

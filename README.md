@@ -72,3 +72,15 @@ python -m unittest discover -s tests -v
 ## License
 
 MIT. See [LICENSE](LICENSE). Titles and links belong to their publishers; this bot only points to them.
+
+## Testing a post
+
+Run **Actions > Post new articles > Run workflow** with `only` set to a source id (for example `shtetl-optimized`) and `force_latest` set to `1`. That source's newest article is sent again every time, even if it was posted a minute ago. Forced sends skip duplicate detection on purpose; normal runs never repeat a story.
+
+## Why a story is never posted twice
+
+- Every source remembers which articles it has posted (`state/state.json`).
+- The same story from several sources is posted once per Discord channel within 72 hours, even when several sections share one channel.
+- If Discord does not confirm a post (a timeout or a server error after sending), the bot does not retry it, because Discord has usually stored it anyway. The run summary lists such posts.
+- When the bot adds its own preview to a post, Discord is told not to add a second one.
+- Never replace `state/` with an older copy (for example from a downloaded zip). The bot would forget what it posted since then and send those articles again. When updating code, keep your current `state/` folder.
