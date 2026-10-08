@@ -7678,6 +7678,17 @@
    "t": "Patenting Quantum Computing Innovations – Part 5: Shor’s Algorithm and Conclusions",
    "u": "https://quantumcomputingreport.com/patenting-quantum-computing-innovations-part-5-shors-algorithm-and-conclusions/",
    "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T23:03:29+00:00",
+   "id": "10072191fafa8ec9663a",
+   "n": "Statistical Modeling, Causal Inference, and Social Science",
+   "p": "2026-10-08T23:30:58+00:00",
+   "s": "gelman-stat-modeling",
+   "t": "Getting better causal inferences by using more information (my talk at Stanford this coming Wed)",
+   "u": "https://statmodeling.stat.columbia.edu/2026/10/08/getting-better-causal-inferences-by-using-more-information-my-talk-at-stanford-this-coming-wed/",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
