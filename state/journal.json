@@ -5641,6 +5641,39 @@
    "t": "Announcements 2026 Usage Policy update",
    "u": "https://www.anthropic.com/news/2026-usage-policy-update",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T17:45:00+00:00",
+   "id": "5d3f459b11feb7e09e34",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T18:00:56+00:00",
+   "s": "quantum-insider",
+   "t": "Oratomic Raises $775 Million to Develop Fault-Tolerant Quantum Computers",
+   "u": "https://thequantuminsider.com/2026/10/08/oratomic-secures-775-million-fault-tolerant-quantum-computers/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T12:00:00+00:00",
+   "id": "855092fba1df7e8a668b",
+   "n": "OpenAI News",
+   "p": "2026-10-08T18:00:56+00:00",
+   "s": "openai",
+   "t": "Pollo AI turns creative ideas into campaigns with OpenAI",
+   "u": "https://openai.com/index/pollo-ai",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T16:00:00+00:00",
+   "id": "db7b9e6fe248e3146f87",
+   "n": "OpenAI News",
+   "p": "2026-10-08T18:00:56+00:00",
+   "s": "openai",
+   "t": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+   "u": "https://openai.com/index/oracle",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
