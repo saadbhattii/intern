@@ -1383,6 +1383,13 @@
     "url": "http://link.aps.org/doi/10.1103/Physics.19.85",
     "seen": "2026-10-08T10:54:52+00:00",
     "published": "2026-06-18T10:00:00+00:00"
+   },
+   {
+    "id": "7edb70fc8f828f7f239e",
+    "title": "Enhancing the Quantum Oscillation Toolbox",
+    "url": "http://link.aps.org/doi/10.1103/Physics.19.83",
+    "seen": "2026-10-08T11:01:06+00:00",
+    "published": "2026-06-15T10:00:00+00:00"
    }
   ],
   "aqt": [
@@ -2895,6 +2902,72 @@
   ],
   "c12": [
    {
+    "id": "a561f09a222b66678066",
+    "title": "C12 Quantum Electronics lève 10 millions de dollars, un record sur le marché des processeurs quantiques pour une start-up française",
+    "url": "https://www.c12qe.com/news/levee-10-m-usd-bfmbusiness",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "615b303b1830a2256921",
+    "title": "Pierre Desjardins sur le seed de C12",
+    "url": "https://www.c12qe.com/news/podcast-track-record",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "c1f8da9a7a4e745c86e1",
+    "title": "Booster sa startup deeptech en recrutant des talents à l’échelle mondiale",
+    "url": "https://www.c12qe.com/news/booster-sa-startup-deeptech-en-recrutant-des-talents-a-lechelle-mondiale",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "fcd12a7beb256795ac6f",
+    "title": "Paris-Based Startup C12 Quantum Electronics Raises $10M, Led by 360 Capital",
+    "url": "https://www.c12qe.com/news/press-release-c12-fundraising-10md",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "d04d6da120313ff03809",
+    "title": "Dans une fabrique de nanotubes de carbone pour le calcul quantique",
+    "url": "https://www.c12qe.com/news/dans-une-fabrique-de-nanotubes-de-carbone-pour-le-calcul-quantique",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "00039deec68b5866d0dc",
+    "title": "Les nanotubes de carbone de C12 Quantum Electronics",
+    "url": "https://www.c12qe.com/news/les-nanotubes-de-carbone-de-c12-quantum-electronics",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "9448df4a4dbae4cee986",
+    "title": "Voici des processeurs quantiques uniques au monde",
+    "url": "https://www.c12qe.com/news/voici-des-processeurs-quantiques-uniques-au-monde",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "959f00d13064858334ae",
+    "title": "Finalist pitch in the category \"Computer & Communication Hardware\"",
+    "url": "https://www.c12qe.com/news/hello-tomorrow-final",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "b86ecc67813a10ada067",
+    "title": "C12 winner at Hello Tomorrow 2021's Global Challenge",
+    "url": "https://www.c12qe.com/news/winner-hello-tomorrow",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "1cd8231e64a81def651f",
+    "title": "Pierre Desjardins dans le Déclic DeepTech",
+    "url": "https://www.c12qe.com/news/podcast-le-declic-deeptech",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "a1845c049af058e3145a",
+    "title": "A la rencontre de Matthieu et Pierre Desjardins, fondateurs de C12 Quantum Electronics",
+    "url": "https://www.c12qe.com/news/a-la-rencontre-de-matthieu-et-pierre-desjardins-fondateurs-de-c12-quantum-electronics",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
     "id": "a1ab974e7ed1840f3e2c",
     "title": "C12 and Thales present QuantumTrack, an award-winning quantum solution for real-time radar tracking",
     "url": "https://www.c12qe.com/news/c12-and-thales-present-quantumtrack-an-award-winning-quantum-solution-for-real-time-radar-tracking",
@@ -3094,83 +3167,6 @@
     "id": "2e7a24458084f8a6ab6e",
     "title": "La Deeptech voit BIG - Matthieu & Pierre Desjardins - C12 Quantum Electronics",
     "url": "https://www.c12qe.com/news/la-deeptech-voit-big-matthieu-pierre-desjardins-c12-quantum-electronics",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "52be9c8f256bcf25828f",
-    "title": "Pierre Desjardins on developing a quantum processor in carbon nanotubes",
-    "url": "https://www.c12qe.com/news/pierre-desjardins-on-developing-a-quantum-processor-in-carbon-nanotubes",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "54ae1333f543fa2c2513",
-    "title": "Shifting focus: why it’s not just a question of number of qubits?",
-    "url": "https://www.c12qe.com/news/shifting-focus-why-its-not-just-a-question-of-number-of-qubits",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "f336a0b3b3bd32c56a37",
-    "title": "Carbon Nanotubes for Quantum Computers",
-    "url": "https://www.c12qe.com/news/carbon-nanotubes-for-quantum-computers",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "2705c316e165aaf396ab",
-    "title": "Carbon nanotube qubits with Pierre Desjardins",
-    "url": "https://www.c12qe.com/news/carbon-nanotube-qubits-with-pierre-desjardins",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "67258a5c7792fc782ff3",
-    "title": "Paris et Saclay deviennent des places fortes de la recherche quantique",
-    "url": "https://www.c12qe.com/news/paris-et-saclay-deviennent-des-places-fortes-de-la-recherche-quantique",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "6aa33b3e87078bc53230",
-    "title": "La start-up C12 s’appuie sur le CEA pour pré-industrialiser son processeur quantique à base de nanotubes de carbone",
-    "url": "https://www.c12qe.com/news/la-start-up-c12-sappuie-sur-le-cea-pour-pre-industrialiser-son-processeur-quantique-a-base-de-nanotubes-de-carbone",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "ca7dcc7a58c2972fee39",
-    "title": "Quantum Computing Hardware - Roundtable Discussion",
-    "url": "https://www.c12qe.com/news/quantum-computing-hardware-roundtable-discussion",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "a2467fd2611908bfbc65",
-    "title": "L’informatique quantique, le secteur d’avenir qui se conjugue au présent des startups",
-    "url": "https://www.c12qe.com/news/linformatique-quantique-le-secteur-davenir-qui-se-conjugue-au-present-des-startups",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "380a7922c64ac800d031",
-    "title": "C12 Launches Emulator in Partnership with OVHcloud",
-    "url": "https://www.c12qe.com/news/c12-launches-emulator-in-partnership-with-ovhcloud",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "401c2fed84087eb021ee",
-    "title": "Pierre Desjardins : « Comme avec l’IA, le quantique provoquera une rupture technologique majeure »",
-    "url": "https://www.c12qe.com/news/pierre-desjardins-ceo-et-confondateur-de-c12-comme-avec-lia-le-quantique-provoquera-une-rupture-technologique-majeure",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "6552f13cb08f9adcda9f",
-    "title": "QRYOLink: the next generation of cabling system for cryogenic quantum!",
-    "url": "https://www.c12qe.com/news/qryolink-the-next-generation-of-cabling-system-for-cryogenic-quantum",
     "seen": "2026-10-08T10:54:52+00:00",
     "bootstrap": true
    }
@@ -6518,6 +6514,126 @@
   ],
   "goldreich-choices": [
    {
+    "id": "8c292d2643cab2122294",
+    "title": "my comments and the original abstract",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/041.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "8e0ebdc20fa46d0bc4d2",
+    "title": "042.html",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/042.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "b5e432c6f18324b24930",
+    "title": "my comments and the original abstracts",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/043.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "935eb76552ae6a84babc",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/044.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "64a8618b93039a575425",
+    "title": "my comments and the original abstract",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/045.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "4542c9062f3e3060d109",
+    "title": "my comments and the original abstract",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/046.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "654ae7071c7a43603e3e",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/047.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "4fe8993779101c250193",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/048.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "80b11aa76b254026ecc8",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/049.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "d4057dd7623fe22ac815",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/050.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "2bd498ee73cf57693441",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/051.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "4a0dd94b9b72789c6b3c",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/052.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "828d4d8415e10e6d4332",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/053.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "c74e702b1cd2b05665d9",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/054.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "96821f1fb882fb1deec6",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/055.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "b3f8d4a7c3a08c8107ed",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/056.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "5545237d4785de6c6030",
+    "title": "my comments",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/057.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "0d83bedc0ac4901689a5",
+    "title": "my comments and original abstract",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/058.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "ec15b397692034657474",
+    "title": "my comments and original abstract",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/059.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "fd2ccbb807efc616c7f7",
+    "title": "my comments and original abstract",
+    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/060.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
     "id": "fa8961c33e2d16b2cdca",
     "title": "my comments and the original abstract",
     "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/001.html",
@@ -6654,146 +6770,6 @@
     "id": "308f1c540d9c8387ec3b",
     "title": "my comments",
     "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/020.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "c16f4d0183769934e502",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/021.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "0a1ccf93243741ff41ca",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/022.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "66a57d2ca0ee2923a99d",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/023.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "6985240be27296f58877",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/024.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "3f93dea2836ae06e1015",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/025.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "55415fe2b718678d6585",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/026.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "02bb6a764f1cfbf6fa0a",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/027.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "b960518184251d856946",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/028.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "d3c5f28e894b9f0d423d",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/029.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "6ace59bf067a8615bcb4",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/030.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "6554b14372ea47f927f2",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/031.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "5bf76cadc898778a2b45",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/032.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "618a952eafa9d858ba0d",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/033.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "a20c7e002a6f330567fc",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/034.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "5cbd546a24b86427c0dd",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/035.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "dcb8d0ffe331bff509d1",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/036.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "f1fb5c7741f3f99b016e",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/037.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "97605566fd2b8c37a839",
-    "title": "workshop's abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/038.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "f033e3ed013d87f2fe7a",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/039.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "dd4b8cbab51d6aa7ac5d",
-    "title": "my comments and the original abstract",
-    "url": "https://www.wisdom.weizmann.ac.il/~oded/MC/040.html",
     "seen": "2026-10-08T10:54:52+00:00",
     "bootstrap": true
    }
@@ -9047,6 +9023,126 @@
   ],
   "ionq": [
    {
+    "id": "cfdfad86f7dc744a50e3",
+    "title": "How qLDPC with Scheduled Error Correction Unlocks Faster Fault-Tolerant Quantum Computers",
+    "url": "https://www.ionq.com/blog/how-qldpc-with-scheduled-error-correction-unlocks-faster-fault-tolerant-quantum-computers",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "c1daaf0129d71f8a2593",
+    "title": "IonQ and DESY Tackle the Gate Assignment Problem",
+    "url": "https://www.ionq.com/blog/ionq-and-desy-tackle-the-gate-assignment-problem",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "7bcb543597676d5988dd",
+    "title": "Enabling Networked Quantum Computing with Ion-Photon Entanglement",
+    "url": "https://www.ionq.com/blog/enabling-networked-quantum-computing-with-ion-photon-entanglement",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "83c7d7f55fdec324ff41",
+    "title": "How We Achieved Our 2024 Performance Target of #AQ 35",
+    "url": "https://www.ionq.com/blog/how-we-achieved-our-2024-performance-target-of-aq-35",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "6e637d94b42079376c13",
+    "title": "IonQ at AWS re:Invent: Expanded Commercial and Public Availability of IonQ Forte and IonQ Application Support now available on Amazon",
+    "url": "https://www.ionq.com/blog/ionq-at-aws-re-invent-expanded-commercial-and-public-availability-of-ionq",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "c2802c5f1dfd47ed4b94",
+    "title": "The Impact of Quantum Computing on Machine Learning",
+    "url": "https://www.ionq.com/blog/the-impact-of-quantum-computing-on-machine-learning-post",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "7be2b5b961fc0ce9ffca",
+    "title": "IonQ to Participate in SuperCompute 2023",
+    "url": "https://www.ionq.com/blog/ionq-to-participate-in-supercompute-2023",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "797e3da73455b1dbf67d",
+    "title": "IonQ Participates in Quantum World Congress 2023",
+    "url": "https://www.ionq.com/blog/ionq-participates-in-quantum-world-congress-2023",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "c58b58ff7bb92db6e62c",
+    "title": "Security Enhancement: IonQ API keys no longer visible after creation",
+    "url": "https://www.ionq.com/blog/security-enhancement-ionq-api-keys-no-longer-visible-after-creations",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "f9121bed08815d2f8c06",
+    "title": "Why Quantum Computing Is the New Space Race",
+    "url": "https://www.ionq.com/blog/why-quantum-computing-is-the-new-space-race",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "42f5216295ca30f48532",
+    "title": "IonQ to Participate in the IEEE International Conference on Quantum Computing and Engineering",
+    "url": "https://www.ionq.com/blog/ionq-participated-in-the-ieee-international-conference-on-quantum-computing",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "8c14f47db96f4e83d908",
+    "title": "IonQ to Participate In Quantum World Congress 2023",
+    "url": "https://www.ionq.com/blog/ionq-to-participate-in-quantum-world-congress-2023",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "27188ab8aaf57b7c7953",
+    "title": "What Is the Relationship Between Quantum Computing and Machine Learning",
+    "url": "https://www.ionq.com/blog/the-impact-of-quantum-computing-on-machine-learning",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "73ca54ba515092bf041e",
+    "title": "Orbital-optimized pair-correlated electron simulations on trapped-ion quantum computers",
+    "url": "https://www.ionq.com/blog/orbital-optimized-pair-correlated-electron-simulations-on-trapped-ion",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "280de0a7ce9ee1053656",
+    "title": "IonQ Participates in Q2B Tokyo 2023",
+    "url": "https://www.ionq.com/blog/ionq-participates-in-q2b-tokyo-2023",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "9b45b2c3931b30eeff27",
+    "title": "How Does Quantum Machine Learning Work?",
+    "url": "https://www.ionq.com/blog/how-does-quantum-machine-learning-work",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "8c41e08410ea63d95041",
+    "title": "IonQ Participates In Quantum Korea 2023",
+    "url": "https://www.ionq.com/blog/ionq-participates-in-quantum-korea-2023",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "09f78f611c2832c96a4c",
+    "title": "IonQ Forte: Our Highest Performing, Commercially Available Quantum Computer",
+    "url": "https://www.ionq.com/blog/ionq-forte-our-highest-performing-commercially-available-quantum-computer",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "81d4313245e4d8ecaa9a",
+    "title": "IonQ Achieves New Performance Milestone of 29 Algorithmic Qubits (#AQ) on IonQ Forte",
+    "url": "https://www.ionq.com/blog/ionq-achieves-new-performance-milestone-of-29-algorithmic-qubits-aq-on-ionq",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "750c650559ffbb9f73ca",
+    "title": "Quantum Computing, Monte Carlo Algorithms, & Financial Modeling",
+    "url": "https://www.ionq.com/blog/quantum-computing-monte-carlo-algorithms-and-financial-modeling",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
     "id": "e843b70175eac8b75c7d",
     "title": "From Signal to Insight — Evaluating Quantum Generative Models on Real Satellite Radar",
     "url": "https://www.ionq.com/blog/from-signal-to-insight-evaluating-quantum-generative-models-on-real-satellite-radar",
@@ -9165,126 +9261,6 @@
     "title": "IonQ Hits #AQ 64 Milestone Ahead of Schedule — And Sets Its Sights Even Higher",
     "url": "https://www.ionq.com/blog/ionq-hits-aq-64-milestone-ahead-of-schedule-and-sets-its-sights-even-higher",
     "seen": "2026-10-08T10:54:52+00:00"
-   },
-   {
-    "id": "4bd3c18429a8ef3c406b",
-    "title": "Diamond Thin Films Unlock Foundry-Scale Production for Quantum Technologies",
-    "url": "https://www.ionq.com/blog/diamond-thin-films-unlock-foundry-scale-production-for-quantum-technologies",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "98ff4e6702c887bce1d0",
-    "title": "IonQ's Accelerated Roadmap: Turning Quantum Ambition into Reality",
-    "url": "https://www.ionq.com/blog/ionqs-accelerated-roadmap-turning-quantum-ambition-into-reality",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "9d99c7d9980bfd465f36",
-    "title": "Ecosystem Innovation: IonQ’s Life Sciences Application Workflow Accelerates the Drug Development Process",
-    "url": "https://www.ionq.com/blog/ecosystem-innovation-ionqs-life-sciences-application-workflow-accelerates",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "61bcd0867496219630eb",
-    "title": "Supercharging AI with Quantum Computing: Quantum-Enhanced Large Language Models",
-    "url": "https://www.ionq.com/blog/supercharging-ai-with-quantum-computing-quantum-enhanced-large-language",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "467f924ec1360fc6b4de",
-    "title": "IonQ and Leading Global Automotive Manufacturer Collaborate to Advance Materials Science and Vehicle Durability Using Quantum Generative AI",
-    "url": "https://www.ionq.com/blog/ionq-and-leading-global-automotive-manufacturer-collaborate-to-advance",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "7ff3dd5ed9596f9c09b7",
-    "title": "Advancing Quantum Computing: Faster Mixed-Species Gates for Trapped-Ion Quantum Networking",
-    "url": "https://www.ionq.com/blog/advancing-quantum-computing-faster-mixed-species-gates-for-trapped-ion",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "7469056af99724cc0672",
-    "title": "From Flash Cells to Qubits: How IonQ is Drawing Inspiration from Classical Flash Memory to Advance Quantum Error Correction",
-    "url": "https://www.ionq.com/blog/from-flash-cells-to-qubits-how-ionq-is-drawing-inspiration-from-classical",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "b23a7d4cceabc86687db",
-    "title": "Q-Day and the Impact of Breaking RSA2048",
-    "url": "https://www.ionq.com/blog/q-day-and-the-impact-of-breaking-rsa2048",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "27f5d6fc4eddea47ccb0",
-    "title": "Full-Stack Innovation to Power the Quantum-Accelerated Future: IonQ Quantum OS, IonQ Hybrid Services, and IonQ Forte Enterprise Availability",
-    "url": "https://www.ionq.com/blog/full-stack-innovation-to-power-the-quantum-accelerated-future-ionq-quantum",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "225061f927791776a2ae",
-    "title": "IonQ and Oak Ridge National Laboratory Demonstrate a Novel, Scalable, and Efficient Quantum Approach to Combinatorial Optimization Problems",
-    "url": "https://www.ionq.com/blog/ionq-and-oak-ridge-national-laboratory-demonstrate-a-novel-scalable-and",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "4171d87e1412fb02e64e",
-    "title": "IonQ Employee Profile: Garrett Josemans, IonQ Quantum Physicist and Netflix’s Season 7 Love is Blind Breakout Star",
-    "url": "https://www.ionq.com/blog/ionq-employee-profile-garrett-josemans-ionq-quantum-physicist-and-netflixs",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "9d768c6c709b00e777ff",
-    "title": "Extreme High Vacuum (XHV) Reduces Computational Energy Costs and Furthers Room Temperature Quantum Computing",
-    "url": "https://www.ionq.com/blog/extreme-high-vacuum-xhv-reduces-computational-energy-costs-and-furthers-room",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "12a927403066d3699f61",
-    "title": "Quantum takes off",
-    "url": "https://www.ionq.com/blog/quantum-takes-off",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "980fe6c2adb959609245",
-    "title": "Achieving Remote Ion-Ion Entanglement: Paving the Way for Scalable Quantum Networking",
-    "url": "https://www.ionq.com/blog/achieving-remote-ion-ion-entanglement-paving-the-way-for-scalable-quantum",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "70f3959ef6c391b4159e",
-    "title": "Understanding the IonQ Quantum Cloud’s New Access Model",
-    "url": "https://www.ionq.com/blog/understanding-the-ionq-quantum-clouds-new-access-model",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "e99ad457915559fadc3b",
-    "title": "Quantum is Now with IonQ: Building a Large Global Quantum Business",
-    "url": "https://www.ionq.com/blog/quantum-is-now-with-ionq-building-a-large-global-quantum-business",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "f027999dd99a4e7d6207",
-    "title": "IonQ Announces Continued Collaboration with Amazon Web Services to Extend Quantum Accessibility for All",
-    "url": "https://www.ionq.com/blog/ionq-announces-continued-collaboration-with-amazon-web-services-to-extend",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "0fe150a559c5aae89723",
-    "title": "Our Novel, Efficient Approach to Quantum Error Correction",
-    "url": "https://www.ionq.com/blog/our-novel-efficient-approach-to-quantum-error-correction",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "645ea37de49067f2dfd6",
-    "title": "Letter to Stockholders About IonQ’s 2023 Annual Report",
-    "url": "https://www.ionq.com/blog/letter-to-stockholders-about-ionqs-2023-annual-report",
-    "seen": "2026-10-08T10:30:58+00:00"
-   },
-   {
-    "id": "58bdc9baed1ed7472b69",
-    "title": "IonQ Employee Profile: Nicolas Delfosse, Principal Researcher",
-    "url": "https://www.ionq.com/blog/ionq-employee-profile-nicolas-delfosse-principal-researcher",
-    "seen": "2026-10-08T10:30:58+00:00"
    }
   ],
   "iqc-waterloo": [
@@ -18319,6 +18295,78 @@
   ],
   "silicon-quantum-computing": [
    {
+    "id": "7edabb1026685268f9e3",
+    "title": "Sqc x amd",
+    "url": "https://sqc.com/news/sqc-x-amd",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "606e1bc172164aeaf81a",
+    "title": "Nrfc investment",
+    "url": "https://sqc.com/news/nrfc-investment",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "558b25c4a0e39856d924",
+    "title": "Sqc launches quantum twins",
+    "url": "https://sqc.com/news/sqc-launches-quantum-twins",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "a0e878a312f59e85e5eb",
+    "title": "Sqc establishes leadership in silicon modality",
+    "url": "https://sqc.com/news/sqc-establishes-leadership-in-silicon-modality",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "753582e46574fa0bf310",
+    "title": "Sqcbloomberg",
+    "url": "https://sqc.com/news/sqcbloomberg",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "e90288bac4b49de8ab4b",
+    "title": "The superposition guys podcast with michelle simmons",
+    "url": "https://sqc.com/news/the-superposition-guys-podcast---with-michelle-simmons",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "f450dab7d55b22c1af23",
+    "title": "Sqc announces record qubit read out fidelities at high temperatures",
+    "url": "https://sqc.com/news/sqc-announces-record-qubit-read-out-fidelities-at-high-temperatures",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "9eaf3d1693a2cb7b565d",
+    "title": "Silicon quantum computing awarded darpa qbi contract",
+    "url": "https://sqc.com/news/silicon-quantum-computing-awarded-darpa-qbi-contract",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "eb7e8e0976fd96dc465a",
+    "title": "Googles former top quantum scientist professor john martinis has joined the sqc team",
+    "url": "https://sqc.com/news/googles-former-top-quantum-scientist-professor-john-martinis-has-joined-the-sqc-team",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "f9867bb0e724fd2e67cb",
+    "title": "Quantum leap from australian research promises super fast computing power",
+    "url": "https://sqc.com/news/quantum-leap-from-australian-research-promises-super-fast-computing-power",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "e3f3142e81fe3551f8f2",
+    "title": "Harnessing the power of spin orbit coupling in silicon scaling up quantum computation",
+    "url": "https://sqc.com/news/harnessing-the-power-of-spin-orbit-coupling-in-silicon-scaling-up-quantum-computation",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "f87d8a58e9281552ffbd",
+    "title": "Australian of the year named as quantum physicist michelle yvonne simmons",
+    "url": "https://sqc.com/news/australian-of-the-year-named-as-quantum-physicist-michelle-yvonne-simmons",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
     "id": "82b2f0d45a61521d4b95",
     "title": "Government and industry back quantum enhanced ai",
     "url": "https://sqc.com/news/government-and-industry-back-quantum-enhanced-ai",
@@ -18485,78 +18533,6 @@
     "title": "Sqc appoints john hollister chief financial officer",
     "url": "https://sqc.com/news/sqc-appoints-john-hollister-chief-financial-officer",
     "seen": "2026-10-08T09:00:57+00:00"
-   },
-   {
-    "id": "213a49b424eeed565af0",
-    "title": "Michelletca",
-    "url": "https://sqc.com/news/michelletca",
-    "seen": "2026-10-08T09:00:57+00:00"
-   },
-   {
-    "id": "86bd91cd6ccead56e3d4",
-    "title": "Sqc ceo awarded 2023 prime ministers prize for science",
-    "url": "https://sqc.com/news/sqc-ceo-awarded-2023-prime-ministers-prize-for-science",
-    "seen": "2026-10-08T09:00:57+00:00"
-   },
-   {
-    "id": "9f81d022d7825d925b97",
-    "title": "Silicon quantum computing raises 50 4m",
-    "url": "https://sqc.com/news/silicon-quantum-computing-raises-50-4m",
-    "seen": "2026-10-08T09:00:57+00:00"
-   },
-   {
-    "id": "74dcfabc904ef70e325a",
-    "title": "Exquisite control of qubit wavefunctions in devices",
-    "url": "https://sqc.com/news/exquisite-control-of-qubit-wavefunctions-in-devices",
-    "seen": "2026-10-08T09:00:57+00:00"
-   },
-   {
-    "id": "bb57648284ed958e3ace",
-    "title": "Michelle simmons ao leading australia in the race to build the worlds first quantum computer",
-    "url": "https://sqc.com/news/michelle-simmons-ao-leading-australia-in-the-race-to-build-the-worlds-first-quantum-computer",
-    "seen": "2026-10-08T09:00:57+00:00"
-   },
-   {
-    "id": "d384a56bba8036345261",
-    "title": "Sqc releases semiconductor qubit readout benchmarking tool",
-    "url": "https://sqc.com/news/sqc-releases-semiconductor-qubit-readout-benchmarking-tool",
-    "seen": "2026-10-08T09:00:57+00:00"
-   },
-   {
-    "id": "f57e213184feb15b6ef9",
-    "title": "Hitting the quantum sweet spot",
-    "url": "https://sqc.com/news/hitting-the-quantum-sweet-spot",
-    "seen": "2026-10-08T09:00:57+00:00"
-   },
-   {
-    "id": "8800f5b21d94bcd14ffa",
-    "title": "Silence please quietest semiconductor quantum bits on record",
-    "url": "https://sqc.com/news/silence-please-quietest-semiconductor-quantum-bits-on-record",
-    "seen": "2026-10-08T09:00:57+00:00"
-   },
-   {
-    "id": "06d60f036a35cd308ac2",
-    "title": "Automating atomic precision semiconductor manufacturing",
-    "url": "https://sqc.com/news/automating-atomic-precision-semiconductor-manufacturing",
-    "seen": "2026-10-08T08:30:59+00:00"
-   },
-   {
-    "id": "a6ed9a5e98040f798346",
-    "title": "Sqc the economist quantum and ai",
-    "url": "https://sqc.com/news/sqc-the-economist-quantum-and-ai",
-    "seen": "2026-10-08T08:30:59+00:00"
-   },
-   {
-    "id": "79c0b33e9b389bf11519",
-    "title": "Sqc strengthens executive team chief legal officer",
-    "url": "https://sqc.com/news/sqc-strengthens-executive-team-chief-legal-officer",
-    "seen": "2026-10-08T08:30:59+00:00"
-   },
-   {
-    "id": "3684ededb4be91c8ae85",
-    "title": "Firgun ventures sqc investment",
-    "url": "https://sqc.com/news/firgun-ventures-sqc-investment",
-    "seen": "2026-10-08T08:30:59+00:00"
    }
   ],
   "simon-willison": [
@@ -19330,6 +19306,66 @@
   ],
   "transformer-circuits": [
    {
+    "id": "0cc1c74ba5092971335d",
+    "title": "Privileged Bases in the Transformer Residual Stream",
+    "url": "https://transformer-circuits.pub/2023/privileged-basis/index.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "577050e8b91f97b665d9",
+    "title": "Superposition, Memorization, and Double Descent",
+    "url": "https://transformer-circuits.pub/2023/toy-double-descent/index.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "321aee2abb0d6fb9d480",
+    "title": "Toy Models of Superposition",
+    "url": "https://transformer-circuits.pub/2022/toy_model/index.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "f03a455216b50f7f4fa1",
+    "title": "Softmax Linear Units",
+    "url": "https://transformer-circuits.pub/2022/solu/index.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "8b08da96a3bdafb35081",
+    "title": "Mechanistic Interpretability, Variables, and the Importance of Interpretable Bases",
+    "url": "https://transformer-circuits.pub/2022/mech-interp-essay/index.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "23e5123e7f8f98e2686d",
+    "title": "In-Context Learning and Induction Heads",
+    "url": "https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "b948d6282416b5867139",
+    "title": "A Mathematical Framework for Transformer Circuits",
+    "url": "https://transformer-circuits.pub/2021/framework/index.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "8aaa3256f8d3fb389642",
+    "title": "Exercises",
+    "url": "https://transformer-circuits.pub/2021/exercises/index.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "a9b37835b4e7626bdfb4",
+    "title": "Videos",
+    "url": "https://transformer-circuits.pub/2021/videos/index.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
+    "id": "82c2b342eded3439bc50",
+    "title": "Garcon",
+    "url": "https://transformer-circuits.pub/2021/garcon/index.html",
+    "seen": "2026-10-08T11:01:06+00:00"
+   },
+   {
     "id": "7ad561be51ffa64b50b1",
     "title": "Characterizing interference weights in a tiny language model",
     "url": "https://transformer-circuits.pub/2026/interference_effectiveness_helpfulness/index.html",
@@ -19536,76 +19572,6 @@
     "id": "426fcdeae8e2b7497e5a",
     "title": "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet",
     "url": "https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "b77363853b2dc774afb4",
-    "title": "Circuits Updates — April 2024",
-    "url": "https://transformer-circuits.pub/2024/april-update/index.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "9c142e72650b33ba7861",
-    "title": "Circuits Updates — March 2024",
-    "url": "https://transformer-circuits.pub/2024/march-update/index.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "d02630c8ecef5cf62f98",
-    "title": "Reflections on Qualitative Research",
-    "url": "https://transformer-circuits.pub/2024/qualitative-essay/index.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "6674879229144d13c72b",
-    "title": "Circuits Updates — February 2024",
-    "url": "https://transformer-circuits.pub/2024/feb-update/index.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "123becb44b2f0998fa07",
-    "title": "Circuits Updates — January 2024",
-    "url": "https://transformer-circuits.pub/2024/jan-update/index.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "0946f0572a4879141749",
-    "title": "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning",
-    "url": "https://transformer-circuits.pub/2023/monosemantic-features/index.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "4602dbc069544ed8331e",
-    "title": "Circuits Updates — July 2023",
-    "url": "https://transformer-circuits.pub/2023/july-update/index.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "3028b7c225dfa3a6f8ac",
-    "title": "Circuits Updates — May 2023",
-    "url": "https://transformer-circuits.pub/2023/may-update/index.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "354a4b2d32fc245ec26b",
-    "title": "Interpretability Dreams",
-    "url": "https://transformer-circuits.pub/2023/interpretability-dreams/index.html",
-    "seen": "2026-10-08T10:54:52+00:00",
-    "bootstrap": true
-   },
-   {
-    "id": "45de0d66138eb0c41e14",
-    "title": "Distributed Representations: Composition & Superposition",
-    "url": "https://transformer-circuits.pub/2023/superposition-composition/index.html",
     "seen": "2026-10-08T10:54:52+00:00",
     "bootstrap": true
    }
