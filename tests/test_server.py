@@ -43,8 +43,14 @@ class Recorder:
         self.fail_on = fail_on
         self.counter = 100
 
+    discord_previews = set()  # message ids for which "Discord" generated its own preview
+
     def __call__(self, url, payload, timeout=20, method="POST"):
         self.calls.append({"url": url, "payload": payload, "method": method})
+        if method == "GET":
+            mid = url.rsplit("/", 1)[-1]
+            embeds = [{"type": "link", "title": "native preview"}] if mid in self.discord_previews else []
+            return 200, json.dumps({"id": mid, "embeds": embeds}).encode(), {}
         if self.fail_on and url.startswith(self.fail_on):
             return 404, b'{"message": "Unknown Webhook"}', {}
         self.counter += 1
@@ -122,6 +128,10 @@ class Base(unittest.TestCase):
 
 
 class CardTests(Base):
+    def setUp(self):
+        super().setUp()
+        self.config.discord["style"] = "card"  # the optional branded style
+
     def test_card_has_identity_colour_brand_time_and_image(self):
         state, journal = self.cycle(None)
         self.feeds["https://acme.test/feed"] = rss([("Acme reaches 1000 qubits", "https://acme.test/p/1", 1),
@@ -183,6 +193,60 @@ class DuplicateAndFirehoseTests(Base):
         self.assertEqual(next(o for o in report.outcomes if o.source.id == "acme").status, "posted")
 
 
+class LinkStyleTests(Base):
+    """The default: the old message format (bold title plus bare link) with a profile picture."""
+
+    def test_old_format_with_profile_picture_and_preview_allowed(self):
+        state, journal = self.cycle(None)
+        self.feeds["https://acme.test/feed"] = rss([("Acme reaches 1000 qubits", "https://acme.test/p/1", 1)])
+        rec = Recorder()
+        rec.discord_previews = {"101"}  # Discord made its own preview for the first message
+        self.go(state, journal, rec)
+        post = rec.posts_to(HOOK_A)[0]["payload"]
+        self.assertTrue(post["content"].endswith("**Acme reaches 1000 qubits**\nhttps://acme.test/p/1"))
+        self.assertEqual(post["avatar_url"], "https://www.google.com/s2/favicons?domain=acme.test&sz=128")
+        self.assertEqual(post["username"], "Acme Quantum")
+        self.assertNotIn("embeds", post)
+        self.assertNotIn("flags", post)  # previews are never switched off
+
+    def test_busy_source_still_gets_one_message_and_preview_per_article(self):
+        state, journal = self.cycle(None)
+        self.feeds["https://acme.test/feed"] = rss([(f"Acme update number {i} on fabrication", f"https://acme.test/p/{i}", i) for i in range(1, 6)])
+        rec = Recorder()
+        self.go(state, journal, rec)
+        posts = [c["payload"] for c in rec.posts_to(HOOK_A)]
+        self.assertEqual(len(posts), 5)
+        self.assertTrue(all("flags" not in p and "https://acme.test/p/" in p["content"] for p in posts))
+
+    def test_missing_preview_gets_a_preview_box_and_existing_ones_are_untouched(self):
+        state, journal = self.cycle(None)
+        self.feeds["https://acme.test/feed"] = rss([("With native preview", "https://acme.test/p/1", 2),
+                                                    ("Without native preview", "https://acme.test/p/2", 1)], image=True)
+        rec = Recorder()
+        # Messages: 101 section + 102 firehose for the first article, 103 + 104 for the second.
+        rec.discord_previews = {"101", "102"}  # Discord previewed the first article in both channels
+        report = self.go(state, journal, rec)
+        patches = [c for c in rec.calls if c["method"] == "PATCH"]
+        self.assertEqual(sorted(c["url"].rsplit("/", 1)[-1] for c in patches), ["103", "104"])
+        box = patches[0]["payload"]["embeds"][0]
+        self.assertEqual(box["title"], "Without native preview")
+        self.assertEqual(box["url"], "https://acme.test/p/2")
+        self.assertEqual(box["author"]["name"], "Acme Quantum")
+        self.assertTrue((box.get("image") or box.get("thumbnail"))["url"].startswith("https://img.test/"))
+        self.assertNotIn("color", box)       # shaped like Discord's own preview: no colour bar
+        self.assertNotIn("description", box) # and no summary
+        self.assertNotIn("footer", box)
+        self.assertTrue(any("preview box" in w for w in report.warnings))
+
+    def test_dry_run_never_waits_or_edits(self):
+        state, journal = self.cycle(None)
+        self.feeds["https://acme.test/feed"] = rss([("Dry", "https://acme.test/p/1", 1)])
+        rec = Recorder()
+        run(self.config, self.hooks, state, client=DiscordClient(dry_run=True, sleep=lambda s: self.fail("slept")),
+            fetch=self.fetch, journal=journal, dry_run=True)
+        self.assertEqual(rec.calls, [])
+
+
 class RolePingTests(Base):
     def test_role_pinged_once_per_section_per_run_and_nothing_else(self):
         state, journal = self.cycle(None)
@@ -196,7 +260,7 @@ class RolePingTests(Base):
         self.assertEqual(len(pinged), 1)
         self.assertEqual(pinged[0]["allowed_mentions"], {"parse": [], "roles": ["111222333444555666"]})
         self.assertTrue(all(p["allowed_mentions"] == {"parse": []} for p in hardware if p not in pinged))
-        self.assertTrue(all("content" not in c["payload"] for c in rec.posts_to(HOOK_B)))  # no role for this section
+        self.assertTrue(all("<@&" not in c["payload"].get("content", "") for c in rec.posts_to(HOOK_B)))  # no role here
 
 
 class JournalTests(unittest.TestCase):

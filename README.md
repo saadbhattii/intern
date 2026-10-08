@@ -1,6 +1,6 @@
-# Intern
+# Within Quantum
 
-A bot that follows about 190 sources (researchers' blogs, labs, companies, universities, journals and analysts) and posts each new article as a clean card with the title and a link to the original. No summaries, no AI rewriting, no discussion.
+A bot follows about 190 sources (researchers' blogs, labs, companies, universities, journals and analysts) and posts each new article as its title and a link to the original, with a link preview.
 
 It runs entirely on GitHub Actions. The full source list is in [`sources.toml`](sources.toml) and rendered as a table in [`docs/SOURCES.md`](docs/SOURCES.md).
 
@@ -26,7 +26,8 @@ For each source the bot tries its feed address first, then any feed the website 
 | One broken site or deleted webhook | Every source is isolated. A private status channel gets one alert after 3 failures in a row, and one when it recovers. |
 | The same story from several outlets | Matching links or near-identical headlines within 72 hours are posted once per channel. |
 | Everything showed Discord's own icon | Each message carries the source's name and website icon (or a custom image). |
-| Busy sources | At most 5 posts per source per run; more than 3 at once become one list card. |
+| Some posts had no preview | About 10 seconds after posting, the bot reads each post back; any post Discord did not preview gets a preview-shaped box. |
+| Busy sources | At most 5 posts per source per run, each as its own message so each gets a preview. |
 | A hostile headline tries to ping @everyone | Mentions are blocked. Only role ids you list under `[discord.roles]` can ever be pinged. |
 | Two runs overlap | Posting and briefings share one concurrency group, so only one job writes state at a time. |
 | State lost or corrupted | State files are committed to git, written atomically, and a corrupt file is set aside instead of crashing. |

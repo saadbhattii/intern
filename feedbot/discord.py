@@ -1,12 +1,13 @@
 """Discord webhook delivery. The bot posts titles and links only, never summaries.
 
 Two message styles (set `style` under [discord] in sources.toml):
-- "card" (default): a branded embed. Source name and icon on top, the headline as
+- "link" (default): the bold title plus the bare link, so Discord draws the
+  site's own preview underneath. If Discord makes no preview (the site offers no
+  preview information or blocks Discord), the bot adds a box shaped like one.
+- "card": a branded embed. Source name and icon on top, the headline as
   a clickable title, a colour stripe per category, a footer with the brand and
   category, the publish time, and an optional preview image. Every channel looks
   like one product, whatever the source's own page looks like.
-- "link": the bold title plus the bare link, so Discord draws the site's own
-  preview card underneath.
 
 Every message carries the source's name and avatar, so posts in a shared
 category channel are easy to tell apart.
@@ -143,6 +144,21 @@ def card_embed(item: Item, *, source_name: str, source_url: str, avatar: str, ca
     return embed
 
 
+def preview_embed(item: Item, *, site_name: str, site_url: str, image: str = "", large: bool = True) -> dict:
+    """A box shaped like Discord's own link preview, used only when Discord made none.
+
+    Site name on top, the headline as a link, and the page's image if it has one.
+    No colour bar, no branding, no summary text.
+    """
+    embed: dict = {"title": truncate(item.title.replace("\n", " "), 256), "url": item.link,
+                   "author": {"name": truncate(site_name, 256)}}
+    if site_url:
+        embed["author"]["url"] = site_url
+    if image:
+        embed["image" if large else "thumbnail"] = {"url": image}
+    return embed
+
+
 def list_embeds(title: str, lines: list[str], *, color: int, footer: str, url: str = "",
                 avatar: str = "") -> list[dict]:
     """A titled list split across as many embeds as needed (one description each)."""
@@ -220,7 +236,7 @@ class DiscordClient:
         self.min_interval = min_interval
         self._sleep = sleep
         self._post = post
-        self._request = request or post_json
+        self._request = request or (post if post is not post_json else post_json)
         self._last_sent: dict[str, float] = {}
         self._blocked_until: dict[str, float] = {}
         self.sent_count = 0
@@ -272,6 +288,18 @@ class DiscordClient:
                 return False
             raise
         return True
+
+    def get(self, webhook_url: str, message_id: str) -> dict | None:
+        """Read back a message this webhook sent (None if it cannot be read)."""
+        if self.dry_run:
+            return None
+        url = f"{webhook_url.split('?')[0]}/messages/{message_id}"
+        try:
+            _, body = self._call(webhook_url, lambda: self._request(url, None, method="GET"))
+            data = json.loads(body.decode("utf-8", "replace"))
+            return data if isinstance(data, dict) else None
+        except Exception:  # noqa: BLE001 - a message we cannot read back is simply not checked
+            return None
 
     def delete(self, webhook_url: str, message_id: str) -> None:
         if self.dry_run:

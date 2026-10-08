@@ -47,9 +47,9 @@ SPECIAL_WEBHOOKS = {
 
 DISCORD_DEFAULTS = {
     "brand": "Within Quantum",
-    "style": "card",            # card: branded embed | link: title plus bare link with Discord's preview
+    "style": "link",            # link: title plus bare link with Discord's preview | card: branded embed
     "avatars": "auto",          # auto: each source's website icon | off: Discord's default icon
-    "preview_image": "thumbnail",  # thumbnail | large | none (only for style = "card")
+    "preview_image": "large",   # thumbnail | large | none (card images, and the fallback preview box)
     "dedupe_hours": 72,         # skip the same story within this many hours (0 = off)
     "asset_base_url": "",       # prefix for avatar paths like "assets/avatars/ibm.png"
     "briefing_max_per_category": 15,

@@ -45,11 +45,12 @@ stale_after_days = 365
 # Discord presentation. All keys optional.
 [discord]
 brand = "Within Quantum"
-# "card": branded card with the source's icon, a colour per section and a preview image.
-# "link": bold title plus the bare link, so Discord shows the site's own preview.
-style = "card"
-avatars = "auto"              # each source's own website icon; "off" for Discord's default
-preview_image = "thumbnail"   # "thumbnail", "large" or "none"
+# "link": bold title plus the bare link, with Discord's own preview underneath. When Discord
+#         makes no preview, the bot adds a box shaped like one, so every post has a preview.
+# "card": a branded card with a colour per section instead.
+style = "link"
+avatars = "auto"              # each source's own website icon as the profile picture; "off" for Discord's default
+preview_image = "large"       # image size in the fallback preview box: "large", "thumbnail" or "none"
 dedupe_hours = 72             # the same story is not posted twice within this many hours
 briefing_max_per_category = 15
 # asset_base_url = "https://raw.githubusercontent.com/<you>/<repo>/main/"  # for avatar = "assets/..." paths

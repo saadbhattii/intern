@@ -20,6 +20,7 @@ Only items Discord confirms are marked seen; the rest are retried next run.
 from __future__ import annotations
 
 import os
+import time
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from datetime import timedelta
@@ -27,7 +28,7 @@ from typing import Callable
 
 from .config import Config, Source, Webhooks
 from .discord import (DEFAULT_COLOR, DiscordClient, WebhookError, card_embed, chunk_lines, digest_embeds,
-                      favicon_url, format_digest, format_item, group_embeds)
+                      favicon_url, format_digest, format_item, group_embeds, preview_embed)
 from .journal import Journal
 from .preview import find_image
 from .feeds import FeedParseError, looks_like_feed, parse_feed
@@ -76,6 +77,8 @@ class DeliveryContext:
     report: "RunReport | None" = None
     pinged: set = field(default_factory=set)
     firehose_failed: bool = False
+    # (webhook, message id, item, source, posted at) for the end-of-run preview check
+    preview_checks: list = field(default_factory=list)
 
     def avatar_for(self, source: Source) -> str:
         if source.avatar:
@@ -102,7 +105,7 @@ class DeliveryContext:
         return ""
 
     def image_for(self, item: Item) -> str:
-        if self.discord.get("style") != "card" or self.discord.get("preview_image") == "none":
+        if self.discord.get("preview_image") == "none":
             return ""
         if item.image:
             return item.image
@@ -379,6 +382,12 @@ def run(
                 report.alerts.append(f"⚠️ **{source.name}** (`{source.id}`) failing: {outcome.detail}")
         report.outcomes.append(outcome)
 
+    if ctx.preview_checks and not dry_run:
+        try:
+            ensure_previews(ctx, client)
+        except Exception as exc:  # noqa: BLE001 - previews are cosmetic: never fail a run for them
+            report.warnings.append(f"preview check stopped early: {exc}")
+
     if not only:
         state.prune({s.id for s in config.sources})
     state.heartbeat(now)
@@ -487,22 +496,26 @@ def _deliver(source: Source, hook: str | None, selection: Selection, st: SourceS
     if not kept:
         return 0, dupes
 
+    card = ctx.discord.get("style", "link") == "card"
     mode = source.mode
     if mode == "auto":
         mode = "digest" if len(kept) > digest_over else "each"
+    if not card:
+        mode = "each"  # link style: every article is its own message, so every one gets a preview
     avatar = ctx.avatar_for(source)
     username = source.display_name
-    card = ctx.discord.get("style", "card") == "card"
     common = dict(source_name=source.name, source_url=source.site, avatar=avatar,
                   category_name=ctx.category_name(category), color=ctx.color_for(category),
                   brand=ctx.discord.get("brand", "Within Quantum"))
 
-    def firehose_copy(payloads: list[dict]) -> None:
+    def firehose_copy(payloads: list[dict], item: Item | None = None) -> None:
         if not ctx.firehose or ctx.firehose_failed:
             return
         try:
             for payload in payloads:
-                client.deliver(ctx.firehose, payload, username=username, avatar_url=avatar)
+                mid = client.deliver(ctx.firehose, payload, username=username, avatar_url=avatar)
+                if item is not None and mid and not card:
+                    ctx.preview_checks.append((ctx.firehose, mid, item, source, time.monotonic()))
         except WebhookError as exc:  # best effort: never blocks the category channel
             ctx.firehose_failed = True
             if ctx.report is not None:
@@ -542,17 +555,53 @@ def _deliver(source: Source, hook: str | None, selection: Selection, st: SourceS
                                              image_mode=ctx.discord.get("preview_image", "thumbnail"), **common)]}
         else:
             payload = {"content": "\n".join(chunk_lines([format_item(item)]))}
-        client.deliver(hook or "", payload, username=username, avatar_url=avatar,
-                       ping_role=ctx.role_once(category))
+        mid = client.deliver(hook or "", payload, username=username, avatar_url=avatar,
+                             ping_role=ctx.role_once(category))
         st.mark_seen(item.keys())  # only after Discord confirmed delivery
+        if mid and not card:
+            ctx.preview_checks.append((hook or "", mid, item, source, time.monotonic()))
         if ctx.journal:
             ctx.journal.add(title=item.title, url=item.link, source_id=source.id, source_name=source.name,
                             category=category, when=ctx.now, published=item.published,
                             firehose=to_firehose and bool(ctx.firehose))
         if to_firehose:
-            firehose_copy([payload])
+            firehose_copy([payload], item)
         posted += 1
     return posted, dupes
+
+
+PREVIEW_WAIT_SECONDS = 10
+
+
+def ensure_previews(ctx: DeliveryContext, client: DiscordClient, wait: float = PREVIEW_WAIT_SECONDS,
+                    sleep=None) -> int:
+    """Make sure every link-style post shows a preview.
+
+    Discord draws link previews a few seconds after a message is posted, and
+    only if the linked page offers preview information and lets Discord read
+    it. After giving it time, each post is read back; any post still without a
+    preview gets a box shaped like one (site name, linked title, the page's
+    image if it has one). Posts where Discord made its own preview are left alone.
+    Returns how many posts received a box.
+    """
+    sleep = sleep or getattr(client, "_sleep", time.sleep)
+    oldest = min(entry[4] for entry in ctx.preview_checks)
+    remaining = wait - (time.monotonic() - oldest)
+    if remaining > 0:
+        sleep(remaining)
+    added = 0
+    large = ctx.discord.get("preview_image", "large") != "thumbnail"
+    for hook, mid, item, source, _ in ctx.preview_checks:
+        message = client.get(hook, mid)
+        if message is None or message.get("embeds"):
+            continue  # unreadable, or Discord made its own preview
+        box = preview_embed(item, site_name=source.name, site_url=source.site, image=ctx.image_for(item), large=large)
+        if client.edit(hook, mid, {"embeds": [box]}):
+            added += 1
+    if added and ctx.report is not None:
+        ctx.report.warnings.append(f"added a preview box to {added} post(s) where Discord made none")
+    ctx.preview_checks.clear()
+    return added
 
 
 def _success(source: Source, st: SourceState, now, report: RunReport) -> None:
