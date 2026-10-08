@@ -5522,6 +5522,49 @@
    "t": "Bengio: ‘If you prioritize safety, leave frontier AI companies’",
    "u": "https://yoshuabengio.org/en/blog/bengio-if-you-prioritize-safety-leave-frontier-ai-companies",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "hardware",
+   "id": "a54bca1335a2eff0ddd3",
+   "n": "IonQ Blog",
+   "p": "2026-10-08T16:00:58+00:00",
+   "s": "ionq",
+   "t": "What It Means to Put a Quantum Roadmap to the Test",
+   "u": "https://www.ionq.com/blog/what-it-means-to-put-a-quantum-roadmap-to-the-test",
+   "w": "d9ef1d3b9c1f36ff3d1e"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T15:10:03+00:00",
+   "id": "464562a714baa3221958",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T16:00:58+00:00",
+   "s": "quantum-insider",
+   "t": "NSF Launches New Programs for Quantum Innovation and STEM Research",
+   "u": "https://thequantuminsider.com/2026/10/08/nsf-new-quantum-research-stem-workforce-programs/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T15:14:31+00:00",
+   "id": "6c5b6b4899203748de26",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T16:00:58+00:00",
+   "s": "quantum-insider",
+   "t": "PsiQuantum Receives Conditional $150M Loan Commitment From U.S. Department of War",
+   "u": "https://thequantuminsider.com/2026/10/08/psiquantum-conditional-150m-loan-california-quantum-facility/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T15:40:02+00:00",
+   "id": "9d7a288727979a46f799",
+   "n": "Don't Worry About the Vase",
+   "p": "2026-10-08T16:00:58+00:00",
+   "s": "zvi",
+   "t": "AI #189: New Math",
+   "u": "https://thezvi.wordpress.com/2026/10/08/ai-189-new-math/",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
