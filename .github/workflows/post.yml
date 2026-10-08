@@ -1,10 +1,6 @@
 name: Post new articles
 
 on:
-  schedule:
-    # Every 30 minutes (UTC), at off-peak minutes because GitHub delays jobs queued at :00.
-    # Missed or delayed runs are harmless: state tracks exactly what was posted.
-    - cron: "7,37 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:

@@ -1,13 +1,6 @@
 name: Briefings
 
-# Daily briefing at 03:00 UTC (08:00 in Pakistan) and weekly roundup on Sundays
-# at 15:00 UTC (20:00 in Pakistan). Each lists what was posted, grouped by
-# section, and goes to the 'briefing' (and optional 'weekly') webhook.
-# A period is never sent twice, even if this workflow runs again.
 on:
-  schedule:
-    - cron: "0 3 * * *"
-    - cron: "0 15 * * 0"
   workflow_dispatch:
     inputs:
       period:
