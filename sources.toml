@@ -915,8 +915,7 @@ category = "publications"
 feed = "https://feeds.aps.org/rss/recent/physics.xml"
 site = "https://physics.aps.org/"
 include_keywords = ["quantum", "qubit", "entangle"]
-enabled = false
-note = "Disabled: mostly commentary on individual papers. Enable if wanted."
+note = "Viewpoints written by researchers. Feed verified Oct 2026."
 
 [[source]]
 id = "cacm-quantum"
@@ -951,6 +950,8 @@ name = "SQMS Center (Fermilab)"
 category = "government"
 feed = "https://sqms.fnal.gov/feed/"
 site = "https://sqms.fnal.gov/news/"
+enabled = false
+note = "Site blocks or cannot be read from GitHub. Replaced by fermilab-news."
 
 [[source]]
 id = "quantum-systems-accelerator"
@@ -1052,6 +1053,8 @@ id = "harvard-quantum"
 name = "Harvard Quantum Initiative"
 category = "institutes"
 site = "https://quantum.harvard.edu/news"
+enabled = false
+note = "Site blocks or cannot be read from GitHub. Replaced by harvard-gazette-science."
 
 # =============================================================================
 # INDEPENDENT ANALYSTS AND INDUSTRY NEWS
@@ -1098,3 +1101,822 @@ high_volume = true
 mode = "digest"
 max_per_run = 10
 note = "Very high volume; posted as digests."
+
+# =============================================================================
+# QUANTUM RESEARCHERS (additions, Oct 2026)
+# =============================================================================
+
+[[source]]
+id = "backreaction"
+name = "Backreaction"
+author = "Sabine Hossenfelder"
+category = "quantum-researchers"
+feed = "https://backreaction.blogspot.com/feeds/posts/default"
+site = "https://backreaction.blogspot.com/"
+note = "Active Oct 2026. Contrarian; frequent AI/tech posts."
+
+[[source]]
+id = "chris-ferrie"
+name = "Chris Ferrie"
+author = "Chris Ferrie (UTS Sydney)"
+category = "quantum-researchers"
+feed = "https://csferrie.medium.com/feed"
+site = "https://csferrie.medium.com/"
+note = "Medium feed; his own site renders in JavaScript and cannot be read."
+
+[[source]]
+id = "michael-nielsen"
+name = "Michael Nielsen's notebook"
+author = "Michael Nielsen (co-author of Nielsen & Chuang)"
+category = "quantum-researchers"
+site = "https://michaelnotebook.com/projects.html"
+kind = "html"
+note = "Dated list of essays; mostly metascience and AI now."
+
+[[source]]
+id = "matt-strassler"
+name = "Of Particular Significance"
+author = "Matt Strassler"
+category = "quantum-researchers"
+feed = "https://profmattstrassler.com/feed/"
+site = "https://profmattstrassler.com/"
+note = "Feed verified. Low volume."
+
+[[source]]
+id = "condensed-concepts"
+name = "Condensed Concepts"
+author = "Ross McKenzie (University of Queensland)"
+category = "quantum-researchers"
+feed = "https://condensedconcepts.blogspot.com/feeds/posts/default"
+site = "https://condensedconcepts.blogspot.com/"
+
+# =============================================================================
+# PUBLICATIONS AND SCIENCE JOURNALISM (additions)
+# =============================================================================
+
+[[source]]
+id = "physorg-quantum"
+name = "Phys.org (quantum physics)"
+category = "publications"
+feed = "https://phys.org/rss-feed/physics-news/quantum-physics/"
+site = "https://phys.org/physics-news/quantum-physics/"
+include_keywords = ["quantum comput", "qubit", "error correction", "quantum network", "entangle", "quantum sens"]
+mode = "digest"
+max_per_run = 10
+high_volume = true
+note = "Many items a day, largely university press releases."
+
+[[source]]
+id = "ars-technica-science"
+name = "Ars Technica (science, quantum)"
+category = "publications"
+feed = "https://feeds.arstechnica.com/arstechnica/science"
+site = "https://arstechnica.com/science/"
+include_keywords = ["quantum", "qubit"]
+
+[[source]]
+id = "new-scientist-physics"
+name = "New Scientist (physics, quantum)"
+category = "publications"
+feed = "https://www.newscientist.com/subject/physics/feed/"
+site = "https://www.newscientist.com/subject/physics/"
+include_keywords = ["quantum", "qubit"]
+
+[[source]]
+id = "science-news-quantum"
+name = "Science (AAAS) news, quantum"
+category = "publications"
+feed = "https://www.science.org/rss/news_current.xml"
+site = "https://www.science.org/news"
+include_keywords = ["quantum", "qubit"]
+note = "science.org uses bot protection; may be blocked."
+
+[[source]]
+id = "mit-tech-review-quantum"
+name = "MIT Technology Review (quantum)"
+category = "publications"
+feed = "https://www.technologyreview.com/feed/"
+site = "https://www.technologyreview.com/"
+include_keywords = ["quantum", "qubit"]
+
+[[source]]
+id = "hpcwire-quantum"
+name = "HPCwire (quantum)"
+category = "publications"
+feed = "https://www.hpcwire.com/topic/quantum/feed/"
+site = "https://www.hpcwire.com/topic/quantum/"
+mode = "digest"
+max_per_run = 10
+high_volume = true
+note = "Includes many wire press releases."
+
+[[source]]
+id = "the-next-platform"
+name = "The Next Platform (quantum)"
+category = "publications"
+feed = "https://www.nextplatform.com/feed/"
+site = "https://www.nextplatform.com/"
+include_keywords = ["quantum", "qubit"]
+
+[[source]]
+id = "ee-times-quantum"
+name = "EE Times (quantum)"
+category = "publications"
+feed = "https://www.eetimes.com/feed/"
+site = "https://www.eetimes.com/"
+include_keywords = ["quantum", "qubit", "cryo"]
+
+[[source]]
+id = "quanta-computer-science"
+name = "Quanta Magazine (computer science)"
+category = "publications"
+feed = "https://www.quantamagazine.org/computer-science/feed/"
+site = "https://www.quantamagazine.org/computer-science/"
+
+[[source]]
+id = "quanta-mathematics"
+name = "Quanta Magazine (mathematics)"
+category = "publications"
+feed = "https://www.quantamagazine.org/mathematics/feed/"
+site = "https://www.quantamagazine.org/mathematics/"
+
+[[source]]
+id = "inside-quantum-technology"
+name = "Inside Quantum Technology"
+category = "publications"
+feed = "https://www.insidequantumtechnology.com/feed/"
+site = "https://www.insidequantumtechnology.com/news/"
+mode = "digest"
+max_per_run = 10
+high_volume = true
+
+[[source]]
+id = "ars-technica-ai"
+name = "Ars Technica (AI)"
+category = "publications"
+feed = "https://arstechnica.com/ai/feed/"
+site = "https://arstechnica.com/ai/"
+note = "Feed confirmed working Oct 2026 (Feeder)."
+
+[[source]]
+id = "mit-tech-review-ai"
+name = "MIT Technology Review (AI)"
+category = "publications"
+feed = "https://www.technologyreview.com/topic/artificial-intelligence/feed"
+site = "https://www.technologyreview.com/topic/artificial-intelligence/"
+note = "Feed confirmed working Oct 2026 (Feeder)."
+
+# =============================================================================
+# AI COMPANIES AND LABS (filed under AI researchers)
+# =============================================================================
+
+[[source]]
+id = "openai"
+name = "OpenAI News"
+category = "ai"
+feed = "https://openai.com/news/rss.xml"
+site = "https://openai.com/news/"
+note = "Feed confirmed working Oct 2026 (Feeder). openai.com uses Cloudflare; may be blocked from GitHub."
+
+[[source]]
+id = "google-deepmind"
+name = "Google DeepMind"
+category = "ai"
+feed = "https://deepmind.google/blog/rss.xml"
+site = "https://deepmind.google/blog/"
+note = "Feed confirmed working Oct 2026 (Feeder)."
+
+[[source]]
+id = "google-ai"
+name = "Google AI (The Keyword)"
+category = "ai"
+feed = "https://blog.google/innovation-and-ai/technology/ai/rss/"
+site = "https://blog.google/technology/ai/"
+note = "Feed confirmed working Oct 2026 (Feeder). Product-oriented."
+
+[[source]]
+id = "google-research"
+name = "Google Research Blog"
+category = "ai"
+feed = "https://research.google/blog/rss/"
+site = "https://research.google/blog/"
+note = "Full blog; google-research-quantum keeps a quantum-only copy."
+
+[[source]]
+id = "anthropic"
+name = "Anthropic News"
+category = "ai"
+site = "https://www.anthropic.com/news"
+kind = "html"
+link_pattern = "anthropic\\.com/news/[a-z0-9-]+/?$"
+note = "No RSS exists; the news page is read directly."
+
+[[source]]
+id = "anthropic-research"
+name = "Anthropic Research"
+category = "ai"
+site = "https://www.anthropic.com/research"
+kind = "html"
+link_pattern = "anthropic\\.com/research/[a-z0-9-]+/?$"
+note = "No RSS exists; the research page is read directly."
+
+[[source]]
+id = "meta-ai"
+name = "Meta AI Blog"
+category = "ai"
+site = "https://ai.meta.com/blog/"
+kind = "html"
+link_pattern = "ai\\.meta\\.com/blog/[a-z0-9-]+/?$"
+note = "No RSS exists; page may be JavaScript-rendered."
+
+[[source]]
+id = "microsoft-research"
+name = "Microsoft Research Blog"
+category = "ai"
+feed = "https://www.microsoft.com/en-us/research/feed/"
+site = "https://www.microsoft.com/en-us/research/blog/"
+
+[[source]]
+id = "apple-ml-research"
+name = "Apple Machine Learning Research"
+category = "ai"
+feed = "https://machinelearning.apple.com/rss.xml"
+site = "https://machinelearning.apple.com/research"
+
+[[source]]
+id = "amazon-science"
+name = "Amazon Science"
+category = "ai"
+feed = "https://www.amazon.science/index.rss"
+site = "https://www.amazon.science/blog"
+
+[[source]]
+id = "nvidia-blog"
+name = "NVIDIA Blog"
+category = "ai"
+feed = "https://blogs.nvidia.com/feed/"
+site = "https://blogs.nvidia.com/"
+max_per_run = 5
+note = "Feed confirmed working Oct 2026 (Feeder). nvidia-quantum keeps a quantum-only copy."
+
+[[source]]
+id = "mistral"
+name = "Mistral AI News"
+category = "ai"
+feed = "https://mistral.ai/news/rss"
+site = "https://mistral.ai/news"
+note = "Feed confirmed working Oct 2026 (Feeder)."
+
+[[source]]
+id = "hugging-face"
+name = "Hugging Face Blog"
+category = "ai"
+feed = "https://huggingface.co/blog/feed.xml"
+site = "https://huggingface.co/blog"
+mode = "digest"
+high_volume = true
+note = "Feed confirmed working Oct 2026 (Feeder)."
+
+[[source]]
+id = "aws-machine-learning"
+name = "AWS Machine Learning Blog"
+category = "ai"
+feed = "https://aws.amazon.com/blogs/machine-learning/feed/"
+site = "https://aws.amazon.com/blogs/machine-learning/"
+mode = "digest"
+high_volume = true
+note = "Feed confirmed working Oct 2026 (Feeder). Mostly how-tos."
+
+[[source]]
+id = "ibm-research"
+name = "IBM Research Blog"
+category = "ai"
+site = "https://research.ibm.com/blog"
+note = "Covers IBM AI and quantum research; separate from the IBM Quantum blog."
+
+[[source]]
+id = "meta-engineering"
+name = "Engineering at Meta (AI)"
+category = "ai"
+feed = "https://engineering.fb.com/feed/"
+site = "https://engineering.fb.com/"
+include_keywords = ["AI", "artificial intelligence", "machine learning", "model", "LLM", "neural"]
+
+[[source]]
+id = "ai2"
+name = "Ai2 (Allen Institute for AI)"
+category = "ai"
+site = "https://allenai.org/blog"
+
+[[source]]
+id = "transformer-circuits"
+name = "Transformer Circuits Thread"
+author = "Anthropic interpretability team"
+category = "ai"
+site = "https://transformer-circuits.pub/"
+kind = "html"
+note = "Static index of interpretability write-ups."
+
+# =============================================================================
+# AI RESEARCHERS (additions)
+# =============================================================================
+
+[[source]]
+id = "import-ai"
+name = "Import AI"
+author = "Jack Clark (Anthropic co-founder)"
+category = "ai"
+feed = "https://jack-clark.net/feed/"
+site = "https://jack-clark.net/"
+note = "WordPress mirror; the substack.com address is blocked from GitHub."
+
+[[source]]
+id = "one-useful-thing"
+name = "One Useful Thing"
+author = "Ethan Mollick (Wharton)"
+category = "ai"
+feed = "https://www.oneusefulthing.org/feed"
+site = "https://www.oneusefulthing.org/"
+
+[[source]]
+id = "epoch-ai"
+name = "Epoch AI: Gradient Updates"
+category = "ai"
+site = "https://epoch.ai/gradient-updates"
+note = "The epochai.substack.com address is blocked from GitHub."
+
+[[source]]
+id = "ai-as-normal-technology"
+name = "AI as Normal Technology"
+author = "Arvind Narayanan and Sayash Kapoor (Princeton)"
+category = "ai"
+feed = "https://www.normaltech.ai/feed"
+site = "https://www.normaltech.ai/"
+
+[[source]]
+id = "understanding-ai"
+name = "Understanding AI"
+author = "Timothy B. Lee"
+category = "ai"
+feed = "https://www.understandingai.org/feed"
+site = "https://www.understandingai.org/"
+
+[[source]]
+id = "zvi"
+name = "Don't Worry About the Vase"
+author = "Zvi Mowshowitz"
+category = "ai"
+feed = "https://thezvi.wordpress.com/feed/"
+site = "https://thezvi.wordpress.com/"
+mode = "digest"
+high_volume = true
+
+[[source]]
+id = "eugene-yan"
+name = "Eugene Yan"
+category = "ai"
+feed = "https://eugeneyan.com/rss/"
+site = "https://eugeneyan.com/writing/"
+
+[[source]]
+id = "yoshua-bengio"
+name = "Yoshua Bengio"
+category = "ai"
+feed = "https://yoshuabengio.org/feed/"
+site = "https://yoshuabengio.org/"
+note = "A few posts a year."
+
+# =============================================================================
+# UNIVERSITY AI LABS (filed under University institutes)
+# =============================================================================
+
+[[source]]
+id = "cmu-ml-blog"
+name = "ML@CMU Blog"
+category = "institutes"
+feed = "https://blog.ml.cmu.edu/feed/"
+site = "https://blog.ml.cmu.edu/"
+
+[[source]]
+id = "mit-news-ai"
+name = "MIT News (artificial intelligence)"
+category = "institutes"
+feed = "https://news.mit.edu/rss/topic/artificial-intelligence2"
+site = "https://news.mit.edu/topic/artificial-intelligence2"
+note = "Feed confirmed working Oct 2026 (Feeder)."
+
+[[source]]
+id = "bair"
+name = "Berkeley AI Research (BAIR) Blog"
+category = "institutes"
+feed = "https://bair.berkeley.edu/blog/feed.xml"
+site = "https://bair.berkeley.edu/blog/"
+note = "Other GitHub-hosted checkers report this feed unreachable; kept to test."
+
+[[source]]
+id = "stanford-hai"
+name = "Stanford HAI News"
+category = "institutes"
+site = "https://hai.stanford.edu/news"
+
+[[source]]
+id = "stanford-ai-lab"
+name = "Stanford AI Lab Blog"
+category = "institutes"
+feed = "https://ai.stanford.edu/blog/feed.xml"
+site = "https://ai.stanford.edu/blog/"
+
+[[source]]
+id = "freedom-to-tinker"
+name = "Freedom to Tinker"
+author = "Princeton CITP"
+category = "institutes"
+feed = "https://freedom-to-tinker.com/feed/"
+site = "https://freedom-to-tinker.com/"
+
+# =============================================================================
+# THEORETICAL COMPUTER SCIENCE (additions)
+# =============================================================================
+
+[[source]]
+id = "process-algebra-diary"
+name = "Process Algebra Diary"
+author = "Luca Aceto (Reykjavik University, GSSI)"
+category = "tcs"
+feed = "https://processalgebra.blogspot.com/feeds/posts/default"
+site = "https://processalgebra.blogspot.com/"
+
+[[source]]
+id = "property-testing-review"
+name = "Property Testing Review"
+category = "tcs"
+feed = "https://ptreview.sublinear.info/feed/"
+site = "https://ptreview.sublinear.info/"
+
+[[source]]
+id = "jeremy-kun"
+name = "Math ∩ Programming"
+author = "Jeremy Kun"
+category = "tcs"
+feed = "https://www.jeremykun.com/index.xml"
+site = "https://www.jeremykun.com/"
+
+[[source]]
+id = "daniel-lemire"
+name = "Daniel Lemire's blog"
+category = "tcs"
+feed = "https://lemire.me/blog/feed/"
+site = "https://lemire.me/blog/"
+mode = "digest"
+high_volume = true
+
+[[source]]
+id = "andrej-bauer"
+name = "Mathematics and Computation"
+author = "Andrej Bauer (Ljubljana)"
+category = "tcs"
+feed = "https://math.andrej.com/feed.xml"
+site = "https://math.andrej.com/"
+note = "Sparse; check for activity."
+
+[[source]]
+id = "goldreich-choices"
+name = "Oded Goldreich's choices"
+category = "tcs"
+site = "https://www.wisdom.weizmann.ac.il/~oded/my-choice.html"
+kind = "html"
+link_pattern = "~oded/MC/[0-9]+"
+note = "Commentary on new work; static page."
+
+# =============================================================================
+# MATHEMATICS (additions)
+# =============================================================================
+
+[[source]]
+id = "daniel-litt"
+name = "Daniel Litt"
+author = "Daniel Litt (University of Toronto)"
+category = "math"
+site = "https://www.daniellitt.com/blog"
+note = "Leading voice on AI and mathematics."
+
+[[source]]
+id = "john-d-cook"
+name = "The Endeavour"
+author = "John D. Cook"
+category = "math"
+feed = "https://www.johndcook.com/blog/feed/"
+site = "https://www.johndcook.com/blog/"
+mode = "digest"
+high_volume = true
+
+[[source]]
+id = "matt-baker"
+name = "Matt Baker's Math Blog"
+author = "Matt Baker (Georgia Tech)"
+category = "math"
+feed = "https://mattbaker.blog/feed/"
+site = "https://mattbaker.blog/"
+
+[[source]]
+id = "aperiodical"
+name = "The Aperiodical"
+category = "math"
+feed = "https://aperiodical.com/feed/"
+site = "https://aperiodical.com/"
+
+[[source]]
+id = "lean-community"
+name = "Lean Community Blog"
+category = "math"
+site = "https://leanprover-community.github.io/blog/"
+
+# =============================================================================
+# NATIONAL LABS AND UNIVERSITY QUANTUM CENTERS (additions)
+# =============================================================================
+
+[[source]]
+id = "fermilab-news"
+name = "Fermilab News (quantum)"
+category = "government"
+feed = "https://news.fnal.gov/feed/"
+site = "https://news.fnal.gov/"
+include_keywords = ["quantum", "qubit", "SQMS"]
+note = "Replaces sqms-fermilab."
+
+[[source]]
+id = "berkeley-lab-news"
+name = "Berkeley Lab News (quantum)"
+category = "government"
+feed = "https://newscenter.lbl.gov/feed/"
+site = "https://newscenter.lbl.gov/"
+include_keywords = ["quantum", "qubit", "entangle", "error correction"]
+
+[[source]]
+id = "sandia-news"
+name = "Sandia News (quantum)"
+category = "government"
+feed = "https://newsreleases.sandia.gov/feed/"
+site = "https://newsreleases.sandia.gov/"
+include_keywords = ["quantum", "qubit", "entangle", "error correction"]
+
+[[source]]
+id = "dlr-qci"
+name = "DLR Quantum Computing Initiative"
+category = "government"
+site = "https://qci.dlr.de/en/news/"
+
+[[source]]
+id = "harvard-gazette-science"
+name = "Harvard Gazette (science, quantum)"
+category = "institutes"
+feed = "https://news.harvard.edu/gazette/section/science-technology/feed/"
+site = "https://news.harvard.edu/gazette/section/science-technology/"
+include_keywords = ["quantum", "qubit", "atom"]
+note = "Replaces harvard-quantum."
+
+[[source]]
+id = "quics"
+name = "QuICS (Maryland)"
+category = "institutes"
+site = "https://quics.umd.edu/news"
+
+[[source]]
+id = "jila"
+name = "JILA (Colorado)"
+category = "institutes"
+site = "https://jila.colorado.edu/news"
+
+[[source]]
+id = "yale-quantum"
+name = "Yale Quantum Institute"
+category = "institutes"
+site = "https://quantuminstitute.yale.edu/news"
+
+[[source]]
+id = "princeton-quantum"
+name = "Princeton Quantum Initiative"
+category = "institutes"
+site = "https://quantum.princeton.edu/news"
+
+[[source]]
+id = "uchicago-pme"
+name = "UChicago Pritzker School of Molecular Engineering"
+category = "institutes"
+site = "https://pme.uchicago.edu/news"
+include_keywords = ["quantum", "qubit", "entangle", "error correction"]
+
+[[source]]
+id = "illinois-iquist"
+name = "Illinois IQUIST"
+category = "institutes"
+site = "https://iquist.illinois.edu/news"
+
+[[source]]
+id = "duke-quantum"
+name = "Duke Quantum Center"
+category = "institutes"
+site = "https://quantum.duke.edu/news"
+
+[[source]]
+id = "mpq"
+name = "Max Planck Institute of Quantum Optics"
+category = "institutes"
+site = "https://www.mpq.mpg.de/news"
+
+# =============================================================================
+# QUANTUM COMPANIES (additions)
+# =============================================================================
+
+[[source]]
+id = "quantware"
+name = "QuantWare"
+category = "hardware"
+site = "https://quantware.com/news"
+
+[[source]]
+id = "seeqc"
+name = "SEEQC"
+category = "control"
+site = "https://seeqc.com/news"
+
+[[source]]
+id = "quantum-brilliance"
+name = "Quantum Brilliance"
+category = "hardware"
+site = "https://quantumbrilliance.com/news"
+
+[[source]]
+id = "c12"
+name = "C12 Quantum Electronics"
+category = "hardware"
+site = "https://www.c12qe.com/news"
+
+[[source]]
+id = "universal-quantum"
+name = "Universal Quantum"
+category = "hardware"
+site = "https://universalquantum.com/news"
+
+[[source]]
+id = "eeroq"
+name = "EeroQ"
+category = "hardware"
+site = "https://eeroq.com/news"
+
+[[source]]
+id = "quantum-source"
+name = "Quantum Source"
+category = "hardware"
+site = "https://qs.co/news"
+
+[[source]]
+id = "qedma"
+name = "Qedma"
+category = "qec"
+site = "https://www.qedma.com/blog"
+
+[[source]]
+id = "strangeworks"
+name = "Strangeworks"
+category = "software"
+site = "https://strangeworks.com/blog"
+
+[[source]]
+id = "qunasys"
+name = "QunaSys"
+category = "software"
+site = "https://qunasys.com/en/news"
+
+[[source]]
+id = "terra-quantum"
+name = "Terra Quantum"
+category = "software"
+site = "https://terraquantum.swiss/news"
+
+[[source]]
+id = "qruise"
+name = "Qruise"
+category = "control"
+site = "https://qruise.com/blog"
+
+[[source]]
+id = "delft-circuits"
+name = "Delft Circuits"
+category = "control"
+site = "https://delft-circuits.com/news"
+
+[[source]]
+id = "qphox"
+name = "QphoX"
+category = "networking"
+site = "https://qphox.eu/news"
+
+[[source]]
+id = "nu-quantum"
+name = "Nu Quantum"
+category = "networking"
+site = "https://www.nu-quantum.com/news"
+
+[[source]]
+id = "welinq"
+name = "Welinq"
+category = "networking"
+site = "https://welinq.fr/news"
+
+[[source]]
+id = "memq"
+name = "memQ"
+category = "networking"
+site = "https://www.memq.tech/news"
+
+[[source]]
+id = "qusecure"
+name = "QuSecure"
+category = "networking"
+site = "https://www.qusecure.com/blog"
+
+# =============================================================================
+# ANALYSTS (additions)
+# =============================================================================
+
+[[source]]
+id = "postquantum"
+name = "PostQuantum.com"
+author = "Marin Ivezic"
+category = "analysts"
+feed = "https://postquantum.com/feed/"
+site = "https://postquantum.com/"
+note = "Practitioner commentary on Q-Day and post-quantum migration."
+
+[[source]]
+id = "semianalysis"
+name = "SemiAnalysis"
+author = "Dylan Patel"
+category = "analysts"
+feed = "https://semianalysis.com/feed/"
+site = "https://semianalysis.com/"
+note = "Many posts paywalled; titles still post."
+
+[[source]]
+id = "benedict-evans"
+name = "Benedict Evans"
+category = "analysts"
+feed = "https://www.ben-evans.com/benedictevans?format=rss"
+site = "https://www.ben-evans.com/"
+
+[[source]]
+id = "stratechery"
+name = "Stratechery"
+author = "Ben Thompson"
+category = "analysts"
+feed = "https://stratechery.com/feed/"
+site = "https://stratechery.com/"
+note = "Mostly paywalled; titles still post."
+
+[[source]]
+id = "fact-based-insight"
+name = "Fact Based Insight"
+author = "David Shaw"
+category = "analysts"
+site = "https://www.factbasedinsight.com/"
+
+[[source]]
+id = "qed-c"
+name = "QED-C (Quantum Economic Development Consortium)"
+category = "analysts"
+site = "https://quantumconsortium.org/news/"
+
+[[source]]
+id = "gqi"
+name = "Global Quantum Intelligence (GQI)"
+category = "analysts"
+site = "https://www.global-qi.com/insights"
+
+# =============================================================================
+# PODCASTS (filed under their subject categories)
+# =============================================================================
+
+[[source]]
+id = "mindscape"
+name = "Mindscape"
+author = "Sean Carroll"
+category = "quantum-researchers"
+feed = "https://www.preposterousuniverse.com/podcast/feed/"
+site = "https://www.preposterousuniverse.com/podcast/"
+note = "Weekly; many quantum-foundations episodes."
+
+[[source]]
+id = "new-quantum-era"
+name = "The New Quantum Era"
+author = "Sebastian Hassinger"
+category = "publications"
+site = "https://newquantumera.transistor.fm/"
+
+[[source]]
+id = "dwarkesh"
+name = "Dwarkesh Podcast"
+author = "Dwarkesh Patel"
+category = "ai"
+feed = "https://www.dwarkesh.com/feed"
+site = "https://www.dwarkesh.com/"
