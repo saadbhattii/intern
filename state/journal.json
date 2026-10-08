@@ -5565,6 +5565,39 @@
    "t": "AI #189: New Math",
    "u": "https://thezvi.wordpress.com/2026/10/08/ai-189-new-math/",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T16:20:04+00:00",
+   "id": "575f2b8d33878f21ab30",
+   "n": "AWS Machine Learning Blog",
+   "p": "2026-10-08T16:30:58+00:00",
+   "s": "aws-machine-learning",
+   "t": "Share GPU clusters across teams with isolation and fairness using Amazon SageMaker HyperPod",
+   "u": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "government",
+   "d": "2026-10-08T16:17:51+00:00",
+   "id": "1c2513d0e1b7d29f4634",
+   "n": "Fermilab News (quantum)",
+   "p": "2026-10-08T16:30:58+00:00",
+   "s": "fermilab-news",
+   "t": "Fermilab physicist wins DOE Early Career Award to study dark matter with entangled qubits",
+   "u": "https://news.fnal.gov/2026/10/fermilab-physicist-wins-doe-early-career-award-to-study-dark-matter-with-entangled-qubits/",
+   "w": "264ac428e52865e9cbcb"
+  },
+  {
+   "c": "government",
+   "d": "2026-10-08T16:19:09+00:00",
+   "id": "66d28b3b41b5bd698373",
+   "n": "Fermilab News (quantum)",
+   "p": "2026-10-08T16:30:58+00:00",
+   "s": "fermilab-news",
+   "t": "New DOE Early Career project uses magnetic vortices to uncover hidden sources of loss in superconducting quantum devices",
+   "u": "https://news.fnal.gov/2026/10/new-doe-early-career-project-uses-magnetic-vortices-to-uncover-hidden-sources-of-loss-in-superconducting-quantum-devices/",
+   "w": "264ac428e52865e9cbcb"
   }
  ],
  "meta": {}
