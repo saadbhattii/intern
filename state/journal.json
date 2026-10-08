@@ -1,0 +1,35 @@
+{
+ "items": [
+  {
+   "c": "analysts",
+   "d": "2026-10-08T11:07:54+00:00",
+   "id": "37b45230c220f299622e",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T11:30:58+00:00",
+   "s": "quantum-insider",
+   "t": "IonQ Advances to Stage C of DARPA Quantum Benchmarking Initiative",
+   "u": "https://thequantuminsider.com/2026/10/08/ionq-advances-to-final-stage-of-darpa-quantum-benchmarking-initiative/"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-08T11:00:29+00:00",
+   "id": "9bd5083e8d55ee119ee3",
+   "n": "Inside Quantum Technology",
+   "p": "2026-10-08T11:30:58+00:00",
+   "s": "inside-quantum-technology",
+   "t": "Diamonds are forever.",
+   "u": "https://www.insidequantumtechnology.com/news-archive/diamonds-are-forever/"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-08T11:15:33+00:00",
+   "id": "7adf688cec64ff08695a",
+   "n": "Ars Technica (AI)",
+   "p": "2026-10-08T11:30:58+00:00",
+   "s": "ars-technica-ai",
+   "t": "Nvidia's big bet on physical AI aims for safer robotaxis, humanoid robots",
+   "u": "https://arstechnica.com/ai/2026/10/nvidias-big-bet-on-physical-ai-aims-for-safer-robotaxis-humanoid-robots/"
+  }
+ ],
+ "meta": {}
+}
