@@ -7572,6 +7572,26 @@
    "t": "Frontier Red Team Launching an opt-in vulnerability-finding service for open-source software",
    "u": "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "analysts",
+   "id": "fa50b95678cad0f8a455",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-08T20:00:58+00:00",
+   "s": "quantum-computing-report",
+   "t": "U.S. Department of War Announces $350 Million Quantum Package, Highlighted by $150 Million OSC Loan Commitment for PsiQuantum",
+   "u": "https://quantumcomputingreport.com/u-s-department-of-war-announces-350-million-quantum-package-highlighted-by-150-million-osc-loan-commitment-for-psiquantum/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "id": "07acb2ae0de89dcd528c",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-08T20:00:58+00:00",
+   "s": "quantum-computing-report",
+   "t": "U.S. Department of Energy Unveils Quantum Genesis Priority Applications to Guide Fault-Tolerant Scientific Utility",
+   "u": "https://quantumcomputingreport.com/u-s-department-of-energy-unveils-quantum-genesis-priority-applications-to-guide-fault-tolerant-scientific-utility/",
+   "w": "38ea256357822bec3bfd"
   }
  ],
  "meta": {}
