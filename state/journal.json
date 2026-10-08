@@ -5249,6 +5249,94 @@
    "t": "Si Sheppard – How did a few hundred Spanish soldiers topple two empires?",
    "u": "https://www.dwarkesh.com/p/si-sheppard",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T13:58:08+00:00",
+   "id": "41ba5a265bad51ee2aca",
+   "n": "Statistical Modeling, Causal Inference, and Social Science",
+   "p": "2026-10-08T14:01:08+00:00",
+   "s": "gelman-stat-modeling",
+   "t": "What’s the deal with the RMET (“the Reading the Mind in the Eyes test”)?",
+   "u": "https://statmodeling.stat.columbia.edu/2026/10/08/whats-the-deal-with-the-rmet-the-reading-the-mind-in-the-eyes-test/",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T13:16:36+00:00",
+   "id": "3495debc31a2733124e8",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T14:01:08+00:00",
+   "s": "quantum-insider",
+   "t": "Quantinuum Processors Stand Out in Study of Quantum Error-Correction Operations",
+   "u": "https://thequantuminsider.com/2026/10/08/quantinuum-processors-stand-out-in-study-of-quantum-error-correction-operations/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-08T13:59:56+00:00",
+   "id": "4015a70a5e2fb58188ba",
+   "n": "HPCwire (quantum)",
+   "p": "2026-10-08T14:01:08+00:00",
+   "s": "hpcwire-quantum",
+   "t": "Classiq and NTT DOCOMO BUSINESS Target Enterprise Quantum Applications in Japan",
+   "u": "https://www.hpcwire.com/off-the-wire/classiq-and-ntt-docomo-business-target-enterprise-quantum-applications-in-japan/",
+   "w": "743abde5e483be0069e5"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-07T13:21:03+00:00",
+   "id": "16b7810afb00bdc03cf9",
+   "n": "Hugging Face Blog",
+   "p": "2026-10-08T14:01:08+00:00",
+   "s": "hugging-face",
+   "t": "Introducing Falcon ASR",
+   "u": "https://huggingface.co/blog/tiiuae/falcon-asr",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-07T04:00:00+00:00",
+   "id": "2fd1571bb127ea4c2915",
+   "n": "IBM Research Blog",
+   "p": "2026-10-08T14:01:08+00:00",
+   "s": "ibm-research",
+   "t": "What's new at IBM Quantum Q3 2026",
+   "u": "https://research.ibm.com/blog/whats-new-q3-2026?utm_medium=rss&utm_source=rss",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T13:54:08+00:00",
+   "id": "86fc632e76b124b8653a",
+   "n": "Yoshua Bengio",
+   "p": "2026-10-08T14:01:08+00:00",
+   "s": "yoshua-bengio",
+   "t": "The dangerous myth behind AI agent hacks",
+   "u": "https://yoshuabengio.org/en/blog/dangerous-myth-behind-ai-agent-hacks",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "institutes",
+   "d": "2026-10-08T13:50:51+00:00",
+   "id": "df14dd36216bcb067aeb",
+   "n": "Freedom to Tinker",
+   "p": "2026-10-08T14:01:08+00:00",
+   "s": "freedom-to-tinker",
+   "t": "AI Election Policy",
+   "u": "https://blog.citp.princeton.edu/2026/10/08/ai-election-policy/",
+   "w": "6341e8660a5f186cb2aa"
+  },
+  {
+   "c": "math",
+   "d": "2026-10-08T13:43:02+00:00",
+   "id": "440dedc7b9b135c80b1d",
+   "n": "The Endeavour",
+   "p": "2026-10-08T14:01:08+00:00",
+   "s": "john-d-cook",
+   "t": "Privacy policies and modal logic",
+   "u": "https://www.johndcook.com/blog/2026/10/08/privacy-policies-and-modal-logic/",
+   "w": "4c3df3fa3a1733eb1e73"
   }
  ],
  "meta": {}
