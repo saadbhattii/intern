@@ -5414,6 +5414,70 @@
    "t": "IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative",
    "u": "https://www.hpcwire.com/off-the-wire/ibm-advances-to-stage-c-of-darpa-quantum-benchmarking-initiative/",
    "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "math",
+   "d": "2026-10-08T14:43:35+00:00",
+   "id": "5b93230c0757f17de310",
+   "n": "What's new",
+   "p": "2026-10-08T15:01:00+00:00",
+   "s": "terry-tao",
+   "t": "What should we tell our students?",
+   "u": "https://terrytao.wordpress.com/2026/10/08/what-should-we-tell-our-students/",
+   "w": "4c3df3fa3a1733eb1e73"
+  },
+  {
+   "c": "hardware",
+   "id": "3d18af8b15c518cce73f",
+   "n": "PsiQuantum",
+   "p": "2026-10-08T15:01:00+00:00",
+   "s": "psiquantum",
+   "t": "PsiQuantum Receives Conditional $150 Million Loan Commitment from the U.S. Department of War to Advance Domestic Quantum Computing",
+   "u": "https://www.psiquantum.com/news-import/psiquantum-receives-conditional-150-million-loan-commitment-from-the-us-department-of-war",
+   "w": "d9ef1d3b9c1f36ff3d1e"
+  },
+  {
+   "c": "ai",
+   "id": "fd0dc27ca8ea6554b9f9",
+   "n": "Anthropic News",
+   "p": "2026-10-08T15:01:00+00:00",
+   "s": "anthropic",
+   "t": "Announcements Building on our commitment to American scientific discovery",
+   "u": "https://www.anthropic.com/news/genesis-mission-commitment",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T00:00:00+00:00",
+   "id": "a9f660862b14122b754b",
+   "n": "Apple Machine Learning Research",
+   "p": "2026-10-08T15:01:00+00:00",
+   "s": "apple-ml-research",
+   "t": "Normalizing Trajectory Models",
+   "u": "https://machinelearning.apple.com/research/normalizing-trajectory-models",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "math",
+   "d": "2026-10-08T14:58:55+00:00",
+   "id": "ef7ea9f0bbe465ec60dc",
+   "n": "Matt Baker's Math Blog",
+   "p": "2026-10-08T15:01:00+00:00",
+   "s": "matt-baker",
+   "t": "Some early morning thoughts on the OpenAI dump",
+   "u": "https://mattbaker.blog/2026/10/08/some-early-morning-thoughts-on-the-openai-dump/",
+   "w": "4c3df3fa3a1733eb1e73"
+  },
+  {
+   "c": "government",
+   "d": "2026-10-08T14:35:10+00:00",
+   "id": "e755158f74c0bff0f7ab",
+   "n": "Fermilab News (quantum)",
+   "p": "2026-10-08T15:01:00+00:00",
+   "s": "fermilab-news",
+   "t": "Fermilab to lead two new Genesis Mission awards to accelerate development of microelectronics and quantum",
+   "u": "https://news.fnal.gov/2026/10/fermilab-to-lead-two-new-genesis-mission-awards-to-accelerate-development-of-microelectronics-and-quantum/",
+   "w": "264ac428e52865e9cbcb"
   }
  ],
  "meta": {}

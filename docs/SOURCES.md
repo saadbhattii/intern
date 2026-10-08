@@ -2,7 +2,7 @@
 
 <!-- Generated from sources.toml by `python -m feedbot docs`. Do not edit by hand. -->
 
-188 active sources. Each posts titles and links only, to its own Discord channel.
+179 active sources. Each posts titles and links only, to its own Discord channel.
 
 ## Quantum researchers
 
@@ -13,16 +13,15 @@
 | [Tobias J. Osborne's research notes](https://tjoresearchnotes.wordpress.com/) | `osborne-research-notes` | feed | Rare posts. |
 | [Combinatorics and More](https://gilkalai.wordpress.com/) | `gil-kalai` | feed | Leading quantum computing skeptic; combinatorics; AI and polymath. |
 | [Algorithmic Assertions](https://algassert.com/) | `algorithmic-assertions` | feed | Error correction, resource estimates, factoring claims. |
-| [Nanoscale Views](https://nanoscale.blogspot.com/) | `nanoscale-views` | feed | Condensed matter and quantum hardware physics. |
+| [Nanoscale Views](https://nanoscale.blogspot.com/) | `nanoscale-views` | feed | Disabled. Condensed matter and quantum hardware physics. |
 | [Not Even Wrong](https://www.math.columbia.edu/~woit/wordpress/) | `not-even-wrong` | feed |  |
 | [Azimuth](https://johncarlosbaez.wordpress.com/) | `azimuth` | feed |  |
-| [4 gravitons](https://4gravitons.com/) | `four-gravitons` | feed | Physics more than quantum information. |
-| [Backreaction](https://backreaction.blogspot.com/) | `backreaction` | feed | Active Oct 2026. Contrarian; frequent AI/tech posts. |
-| [Chris Ferrie](https://csferrie.medium.com/) | `chris-ferrie` | feed | Medium feed; his own site renders in JavaScript and cannot be read. |
-| [Michael Nielsen's notebook](https://michaelnotebook.com/) | `michael-nielsen` | listing page | Dated list of essays; mostly metascience and AI now. |
-| [Of Particular Significance](https://profmattstrassler.com/) | `matt-strassler` | feed | Feed verified. Low volume. |
-| [Condensed Concepts](https://condensedconcepts.blogspot.com/) | `condensed-concepts` | feed |  |
-| [Mindscape](https://www.preposterousuniverse.com/podcast/) | `mindscape` | feed | Weekly; many quantum-foundations episodes. |
+| [4 gravitons](https://4gravitons.com/) | `four-gravitons` | feed | Disabled. Physics more than quantum information. |
+| [Chris Ferrie](https://csferrie.medium.com/) | `chris-ferrie` | feed | Disabled. Medium feed; his own site renders in JavaScript and cannot be read. |
+| [Michael Nielsen's notebook](https://michaelnotebook.com/) | `michael-nielsen` | listing page | Disabled. Dated list of essays; mostly metascience and AI now. |
+| [Of Particular Significance](https://profmattstrassler.com/) | `matt-strassler` | feed | Disabled. Feed verified. Low volume. |
+| [Condensed Concepts](https://condensedconcepts.blogspot.com/) | `condensed-concepts` | feed | Disabled. |
+| [Mindscape](https://www.preposterousuniverse.com/podcast/) | `mindscape` | feed | Disabled. Weekly; many quantum-foundations episodes. |
 
 ## Mathematics and math + AI
 
@@ -294,6 +293,7 @@
 | [Daily Quantum Update](https://drbobsutor.substack.com/) | `daily-quantum-update` | feed | Disabled. High volume. Disabled after Check sources (Oct 8, 2026): Substack blocks GitHub runners (HTTP 403). |
 | [Quantum Computing Report](https://quantumcomputingreport.com/) | `quantum-computing-report` | feed | High volume. |
 | [The Quantum Insider](https://thequantuminsider.com/) | `quantum-insider` | feed | High volume. Very high volume; posted as digests. |
+| [Backreaction](https://backreaction.blogspot.com/) | `backreaction` | feed | Disabled. Active Oct 2026. Contrarian; frequent AI/tech posts. |
 | [PostQuantum.com](https://postquantum.com/) | `postquantum` | feed | Practitioner commentary on Q-Day and post-quantum migration. |
 | [SemiAnalysis](https://semianalysis.com/) | `semianalysis` | feed | Disabled. Disabled after Check sources (Oct 8, 2026): Feed stale: no post since Sep 2025. |
 | [Benedict Evans](https://www.ben-evans.com/) | `benedict-evans` | feed | Disabled. |
@@ -301,4 +301,3 @@
 | [Fact Based Insight](https://www.factbasedinsight.com/) | `fact-based-insight` | feed discovery, else listing page | Disabled. Disabled after Check sources (Oct 8, 2026): Domain now serves unrelated gambling content. |
 | [QED-C (Quantum Economic Development Consortium)](https://quantumconsortium.org/) | `qed-c` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
 | [Global Quantum Intelligence (GQI)](https://www.global-qi.com/) | `gqi` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
-| [HPCwire (quantum)](https://www.hpcwire.com/) | `hpcwire-quantum` | feed · filtered: quantum, qubit | High volume. Topic feed was stuck in 2015; main feed filtered to quantum instead. |
