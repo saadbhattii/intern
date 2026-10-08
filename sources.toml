@@ -283,7 +283,8 @@ author = "Jeff Erickson (UIUC)"
 category = "tcs"
 feed = "https://jeffgerickson.substack.com/feed"
 site = "https://jeffgerickson.substack.com/"
-note = "Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting."
+note = "Disabled after Check sources (Oct 8, 2026): Substack blocks GitHub runners (HTTP 403)."
+enabled = false
 
 [[source]]
 id = "emanuele-viola"
@@ -441,7 +442,8 @@ author = "Melanie Mitchell (Santa Fe Institute)"
 category = "ai"
 feed = "https://aiguide.substack.com/feed"
 site = "https://aiguide.substack.com/"
-note = "Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting."
+note = "Disabled after Check sources (Oct 8, 2026): Substack blocks GitHub runners (HTTP 403)."
+enabled = false
 
 [[source]]
 id = "gelman-stat-modeling"
@@ -462,7 +464,8 @@ category = "ai"
 feed = "https://garymarcus.substack.com/feed"
 site = "https://garymarcus.substack.com/"
 high_volume = true
-note = "Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting."
+note = "Disabled after Check sources (Oct 8, 2026): Substack blocks GitHub runners (HTTP 403)."
+enabled = false
 
 [[source]]
 id = "simon-willison"
@@ -588,7 +591,7 @@ site = "https://infleqtion.com/blog"
 id = "planqc"
 name = "planqc"
 category = "hardware"
-site = "https://www.planqc.eu/en/news"
+site = "https://www.planqc.eu/"
 
 # --- Superconducting ---
 
@@ -598,7 +601,8 @@ name = "Rigetti Computing (press releases)"
 category = "hardware"
 site = "https://investors.rigetti.com/news-releases"
 link_pattern = "news-release-details/"
-note = "Investor press releases only."
+note = "Disabled after Check sources (Oct 8, 2026): Investor site times out from GitHub."
+enabled = false
 
 [[source]]
 id = "iqm"
@@ -612,7 +616,8 @@ name = "Alice & Bob"
 category = "hardware"
 feed = "https://alice-bob.com/feed/"
 site = "https://alice-bob.com/blog/"
-note = "Cat qubits; strongly error-correction focused."
+note = "Disabled after Check sources (Oct 8, 2026): Site blocks GitHub runners (HTTP 403)."
+enabled = false
 
 [[source]]
 id = "oqc"
@@ -647,7 +652,7 @@ note = "Xanadu's technical/software blog; investor news deliberately excluded."
 id = "psiquantum"
 name = "PsiQuantum"
 category = "hardware"
-site = "https://www.psiquantum.com/news"
+site = "https://www.psiquantum.com/"
 
 [[source]]
 id = "quandela"
@@ -682,13 +687,15 @@ site = "https://photonic.com/news/"
 id = "diraq"
 name = "Diraq"
 category = "hardware"
-site = "https://diraq.com/news"
+site = "https://diraq.com/"
 
 [[source]]
 id = "quantum-motion"
 name = "Quantum Motion"
 category = "hardware"
 site = "https://quantummotion.tech/news"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Site blocks GitHub runners (HTTP 403)."
 
 [[source]]
 id = "silicon-quantum-computing"
@@ -701,6 +708,8 @@ id = "equal1"
 name = "Equal1"
 category = "hardware"
 site = "https://www.equal1.com/news"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): No readable news page."
 
 # =============================================================================
 # QUANTUM ERROR CORRECTION
@@ -727,13 +736,15 @@ site = "https://q-ctrl.com/blog"
 id = "classiq"
 name = "Classiq"
 category = "software"
-site = "https://www.classiq.io/insights"
+site = "https://www.classiq.io/"
 
 [[source]]
 id = "phasecraft"
 name = "Phasecraft"
 category = "software"
 site = "https://phasecraft.io/news/"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): No readable news page."
 
 [[source]]
 id = "algorithmiq"
@@ -758,6 +769,8 @@ id = "qc-ware"
 name = "QC Ware"
 category = "software"
 site = "https://www.qcware.com/news"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): No readable news page."
 
 [[source]]
 id = "horizon-quantum"
@@ -790,7 +803,7 @@ note = "Filtered to quantum topics."
 id = "unitary-foundation"
 name = "Unitary Foundation"
 category = "software"
-site = "https://unitary.foundation/blog"
+site = "https://unitary.foundation/"
 link_pattern = "unitary\\.foundation/posts/[^/]+/?$"
 note = "Open-source quantum software nonprofit (formerly Unitary Fund). Posts live at /posts/<slug>/."
 
@@ -813,12 +826,14 @@ name = "Quantum Machines"
 category = "control"
 feed = "https://www.quantum-machines.co/feed/"
 site = "https://www.quantum-machines.co/blog/"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Site blocks GitHub runners (HTTP 403)."
 
 [[source]]
 id = "qblox"
 name = "Qblox"
 category = "control"
-site = "https://www.qblox.com/blog"
+site = "https://www.qblox.com/"
 
 [[source]]
 id = "zurich-instruments"
@@ -831,13 +846,13 @@ include_keywords = ["quantum", "qubit"]
 id = "bluefors"
 name = "Bluefors"
 category = "control"
-site = "https://bluefors.com/news/"
+site = "https://bluefors.com/"
 
 [[source]]
 id = "maybell"
 name = "Maybell Quantum"
 category = "control"
-site = "https://www.maybellquantum.com/blog"
+site = "https://www.maybellquantum.com/"
 
 # =============================================================================
 # QUANTUM NETWORKING AND POST-QUANTUM CRYPTOGRAPHY
@@ -854,6 +869,8 @@ id = "qunnect"
 name = "Qunnect"
 category = "networking"
 site = "https://www.qunnect.com/news"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Site resets connections from GitHub."
 
 [[source]]
 id = "pqshield"
@@ -924,6 +941,8 @@ category = "publications"
 feed = "https://cacm.acm.org/feed/"
 site = "https://cacm.acm.org/"
 include_keywords = ["quantum", "qubit"]
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Site blocks GitHub runners (HTTP 403)."
 
 # =============================================================================
 # NATIONAL LABS AND GOVERNMENT PROGRAMS
@@ -940,7 +959,7 @@ site = "https://www.quantum.gov/news/"
 id = "nist-quantum"
 name = "NIST Quantum Information Science"
 category = "government"
-site = "https://www.nist.gov/topics/physics/quantum-information-science"
+site = "https://www.nist.gov/"
 include_keywords = ["quantum", "qubit", "entangle"]
 note = "Topic page moved; keyword filter keeps homepage fallback on-topic."
 
@@ -964,19 +983,21 @@ site = "https://quantumsystemsaccelerator.org/news/"
 id = "q-next"
 name = "Q-NEXT (Argonne)"
 category = "government"
-site = "https://www.q-next.org/news/"
+site = "https://www.q-next.org/"
 
 [[source]]
 id = "quantum-science-center"
 name = "Quantum Science Center (Oak Ridge)"
 category = "government"
 site = "https://qscience.org/news/"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Page is rendered by JavaScript; nothing to read."
 
 [[source]]
 id = "c2qa"
 name = "C2QA (Brookhaven)"
 category = "government"
-site = "https://www.bnl.gov/quantumcenter/news/"
+site = "https://www.bnl.gov/"
 include_keywords = ["quantum", "qubit", "c2qa"]
 note = "Keyword filter keeps a bnl.gov homepage fallback on-topic."
 
@@ -1008,7 +1029,7 @@ include_keywords = ["quantum", "qubit", "qbi"]
 id = "jqi"
 name = "Joint Quantum Institute (Maryland)"
 category = "institutes"
-site = "https://jqi.umd.edu/news"
+site = "https://jqi.umd.edu/"
 
 [[source]]
 id = "mit-news-quantum"
@@ -1040,13 +1061,13 @@ site = "https://perimeterinstitute.ca/news"
 id = "cqt-singapore"
 name = "Centre for Quantum Technologies (Singapore)"
 category = "institutes"
-site = "https://www.cqt.sg/news"
+site = "https://www.cqt.sg/"
 
 [[source]]
 id = "chicago-quantum-exchange"
 name = "Chicago Quantum Exchange"
 category = "institutes"
-site = "https://chicagoquantum.org/news"
+site = "https://chicagoquantum.org/"
 
 [[source]]
 id = "harvard-quantum"
@@ -1079,7 +1100,8 @@ category = "analysts"
 feed = "https://drbobsutor.substack.com/feed"
 site = "https://drbobsutor.substack.com/"
 high_volume = true
-note = "Substack sometimes blocks GitHub-hosted runners (HTTP 403). The bot retries with a feed-reader identity; if it still fails, see README > Troubleshooting."
+note = "Disabled after Check sources (Oct 8, 2026): Substack blocks GitHub runners (HTTP 403)."
+enabled = false
 
 [[source]]
 id = "quantum-computing-report"
@@ -1129,9 +1151,10 @@ id = "michael-nielsen"
 name = "Michael Nielsen's notebook"
 author = "Michael Nielsen (co-author of Nielsen & Chuang)"
 category = "quantum-researchers"
-site = "https://michaelnotebook.com/projects.html"
+site = "https://michaelnotebook.com/"
 kind = "html"
 note = "Dated list of essays; mostly metascience and AI now."
+link_pattern = "michaelnotebook\\.com/(?!ongoing|projects)[a-z0-9_-]+/(index\\.html)?$"
 
 [[source]]
 id = "matt-strassler"
@@ -1203,12 +1226,13 @@ include_keywords = ["quantum", "qubit"]
 id = "hpcwire-quantum"
 name = "HPCwire (quantum)"
 category = "publications"
-feed = "https://www.hpcwire.com/topic/quantum/feed/"
-site = "https://www.hpcwire.com/topic/quantum/"
+feed = "https://www.hpcwire.com/feed/"
+site = "https://www.hpcwire.com/"
 mode = "digest"
 max_per_run = 10
 high_volume = true
-note = "Includes many wire press releases."
+note = "Topic feed was stuck in 2015; main feed filtered to quantum instead."
+include_keywords = ["quantum", "qubit"]
 
 [[source]]
 id = "the-next-platform"
@@ -1327,7 +1351,8 @@ category = "ai"
 site = "https://ai.meta.com/blog/"
 kind = "html"
 link_pattern = "ai\\.meta\\.com/blog/[a-z0-9-]+/?$"
-note = "No RSS exists; page may be JavaScript-rendered."
+note = "Disabled after Check sources (Oct 8, 2026): Page rejects automated requests (HTTP 400) and has no feed."
+enabled = false
 
 [[source]]
 id = "microsoft-research"
@@ -1416,6 +1441,7 @@ category = "ai"
 site = "https://transformer-circuits.pub/"
 kind = "html"
 note = "Static index of interpretability write-ups."
+link_pattern = "transformer-circuits\\.pub/20[0-9]{2}/[^/]+/index\\.html$"
 
 # =============================================================================
 # AI RESEARCHERS (additions)
@@ -1444,6 +1470,7 @@ name = "Epoch AI: Gradient Updates"
 category = "ai"
 site = "https://epoch.ai/gradient-updates"
 note = "The epochai.substack.com address is blocked from GitHub."
+link_pattern = "epoch\\.ai/gradient-updates/[a-z0-9-]+/?$"
 
 [[source]]
 id = "ai-as-normal-technology"
@@ -1525,6 +1552,8 @@ name = "Stanford AI Lab Blog"
 category = "institutes"
 feed = "https://ai.stanford.edu/blog/feed.xml"
 site = "https://ai.stanford.edu/blog/"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Dormant: no post since May 2022."
 
 [[source]]
 id = "freedom-to-tinker"
@@ -1569,6 +1598,8 @@ feed = "https://lemire.me/blog/feed/"
 site = "https://lemire.me/blog/"
 mode = "digest"
 high_volume = true
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Site blocks GitHub runners (HTTP 403)."
 
 [[source]]
 id = "andrej-bauer"
@@ -1679,25 +1710,29 @@ note = "Replaces harvard-quantum."
 id = "quics"
 name = "QuICS (Maryland)"
 category = "institutes"
-site = "https://quics.umd.edu/news"
+site = "https://quics.umd.edu/"
 
 [[source]]
 id = "jila"
 name = "JILA (Colorado)"
 category = "institutes"
 site = "https://jila.colorado.edu/news"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): News page returns an API error instead of articles."
 
 [[source]]
 id = "yale-quantum"
 name = "Yale Quantum Institute"
 category = "institutes"
-site = "https://quantuminstitute.yale.edu/news"
+site = "https://quantuminstitute.yale.edu/"
 
 [[source]]
 id = "princeton-quantum"
 name = "Princeton Quantum Initiative"
 category = "institutes"
 site = "https://quantum.princeton.edu/news"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Site blocks GitHub runners (HTTP 403)."
 
 [[source]]
 id = "uchicago-pme"
@@ -1710,7 +1745,7 @@ include_keywords = ["quantum", "qubit", "entangle", "error correction"]
 id = "illinois-iquist"
 name = "Illinois IQUIST"
 category = "institutes"
-site = "https://iquist.illinois.edu/news"
+site = "https://iquist.illinois.edu/"
 
 [[source]]
 id = "duke-quantum"
@@ -1722,7 +1757,7 @@ site = "https://quantum.duke.edu/news"
 id = "mpq"
 name = "Max Planck Institute of Quantum Optics"
 category = "institutes"
-site = "https://www.mpq.mpg.de/news"
+site = "https://www.mpq.mpg.de/"
 
 # =============================================================================
 # QUANTUM COMPANIES (additions)
@@ -1738,7 +1773,7 @@ site = "https://quantware.com/news"
 id = "seeqc"
 name = "SEEQC"
 category = "control"
-site = "https://seeqc.com/news"
+site = "https://seeqc.com/"
 
 [[source]]
 id = "quantum-brilliance"
@@ -1756,19 +1791,21 @@ site = "https://www.c12qe.com/news"
 id = "universal-quantum"
 name = "Universal Quantum"
 category = "hardware"
-site = "https://universalquantum.com/news"
+site = "https://universalquantum.com/"
 
 [[source]]
 id = "eeroq"
 name = "EeroQ"
 category = "hardware"
-site = "https://eeroq.com/news"
+site = "https://eeroq.com/"
 
 [[source]]
 id = "quantum-source"
 name = "Quantum Source"
 category = "hardware"
 site = "https://qs.co/news"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Site blocks GitHub runners (HTTP 403)."
 
 [[source]]
 id = "qedma"
@@ -1780,7 +1817,7 @@ site = "https://www.qedma.com/blog"
 id = "strangeworks"
 name = "Strangeworks"
 category = "software"
-site = "https://strangeworks.com/blog"
+site = "https://strangeworks.com/"
 
 [[source]]
 id = "qunasys"
@@ -1798,7 +1835,7 @@ site = "https://terraquantum.swiss/news"
 id = "qruise"
 name = "Qruise"
 category = "control"
-site = "https://qruise.com/blog"
+site = "https://qruise.com/"
 
 [[source]]
 id = "delft-circuits"
@@ -1811,6 +1848,8 @@ id = "qphox"
 name = "QphoX"
 category = "networking"
 site = "https://qphox.eu/news"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Site blocks GitHub runners (HTTP 403)."
 
 [[source]]
 id = "nu-quantum"
@@ -1856,7 +1895,8 @@ author = "Dylan Patel"
 category = "analysts"
 feed = "https://semianalysis.com/feed/"
 site = "https://semianalysis.com/"
-note = "Many posts paywalled; titles still post."
+note = "Disabled after Check sources (Oct 8, 2026): Feed stale: no post since Sep 2025."
+enabled = false
 
 [[source]]
 id = "benedict-evans"
@@ -1880,18 +1920,20 @@ name = "Fact Based Insight"
 author = "David Shaw"
 category = "analysts"
 site = "https://www.factbasedinsight.com/"
+enabled = false
+note = "Disabled after Check sources (Oct 8, 2026): Domain now serves unrelated gambling content."
 
 [[source]]
 id = "qed-c"
 name = "QED-C (Quantum Economic Development Consortium)"
 category = "analysts"
-site = "https://quantumconsortium.org/news/"
+site = "https://quantumconsortium.org/"
 
 [[source]]
 id = "gqi"
 name = "Global Quantum Intelligence (GQI)"
 category = "analysts"
-site = "https://www.global-qi.com/insights"
+site = "https://www.global-qi.com/"
 
 # =============================================================================
 # PODCASTS (filed under their subject categories)
