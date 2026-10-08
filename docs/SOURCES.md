@@ -2,7 +2,7 @@
 
 <!-- Generated from sources.toml by `python -m feedbot docs`. Do not edit by hand. -->
 
-190 active sources. Each posts titles and links only, to its own Discord channel.
+188 active sources. Each posts titles and links only, to its own Discord channel.
 
 ## Quantum researchers
 
@@ -230,7 +230,6 @@
 | [New Scientist (physics, quantum)](https://www.newscientist.com/subject/physics/) | `new-scientist-physics` | feed · filtered: quantum, qubit |  |
 | [Science (AAAS) news, quantum](https://www.science.org/news) | `science-news-quantum` | feed · filtered: quantum, qubit | science.org uses bot protection; may be blocked. |
 | [MIT Technology Review (quantum)](https://www.technologyreview.com/) | `mit-tech-review-quantum` | feed · filtered: quantum, qubit |  |
-| [HPCwire (quantum)](https://www.hpcwire.com/) | `hpcwire-quantum` | feed · filtered: quantum, qubit | High volume. Topic feed was stuck in 2015; main feed filtered to quantum instead. |
 | [The Next Platform (quantum)](https://www.nextplatform.com/) | `the-next-platform` | feed · filtered: quantum, qubit |  |
 | [EE Times (quantum)](https://www.eetimes.com/) | `ee-times-quantum` | feed · filtered: quantum, qubit, cryo |  |
 | [Quanta Magazine (computer science)](https://www.quantamagazine.org/computer-science/) | `quanta-computer-science` | feed |  |
@@ -297,8 +296,9 @@
 | [The Quantum Insider](https://thequantuminsider.com/) | `quantum-insider` | feed | High volume. Very high volume; posted as digests. |
 | [PostQuantum.com](https://postquantum.com/) | `postquantum` | feed | Practitioner commentary on Q-Day and post-quantum migration. |
 | [SemiAnalysis](https://semianalysis.com/) | `semianalysis` | feed | Disabled. Disabled after Check sources (Oct 8, 2026): Feed stale: no post since Sep 2025. |
-| [Benedict Evans](https://www.ben-evans.com/) | `benedict-evans` | feed |  |
-| [Stratechery](https://stratechery.com/) | `stratechery` | feed | Mostly paywalled; titles still post. |
+| [Benedict Evans](https://www.ben-evans.com/) | `benedict-evans` | feed | Disabled. |
+| [Stratechery](https://stratechery.com/) | `stratechery` | feed | Disabled. Mostly paywalled; titles still post. |
 | [Fact Based Insight](https://www.factbasedinsight.com/) | `fact-based-insight` | feed discovery, else listing page | Disabled. Disabled after Check sources (Oct 8, 2026): Domain now serves unrelated gambling content. |
 | [QED-C (Quantum Economic Development Consortium)](https://quantumconsortium.org/) | `qed-c` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
 | [Global Quantum Intelligence (GQI)](https://www.global-qi.com/) | `gqi` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
+| [HPCwire (quantum)](https://www.hpcwire.com/) | `hpcwire-quantum` | feed · filtered: quantum, qubit | High volume. Topic feed was stuck in 2015; main feed filtered to quantum instead. |

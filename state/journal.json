@@ -5337,6 +5337,83 @@
    "t": "Privacy policies and modal logic",
    "u": "https://www.johndcook.com/blog/2026/10/08/privacy-policies-and-modal-logic/",
    "w": "4c3df3fa3a1733eb1e73"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T13:31:26+00:00",
+   "id": "6ee8cc7598bca896b563",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T14:31:02+00:00",
+   "s": "quantum-insider",
+   "t": "Project Eleven and Quantus Plan Integration for Institutional Custody",
+   "u": "https://thequantuminsider.com/2026/10/08/project-eleven-quantus-plan-strongpoint-integration-development-partner/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T14:03:16+00:00",
+   "id": "b34e5a22e54c4a047d60",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T14:31:02+00:00",
+   "s": "quantum-insider",
+   "t": "Surfshark Adds ML-DSA Authentication to Post-Quantum WireGuard",
+   "u": "https://thequantuminsider.com/2026/10/08/surfshark-achieves-full-post-quantum-wireguard-implementation/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T14:16:47+00:00",
+   "id": "4dc041bbe9246bacb974",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T14:31:02+00:00",
+   "s": "quantum-insider",
+   "t": "Energy Department Announces New Genesis Mission Awards to Accelerate Scientific Capability",
+   "u": "https://thequantuminsider.com/2026/10/08/energy-department-announces-new-genesis-mission-awards-to-accelerate-scientific-capability/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T14:26:44+00:00",
+   "id": "4792c0e1d5b48766372e",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T14:31:02+00:00",
+   "s": "quantum-insider",
+   "t": "Quantum Source’s QS-LINK Uses a Single Atom to Help Quantum Processors Connect",
+   "u": "https://thequantuminsider.com/2026/10/08/quantum-sources-qs-link-uses-a-single-atom-to-help-quantum-processors-connect/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-08T14:00:00+00:00",
+   "id": "fa21267ae1954b418938",
+   "n": "Inside Quantum Technology",
+   "p": "2026-10-08T14:31:02+00:00",
+   "s": "inside-quantum-technology",
+   "t": "Current and Future Product Development in Quantum Finance",
+   "u": "https://www.insidequantumtechnology.com/news-archive/current-and-future-product-development-in-quantum-finance/",
+   "w": "743abde5e483be0069e5"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T14:01:32+00:00",
+   "id": "6098b0a5ff747ba9acf5",
+   "n": "HPCwire (quantum)",
+   "p": "2026-10-08T14:31:02+00:00",
+   "s": "hpcwire-quantum",
+   "t": "Atom Computing Selected by DARPA for Final Stage of Quantum Benchmarking Initiative",
+   "u": "https://www.hpcwire.com/off-the-wire/atom-computing-selected-by-darpa-for-final-stage-of-quantum-benchmarking-initiative/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T14:11:20+00:00",
+   "id": "5ccbe494b2b56fef67e9",
+   "n": "HPCwire (quantum)",
+   "p": "2026-10-08T14:31:02+00:00",
+   "s": "hpcwire-quantum",
+   "t": "IBM Advances to Stage C of DARPA Quantum Benchmarking Initiative",
+   "u": "https://www.hpcwire.com/off-the-wire/ibm-advances-to-stage-c-of-darpa-quantum-benchmarking-initiative/",
+   "w": "38ea256357822bec3bfd"
   }
  ],
  "meta": {}
