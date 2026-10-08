@@ -1,4 +1,4 @@
-# Within Quantum
+# Intern
 
 A bot follows about 190 sources (researchers' blogs, labs, companies, universities, journals and analysts) and posts each new article as its title and a link to the original, with a link preview.
 
