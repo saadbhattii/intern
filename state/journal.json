@@ -7657,6 +7657,27 @@
    "t": "The model that didn't exist, so you made it yourself",
    "u": "https://huggingface.co/blog/building-with-ml-intern",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-10-08T22:59:56+00:00",
+   "id": "675ef5fc50b2b77ee635",
+   "n": "Not Even Wrong",
+   "p": "2026-10-08T23:00:56+00:00",
+   "s": "not-even-wrong",
+   "t": "AI and Chiral Fermions",
+   "u": "https://www.math.columbia.edu/~woit/wordpress/?p=15915",
+   "w": "322f68d82b9829cfb4cc"
+  },
+  {
+   "c": "analysts",
+   "id": "0c16071745a699fadde1",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-08T23:00:56+00:00",
+   "s": "quantum-computing-report",
+   "t": "Patenting Quantum Computing Innovations – Part 5: Shor’s Algorithm and Conclusions",
+   "u": "https://quantumcomputingreport.com/patenting-quantum-computing-innovations-part-5-shors-algorithm-and-conclusions/",
+   "w": "38ea256357822bec3bfd"
   }
  ],
  "meta": {}
