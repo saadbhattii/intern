@@ -149,6 +149,7 @@ category = "quantum-researchers"
 feed = "https://nanoscale.blogspot.com/feeds/posts/default"
 site = "https://nanoscale.blogspot.com/"
 note = "Condensed matter and quantum hardware physics."
+enabled = false
 
 [[source]]
 id = "not-even-wrong"
@@ -174,6 +175,7 @@ category = "quantum-researchers"
 feed = "https://4gravitons.com/feed/"
 site = "https://4gravitons.com/"
 note = "Physics more than quantum information."
+enabled = false
 
 # =============================================================================
 # MATHEMATICS AND MATH + AI
@@ -1167,10 +1169,11 @@ note = "Very high volume; posted as digests."
 id = "backreaction"
 name = "Backreaction"
 author = "Sabine Hossenfelder"
-category = "quantum-researchers"
+category = "analysts"
 feed = "https://backreaction.blogspot.com/feeds/posts/default"
 site = "https://backreaction.blogspot.com/"
 note = "Active Oct 2026. Contrarian; frequent AI/tech posts."
+enabled = false
 
 [[source]]
 id = "chris-ferrie"
@@ -1180,6 +1183,7 @@ category = "quantum-researchers"
 feed = "https://csferrie.medium.com/feed"
 site = "https://csferrie.medium.com/"
 note = "Medium feed; his own site renders in JavaScript and cannot be read."
+enabled = false
 
 [[source]]
 id = "michael-nielsen"
@@ -1190,6 +1194,7 @@ site = "https://michaelnotebook.com/"
 kind = "html"
 note = "Dated list of essays; mostly metascience and AI now."
 link_pattern = "michaelnotebook\\.com/(?!ongoing|projects)[a-z0-9_-]+/(index\\.html)?$"
+enabled = false
 
 [[source]]
 id = "matt-strassler"
@@ -1199,6 +1204,7 @@ category = "quantum-researchers"
 feed = "https://profmattstrassler.com/feed/"
 site = "https://profmattstrassler.com/"
 note = "Feed verified. Low volume."
+enabled = false
 
 [[source]]
 id = "condensed-concepts"
@@ -1207,6 +1213,7 @@ author = "Ross McKenzie (University of Queensland)"
 category = "quantum-researchers"
 feed = "https://condensedconcepts.blogspot.com/feeds/posts/default"
 site = "https://condensedconcepts.blogspot.com/"
+enabled = false
 
 # =============================================================================
 # PUBLICATIONS AND SCIENCE JOURNALISM (additions)
@@ -1974,18 +1981,6 @@ site = "https://www.global-qi.com/"
 enabled = false
 note = "Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page."
 
-[[source]]
-id = "hpcwire-quantum"
-name = "HPCwire (quantum)"
-category = "analysts"
-feed = "https://www.hpcwire.com/feed/"
-site = "https://www.hpcwire.com/"
-mode = "digest"
-max_per_run = 10
-high_volume = true
-note = "Topic feed was stuck in 2015; main feed filtered to quantum instead."
-include_keywords = ["quantum", "qubit"]
-
 # =============================================================================
 # PODCASTS (filed under their subject categories)
 # =============================================================================
@@ -1998,6 +1993,7 @@ category = "quantum-researchers"
 feed = "https://www.preposterousuniverse.com/podcast/feed/"
 site = "https://www.preposterousuniverse.com/podcast/"
 note = "Weekly; many quantum-foundations episodes."
+enabled = false
 
 [[source]]
 id = "new-quantum-era"
