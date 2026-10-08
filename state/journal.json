@@ -7531,6 +7531,47 @@
    "t": "Hotword detection in FHE on GPU in 350ms",
    "u": "https://www.jeremykun.com/shortform/2026-10-08-1120/",
    "w": "8cd4c4ca9e9b9649dc04"
+  },
+  {
+   "c": "analysts",
+   "id": "82bfb1ce6eebe3d7b8de",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-08T19:30:57+00:00",
+   "s": "quantum-computing-report",
+   "t": "U.S. Department of Energy Allocates $159 Million in Phase II Genesis Mission Awards for Quantum Error Correction and Materials Co-Design",
+   "u": "https://quantumcomputingreport.com/u-s-department-of-energy-allocates-159-million-in-phase-ii-genesis-mission-awards-for-quantum-error-correction-and-materials-co-design/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-08T19:24:58+00:00",
+   "id": "9d36bcc224d41a4520f6",
+   "n": "The Quantum Insider",
+   "p": "2026-10-08T19:30:57+00:00",
+   "s": "quantum-insider",
+   "t": "DOE Announces Science Applications For Quantum Computing",
+   "u": "https://thequantuminsider.com/2026/10/08/doe-announces-science-applications-for-quantum-computing/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "ai",
+   "id": "db9affcbdb973e525d2f",
+   "n": "Anthropic News",
+   "p": "2026-10-08T19:30:57+00:00",
+   "s": "anthropic",
+   "t": "Announcements Introducing the Anthropic Cyber Mission",
+   "u": "https://www.anthropic.com/news/anthropic-cyber-mission",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "id": "9d3f0ad98aad670ea855",
+   "n": "Anthropic Research",
+   "p": "2026-10-08T19:30:57+00:00",
+   "s": "anthropic-research",
+   "t": "Frontier Red Team Launching an opt-in vulnerability-finding service for open-source software",
+   "u": "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
