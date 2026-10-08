@@ -1,0 +1,74 @@
+name: Briefings
+
+# Daily briefing at 03:00 UTC (08:00 in Pakistan) and weekly roundup on Sundays
+# at 15:00 UTC (20:00 in Pakistan). Each lists what was posted, grouped by
+# section, and goes to the 'briefing' (and optional 'weekly') webhook.
+# A period is never sent twice, even if this workflow runs again.
+on:
+  schedule:
+    - cron: "0 3 * * *"
+    - cron: "0 15 * * 0"
+  workflow_dispatch:
+    inputs:
+      period:
+        description: "Which briefing to send"
+        type: choice
+        options: [daily, weekly]
+        default: daily
+      force:
+        description: "Send even if this period was already sent"
+        type: boolean
+        default: false
+
+# Shares the posting workflow's group, so the two never commit state at the same time.
+concurrency:
+  group: post-new-articles
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Send briefing
+        env:
+          DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
+          INPUT_PERIOD: ${{ inputs.period }}
+          INPUT_FORCE: ${{ inputs.force }}
+        run: |
+          period="daily"
+          if [ "${EVENT_SCHEDULE}" = "0 15 * * 0" ] || [ "${INPUT_PERIOD}" = "weekly" ]; then period="weekly"; fi
+          args=(briefing --period "${period}")
+          if [ "${INPUT_FORCE}" = "true" ]; then args+=(--force); fi
+          python -m feedbot "${args[@]}"
+
+      - name: Commit journal
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore(state): record briefing [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
+            sleep $((attempt * 3))
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" || git rebase --abort || true
+          done
+          echo "::error::Could not push the journal after 5 attempts."
+          exit 1

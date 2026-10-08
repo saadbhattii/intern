@@ -14,5 +14,4 @@ source-health.md
 state/*.corrupt
 state/.state-*.tmp
 .DS_Store
-_site/
-state/.archive-*.tmp
+state/.journal-*.tmp

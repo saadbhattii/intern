@@ -208,7 +208,10 @@ def tidy_title(text: str) -> str:
 
 
 def _is_generic(text: str) -> bool:
-    return not text or text.lower().strip(" .:›»→") in _GENERIC_TEXT or len(text) < 6
+    if not text or text.lower().strip(" .:›»→") in _GENERIC_TEXT or len(text) < 6:
+        return True
+    words = text.lower().split()
+    return len(words) > 1 and len(set(words)) == 1  # "News News News News"
 
 
 def _pick_title(headings: list[str], texts: list[str], url: str) -> str:

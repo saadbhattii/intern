@@ -9,7 +9,11 @@ Anyone with a Discord webhook URL can post to that channel. In this project:
 - `webhooks.json` is in `.gitignore`.
 - Pull requests from forks run CI only, which has no access to secrets.
 
-If a webhook URL leaks, delete that webhook in Discord, create a new one and update the secret.
+If a webhook URL leaks, delete that webhook in Discord, create a new one and update the secret. On a public server this matters more: anyone holding a webhook URL can post into that channel as if they were the bot.
+
+## Mentions
+
+Mentions are blocked in every message. The only exception is a role id listed under `[discord.roles]` in `sources.toml`, which can be pinged once per run for its section. A headline containing `@everyone` or a role mention can never ping anyone.
 
 ## Parsing untrusted content
 

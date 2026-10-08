@@ -160,15 +160,13 @@ def fetch(
     raise FetchError("request failed")  # pragma: no cover (loop always returns/raises)
 
 
-def post_json(url: str, payload: dict, timeout: float = 20.0) -> tuple[int, bytes, dict]:
-    """POST JSON. Never raises for HTTP/network errors; status 0 means network failure."""
-    data = json.dumps(payload).encode("utf-8")
-    request = urllib.request.Request(
-        url,
-        data=data,
-        headers={"Content-Type": "application/json", "User-Agent": USER_AGENT},
-        method="POST",
-    )
+def post_json(url: str, payload: dict | None, timeout: float = 20.0, method: str = "POST") -> tuple[int, bytes, dict]:
+    """Send JSON (POST, PATCH or DELETE). Never raises for HTTP/network errors; status 0 means network failure."""
+    data = json.dumps(payload).encode("utf-8") if payload is not None else None
+    headers = {"User-Agent": USER_AGENT}
+    if data is not None:
+        headers["Content-Type"] = "application/json"
+    request = urllib.request.Request(url, data=data, headers=headers, method=method)
     try:
         with urllib.request.urlopen(request, timeout=timeout) as resp:
             return resp.status, resp.read(65536), {k.lower(): v for k, v in resp.headers.items()}

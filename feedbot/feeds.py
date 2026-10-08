@@ -91,6 +91,23 @@ def _child_text(el: ET.Element, *names: str) -> str:
     return ""
 
 
+def _image(el: ET.Element) -> str:
+    """An image URL from media:thumbnail, media:content or an image enclosure."""
+    for child in el.iter():
+        name = _local(child.tag)
+        url = (child.get("url") or child.get("href") or "").strip()
+        if not url.startswith("https://"):
+            continue
+        ctype = (child.get("type") or child.get("medium") or "").lower()
+        if name == "thumbnail":
+            return url
+        if name in ("content", "enclosure") and ("image" in ctype or url.lower().split("?")[0].endswith((".jpg", ".jpeg", ".png", ".webp", ".gif"))):
+            return url
+        if name == "link" and (child.get("rel") or "") == "enclosure" and "image" in ctype:
+            return url
+    return ""
+
+
 def _atom_link(el: ET.Element) -> str:
     best = ""
     for child in el:
@@ -124,7 +141,7 @@ def parse_feed(data: bytes, base_url: str = "") -> list[Item]:
             link = _atom_link(entry)
             guid = _child_text(entry, "id")
             date = parse_date(_child_text(entry, "published", "issued", "created", "updated", "modified"))
-            items.append(_make_item(_child_text(entry, "title"), link, guid, date, base_url))
+            items.append(_make_item(_child_text(entry, "title"), link, guid, date, base_url, _image(entry)))
     elif kind in ("rss", "rdf"):
         for item in root.iter():
             if _local(item.tag) != "item":
@@ -134,7 +151,7 @@ def parse_feed(data: bytes, base_url: str = "") -> list[Item]:
             if not link and guid.startswith(("http://", "https://")):
                 link = guid
             date = parse_date(_child_text(item, "pubdate", "date", "published", "issued", "updated"))
-            items.append(_make_item(_child_text(item, "title"), link, guid, date, base_url))
+            items.append(_make_item(_child_text(item, "title"), link, guid, date, base_url, _image(item)))
     else:
         raise FeedParseError(f"not an RSS/Atom document (root element <{kind}>)")
 
@@ -142,7 +159,7 @@ def parse_feed(data: bytes, base_url: str = "") -> list[Item]:
     return result[:MAX_ITEMS]
 
 
-def _make_item(title: str, link: str, guid: str, date, base_url: str) -> Item | None:
+def _make_item(title: str, link: str, guid: str, date, base_url: str, image: str = "") -> Item | None:
     link = (link or "").strip()
     if not link:
         return None
@@ -153,4 +170,4 @@ def _make_item(title: str, link: str, guid: str, date, base_url: str) -> Item | 
     title = clean_text(title)
     if not title:
         title = link
-    return Item(title=title, link=link, guid=(guid or "").strip(), published=date)
+    return Item(title=title, link=link, guid=(guid or "").strip(), published=date, image=image[:1000])

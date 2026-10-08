@@ -42,12 +42,39 @@ flood_threshold = 15
 alert_after_failures = 3
 stale_after_days = 365
 
-# Website (published by .github/workflows/site.yml). All keys optional.
-[site]
-title = "The Ket"
-tagline = "Quantum computing, mathematics, theory and AI, from the people doing the work."
-# repo_url = "https://github.com/<you>/<repo>"   # adds a link in the page footer
-items_per_source = 30
+# Discord presentation. All keys optional.
+[discord]
+brand = "Within Quantum"
+# "card": branded card with the source's icon, a colour per section and a preview image.
+# "link": bold title plus the bare link, so Discord shows the site's own preview.
+style = "card"
+avatars = "auto"              # each source's own website icon; "off" for Discord's default
+preview_image = "thumbnail"   # "thumbnail", "large" or "none"
+dedupe_hours = 72             # the same story is not posted twice within this many hours
+briefing_max_per_category = 15
+# asset_base_url = "https://raw.githubusercontent.com/<you>/<repo>/main/"  # for avatar = "assets/..." paths
+
+# Card colour per section.
+[discord.colors]
+quantum-researchers = "#4F7CAC"
+math = "#7A6FB0"
+tcs = "#5E8C7A"
+ai = "#C27C4E"
+big-tech = "#3F6E8C"
+hardware = "#2E8B8B"
+qec = "#8A5A9E"
+software = "#4C9A6A"
+control = "#9A7B4F"
+networking = "#3D7EA6"
+publications = "#A0525B"
+government = "#5B6C8F"
+institutes = "#6B8E4E"
+analysts = "#B08A3E"
+
+# Optional opt-in pings: a Discord role id per section (Server Settings > Roles >
+# right-click > Copy Role ID). A section pings its role at most once per run.
+[discord.roles]
+# hardware = "123456789012345678"
 
 [categories]
 quantum-researchers = "Quantum researchers"
@@ -737,6 +764,7 @@ id = "classiq"
 name = "Classiq"
 category = "software"
 site = "https://www.classiq.io/"
+link_pattern = "classiq\\.io/(insights|blog|news)/[a-z0-9-]+/?$"
 
 [[source]]
 id = "phasecraft"
@@ -853,6 +881,8 @@ id = "maybell"
 name = "Maybell Quantum"
 category = "control"
 site = "https://www.maybellquantum.com/"
+enabled = false
+note = "Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page."
 
 # =============================================================================
 # QUANTUM NETWORKING AND POST-QUANTUM CRYPTOGRAPHY
@@ -984,6 +1014,8 @@ id = "q-next"
 name = "Q-NEXT (Argonne)"
 category = "government"
 site = "https://www.q-next.org/"
+enabled = false
+note = "Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page."
 
 [[source]]
 id = "quantum-science-center"
@@ -1062,6 +1094,8 @@ id = "cqt-singapore"
 name = "Centre for Quantum Technologies (Singapore)"
 category = "institutes"
 site = "https://www.cqt.sg/"
+link_pattern = "cqt\\.sg/highlight/[^/]+/?$"
+note = "News posts live at /highlight/<slug>/."
 
 [[source]]
 id = "chicago-quantum-exchange"
@@ -1711,6 +1745,7 @@ id = "quics"
 name = "QuICS (Maryland)"
 category = "institutes"
 site = "https://quics.umd.edu/"
+link_pattern = "quics\\.umd\\.edu/news/[^/]+/?$"
 
 [[source]]
 id = "jila"
@@ -1725,6 +1760,7 @@ id = "yale-quantum"
 name = "Yale Quantum Institute"
 category = "institutes"
 site = "https://quantuminstitute.yale.edu/"
+link_pattern = "quantuminstitute\\.yale\\.edu/news/[^/]+/?$"
 
 [[source]]
 id = "princeton-quantum"
@@ -1774,6 +1810,8 @@ id = "seeqc"
 name = "SEEQC"
 category = "control"
 site = "https://seeqc.com/"
+enabled = false
+note = "Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page."
 
 [[source]]
 id = "quantum-brilliance"
@@ -1792,12 +1830,16 @@ id = "universal-quantum"
 name = "Universal Quantum"
 category = "hardware"
 site = "https://universalquantum.com/"
+enabled = false
+note = "Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page."
 
 [[source]]
 id = "eeroq"
 name = "EeroQ"
 category = "hardware"
 site = "https://eeroq.com/"
+enabled = false
+note = "Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page."
 
 [[source]]
 id = "quantum-source"
@@ -1818,6 +1860,8 @@ id = "strangeworks"
 name = "Strangeworks"
 category = "software"
 site = "https://strangeworks.com/"
+enabled = false
+note = "Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page."
 
 [[source]]
 id = "qunasys"
@@ -1928,12 +1972,16 @@ id = "qed-c"
 name = "QED-C (Quantum Economic Development Consortium)"
 category = "analysts"
 site = "https://quantumconsortium.org/"
+enabled = false
+note = "Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page."
 
 [[source]]
 id = "gqi"
 name = "Global Quantum Intelligence (GQI)"
 category = "analysts"
 site = "https://www.global-qi.com/"
+enabled = false
+note = "Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page."
 
 # =============================================================================
 # PODCASTS (filed under their subject categories)

@@ -2,7 +2,7 @@
 
 <!-- Generated from sources.toml by `python -m feedbot docs`. Do not edit by hand. -->
 
-198 active sources. Each posts titles and links only, to its own Discord channel.
+190 active sources. Each posts titles and links only, to its own Discord channel.
 
 ## Quantum researchers
 
@@ -156,8 +156,8 @@
 | [QuantWare](https://quantware.com/news) | `quantware` | feed discovery, else listing page |  |
 | [Quantum Brilliance](https://quantumbrilliance.com/news) | `quantum-brilliance` | feed discovery, else listing page |  |
 | [C12 Quantum Electronics](https://www.c12qe.com/news) | `c12` | feed discovery, else listing page |  |
-| [Universal Quantum](https://universalquantum.com/) | `universal-quantum` | feed discovery, else listing page |  |
-| [EeroQ](https://eeroq.com/) | `eeroq` | feed discovery, else listing page |  |
+| [Universal Quantum](https://universalquantum.com/) | `universal-quantum` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
+| [EeroQ](https://eeroq.com/) | `eeroq` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
 | [Quantum Source](https://qs.co/news) | `quantum-source` | feed discovery, else listing page | Disabled. Disabled after Check sources (Oct 8, 2026): Site blocks GitHub runners (HTTP 403). |
 
 ## Quantum error correction
@@ -184,7 +184,7 @@
 | [SandboxAQ](https://www.sandboxaq.com/blog) | `sandboxaq` | feed discovery, else listing page · filtered: quantum, qubit, post-quantum, pqc, cryptograph | Filtered to quantum topics. |
 | [Unitary Foundation](https://unitary.foundation/) | `unitary-foundation` | feed discovery, else listing page | Open-source quantum software nonprofit (formerly Unitary Fund). Posts live at /posts/<slug>/. |
 | [Qiskit (Medium)](https://medium.com/qiskit) | `qiskit-medium` | feed | Disabled. Probably dormant; IBM now posts Qiskit news on the IBM Quantum blog. Enable if it revives. |
-| [Strangeworks](https://strangeworks.com/) | `strangeworks` | feed discovery, else listing page |  |
+| [Strangeworks](https://strangeworks.com/) | `strangeworks` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
 | [QunaSys](https://qunasys.com/en/news) | `qunasys` | feed discovery, else listing page |  |
 | [Terra Quantum](https://terraquantum.swiss/news) | `terra-quantum` | feed discovery, else listing page |  |
 
@@ -196,8 +196,8 @@
 | [Qblox](https://www.qblox.com/) | `qblox` | feed discovery, else listing page |  |
 | [Zurich Instruments (quantum)](https://www.zhinst.com/en/blogs) | `zurich-instruments` | feed discovery, else listing page · filtered: quantum, qubit |  |
 | [Bluefors](https://bluefors.com/) | `bluefors` | feed discovery, else listing page |  |
-| [Maybell Quantum](https://www.maybellquantum.com/) | `maybell` | feed discovery, else listing page |  |
-| [SEEQC](https://seeqc.com/) | `seeqc` | feed discovery, else listing page |  |
+| [Maybell Quantum](https://www.maybellquantum.com/) | `maybell` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
+| [SEEQC](https://seeqc.com/) | `seeqc` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
 | [Qruise](https://qruise.com/) | `qruise` | feed discovery, else listing page |  |
 | [Delft Circuits](https://delft-circuits.com/news) | `delft-circuits` | feed discovery, else listing page |  |
 
@@ -248,7 +248,7 @@
 | [NIST Quantum Information Science](https://www.nist.gov/) | `nist-quantum` | feed discovery, else listing page · filtered: quantum, qubit, entangle | Topic page moved; keyword filter keeps homepage fallback on-topic. |
 | [SQMS Center (Fermilab)](https://sqms.fnal.gov/news/) | `sqms-fermilab` | feed | Disabled. Site blocks or cannot be read from GitHub. Replaced by fermilab-news. |
 | [Quantum Systems Accelerator (Berkeley Lab)](https://quantumsystemsaccelerator.org/news/) | `quantum-systems-accelerator` | feed |  |
-| [Q-NEXT (Argonne)](https://www.q-next.org/) | `q-next` | feed discovery, else listing page |  |
+| [Q-NEXT (Argonne)](https://www.q-next.org/) | `q-next` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
 | [Quantum Science Center (Oak Ridge)](https://qscience.org/news/) | `quantum-science-center` | feed discovery, else listing page | Disabled. Disabled after Check sources (Oct 8, 2026): Page is rendered by JavaScript; nothing to read. |
 | [C2QA (Brookhaven)](https://www.bnl.gov/) | `c2qa` | feed discovery, else listing page · filtered: quantum, qubit, c2qa | Keyword filter keeps a bnl.gov homepage fallback on-topic. |
 | [UK National Quantum Computing Centre](https://www.nqcc.ac.uk/news/) | `nqcc` | feed |  |
@@ -268,7 +268,7 @@
 | [QuTech (Delft)](https://qutech.nl/news/) | `qutech` | feed |  |
 | [Institute for Quantum Computing (Waterloo)](https://uwaterloo.ca/institute-for-quantum-computing/news) | `iqc-waterloo` | feed discovery, else listing page |  |
 | [Perimeter Institute](https://perimeterinstitute.ca/news) | `perimeter` | feed discovery, else listing page |  |
-| [Centre for Quantum Technologies (Singapore)](https://www.cqt.sg/) | `cqt-singapore` | feed discovery, else listing page |  |
+| [Centre for Quantum Technologies (Singapore)](https://www.cqt.sg/) | `cqt-singapore` | feed discovery, else listing page | News posts live at /highlight/<slug>/. |
 | [Chicago Quantum Exchange](https://chicagoquantum.org/) | `chicago-quantum-exchange` | feed discovery, else listing page |  |
 | [Harvard Quantum Initiative](https://quantum.harvard.edu/news) | `harvard-quantum` | feed discovery, else listing page | Disabled. Site blocks or cannot be read from GitHub. Replaced by harvard-gazette-science. |
 | [ML@CMU Blog](https://blog.ml.cmu.edu/) | `cmu-ml-blog` | feed |  |
@@ -300,5 +300,5 @@
 | [Benedict Evans](https://www.ben-evans.com/) | `benedict-evans` | feed |  |
 | [Stratechery](https://stratechery.com/) | `stratechery` | feed | Mostly paywalled; titles still post. |
 | [Fact Based Insight](https://www.factbasedinsight.com/) | `fact-based-insight` | feed discovery, else listing page | Disabled. Disabled after Check sources (Oct 8, 2026): Domain now serves unrelated gambling content. |
-| [QED-C (Quantum Economic Development Consortium)](https://quantumconsortium.org/) | `qed-c` | feed discovery, else listing page |  |
-| [Global Quantum Intelligence (GQI)](https://www.global-qi.com/) | `gqi` | feed discovery, else listing page |  |
+| [QED-C (Quantum Economic Development Consortium)](https://quantumconsortium.org/) | `qed-c` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |
+| [Global Quantum Intelligence (GQI)](https://www.global-qi.com/) | `gqi` | feed discovery, else listing page | Disabled. Disabled before going public: homepage shows marketing pages, not news. Re-enable with a real news page. |

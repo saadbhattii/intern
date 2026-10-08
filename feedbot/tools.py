@@ -88,8 +88,8 @@ def _samples_hint(site: str, fetch: Callable) -> str:
     except Exception:  # noqa: BLE001 - diagnostics only
         return ""
     if not samples:
-        return " — page has no same-site links (probably rendered by JavaScript; find a feed or another page)"
-    return " — links on page: " + ", ".join(samples)
+        return ". The page has no same-site links (probably rendered by JavaScript); find a feed or another page."
+    return ". Links on page: " + ", ".join(samples)
 
 
 def sources_markdown(config: Config) -> str:
@@ -132,7 +132,11 @@ def sources_markdown(config: Config) -> str:
 
 def webhook_template(config: Config) -> str:
     """JSON skeleton for the DISCORD_WEBHOOKS secret: fill in the ones you want."""
+    from .config import SPECIAL_WEBHOOKS
+
     data = {"default": ""}
+    for name in SPECIAL_WEBHOOKS:
+        data[name] = ""
     for category in config.categories:
         data[f"category:{category}"] = ""
     for source in config.sources:

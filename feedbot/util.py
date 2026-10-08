@@ -29,6 +29,7 @@ class Item:
     link: str
     guid: str = ""
     published: datetime | None = None
+    image: str = ""  # optional preview image from the feed (never posted as text)
 
     def keys(self) -> list[str]:
         """Stable identifiers used for 'have we already posted this?' checks.

@@ -25,9 +25,11 @@ from dataclasses import dataclass, field
 from datetime import timedelta
 from typing import Callable
 
-from .archive import Archive
 from .config import Config, Source, Webhooks
-from .discord import DiscordClient, WebhookError, chunk_lines, format_digest, format_item
+from .discord import (DEFAULT_COLOR, DiscordClient, WebhookError, card_embed, chunk_lines, digest_embeds,
+                      favicon_url, format_digest, format_item, group_embeds)
+from .journal import Journal
+from .preview import find_image
 from .feeds import FeedParseError, looks_like_feed, parse_feed
 from .http import FetchError, fetch as http_fetch
 from .pages import discover_feeds, extract_links
@@ -59,6 +61,52 @@ class Outcome:
     detail: str = ""
     posted: int = 0
     method: str = ""
+
+
+@dataclass
+class DeliveryContext:
+    """Everything delivery needs beyond the source itself (shared across one run)."""
+
+    discord: dict
+    categories: dict
+    now: object
+    journal: Journal | None = None
+    firehose: str | None = None
+    fetch: Callable | None = None
+    report: "RunReport | None" = None
+    pinged: set = field(default_factory=set)
+    firehose_failed: bool = False
+
+    def avatar_for(self, source: Source) -> str:
+        if source.avatar:
+            if source.avatar.startswith(("http://", "https://")):
+                return source.avatar
+            base = self.discord.get("asset_base_url", "")
+            return f"{base.rstrip('/')}/{source.avatar.lstrip('/')}" if base else ""
+        if self.discord.get("avatars", "auto") == "auto":
+            return favicon_url(source.site or (source.feeds[0] if source.feeds else ""))
+        return ""
+
+    def color_for(self, category: str) -> int:
+        return self.discord.get("colors", {}).get(category, DEFAULT_COLOR)
+
+    def category_name(self, category: str) -> str:
+        return self.categories.get(category, category)
+
+    def role_once(self, category: str) -> str:
+        """The category's role, but only for the first message in this run (no ping storms)."""
+        role = self.discord.get("roles", {}).get(category, "")
+        if role and category not in self.pinged:
+            self.pinged.add(category)
+            return role
+        return ""
+
+    def image_for(self, item: Item) -> str:
+        if self.discord.get("style") != "card" or self.discord.get("preview_image") == "none":
+            return ""
+        if item.image:
+            return item.image
+        return find_image(item.link, self.fetch) if self.fetch else ""
 
 
 @dataclass
@@ -270,18 +318,19 @@ def run(
     client: DiscordClient | None = None,
     fetch: Callable = http_fetch,
     workers: int = 12,
-    archive: Archive | None = None,
+    journal: Journal | None = None,
 ) -> RunReport:
-    """Fetch every enabled source, archive what it lists, post what is new to Discord.
+    """Fetch every enabled source that has a webhook and post what is new to Discord.
 
-    Sources without a webhook are still fetched and archived (they appear on the
-    website); their Discord state is left untouched so that adding a webhook
-    later starts with a silent seed, exactly like a brand-new source.
+    Sources without a webhook are not fetched at all; adding a webhook later
+    starts with a silent seed, exactly like a brand-new source.
     """
     now = utcnow()
     report = RunReport(warnings=list(state.warnings) + list(webhooks.problems)
-                       + (list(archive.warnings) if archive else []))
+                       + (list(journal.warnings) if journal else []))
     client = client or DiscordClient(dry_run=dry_run)
+    ctx = DeliveryContext(discord=config.discord, categories=config.categories, now=now, journal=journal,
+                          firehose=webhooks.special("firehose"), fetch=fetch, report=report)
 
     selected: list[tuple[Source, str | None]] = []
     for source in config.sources:
@@ -290,7 +339,11 @@ def run(
         if not source.enabled:
             report.outcomes.append(Outcome(source, "skipped", "disabled in sources.toml"))
             continue
-        selected.append((source, webhooks.for_source(source)))
+        hook = webhooks.for_source(source)
+        if not hook and not dry_run:
+            report.outcomes.append(Outcome(source, "no-webhook", "no webhook configured"))
+            continue
+        selected.append((source, hook))
 
     def task(pair):
         source, _ = pair
@@ -298,9 +351,7 @@ def run(
         # Conditional GET ("has it changed since?") only for routine runs of a source
         # that already has a Discord baseline. A forced re-send needs the items even
         # if nothing changed, and a source being seeded needs a full listing.
-        # A source missing from the website archive also needs one full listing.
-        conditional = (st.initialized and not force_latest
-                       and (archive is None or source.id in archive.sources))
+        conditional = st.initialized and not force_latest
         try:
             return collect(
                 source,
@@ -319,14 +370,9 @@ def run(
 
     for (source, hook), result in zip(selected, results):
         st = state.source(source.id)
-        if archive is not None and isinstance(result, Collected) and not result.not_modified:
-            try:
-                archive.merge(source.id, [i for i in result.items if source.keyword_ok(i.title)], now)
-            except Exception as exc:  # noqa: BLE001 - the website must never break posting
-                report.warnings.append(f"{source.id}: could not archive items: {exc}")
         try:
             outcome = _process(source, hook, result, st, config.defaults, client, now, force_latest,
-                               report, dry_run)
+                               report, dry_run, ctx)
         except Exception as exc:  # noqa: BLE001 - last line of defence
             outcome = Outcome(source, "failed", f"internal error: {type(exc).__name__}: {exc}")
             if st.record_failure(outcome.detail, config.defaults["alert_after_failures"]):
@@ -334,15 +380,13 @@ def run(
         report.outcomes.append(outcome)
 
     if not only:
-        keep = {s.id for s in config.sources}
-        state.prune(keep)
-        if archive is not None:
-            archive.prune({s.id for s in config.sources if s.enabled})
+        state.prune({s.id for s in config.sources})
     state.heartbeat(now)
     return report
 
 
-def _process(source, hook, result, st, defaults, client, now, force_latest, report, dry_run=False) -> Outcome:
+def _process(source, hook, result, st, defaults, client, now, force_latest, report, dry_run=False,
+             ctx: DeliveryContext | None = None) -> Outcome:
     alert_after = defaults["alert_after_failures"]
     if isinstance(result, SourceError):
         detail = str(result)
@@ -353,11 +397,6 @@ def _process(source, hook, result, st, defaults, client, now, force_latest, repo
     collected: Collected = result
     if collected.note:
         report.warnings.append(f"{source.id}: {collected.note} (update `site` in sources.toml)")
-
-    if not hook and not dry_run:
-        # Website only: archived above; Discord state deliberately untouched.
-        _success(source, st, now, report)
-        return Outcome(source, "archived", "no webhook: shown on the website only", method=collected.method)
 
     if collected.method == "feed":
         st.set("resolved_feed", collected.url)
@@ -400,9 +439,9 @@ def _process(source, hook, result, st, defaults, client, now, force_latest, repo
         return Outcome(source, "ok", selection.note or f"{len(collected.items)} items, nothing new",
                        method=collected.method)
 
-    posted = 0
+    posted = dupes = 0
     try:
-        posted = _deliver(source, hook, selection, st, client, defaults["digest_over"])
+        posted, dupes = _deliver(source, hook, selection, st, client, defaults["digest_over"], ctx)
     except WebhookError as exc:
         detail = f"Discord: {exc}"
         if st.record_failure(detail, alert_after):
@@ -410,7 +449,12 @@ def _process(source, hook, result, st, defaults, client, now, force_latest, repo
         return Outcome(source, "failed", detail, posted=posted, method=collected.method)
 
     _success(source, st, now, report)
+    if not posted:
+        return Outcome(source, "ok", f"skipped {dupes} duplicate(s) of stories already posted",
+                       method=collected.method)
     note = f"posted {posted}"
+    if dupes:
+        note += f", skipped {dupes} duplicate(s)"
     if force_latest:
         note += " (forced re-send)"
     if selection.skipped_over_limit:
@@ -419,25 +463,96 @@ def _process(source, hook, result, st, defaults, client, now, force_latest, repo
 
 
 def _deliver(source: Source, hook: str | None, selection: Selection, st: SourceState,
-             client: DiscordClient, digest_over: int = 3) -> int:
-    items = selection.to_post
+             client: DiscordClient, digest_over: int = 3, ctx: DeliveryContext | None = None) -> tuple[int, int]:
+    """Post the selected items. Returns (posted, skipped_duplicates).
+
+    Order per item: skip if the same story already went to this category's channel;
+    post it; mark it seen only after Discord confirms; record it in the journal;
+    copy it to the firehose channel unless the story already appeared there.
+    """
+    from .config import DISCORD_DEFAULTS  # local import keeps module load order simple
+
+    if ctx is None:
+        ctx = DeliveryContext(discord=dict(DISCORD_DEFAULTS, colors={}, roles={}), categories={}, now=utcnow())
+    hours = ctx.discord.get("dedupe_hours", 72)
+    category = source.category
+
+    kept, dupes = [], 0
+    for item in selection.to_post:
+        if ctx.journal and ctx.journal.find_duplicate(item.title, item.link, ctx.now, hours, category=category):
+            st.mark_seen(item.keys())
+            dupes += 1
+        else:
+            kept.append(item)
+    if not kept:
+        return 0, dupes
+
     mode = source.mode
     if mode == "auto":
-        mode = "digest" if len(items) > digest_over else "each"
-    posted = 0
+        mode = "digest" if len(kept) > digest_over else "each"
+    avatar = ctx.avatar_for(source)
+    username = source.display_name
+    card = ctx.discord.get("style", "card") == "card"
+    common = dict(source_name=source.name, source_url=source.site, avatar=avatar,
+                  category_name=ctx.category_name(category), color=ctx.color_for(category),
+                  brand=ctx.discord.get("brand", "Within Quantum"))
+
+    def firehose_copy(payloads: list[dict]) -> None:
+        if not ctx.firehose or ctx.firehose_failed:
+            return
+        try:
+            for payload in payloads:
+                client.deliver(ctx.firehose, payload, username=username, avatar_url=avatar)
+        except WebhookError as exc:  # best effort: never blocks the category channel
+            ctx.firehose_failed = True
+            if ctx.report is not None:
+                ctx.report.warnings.append(f"firehose channel: {exc}")
+
+    def is_firehose_duplicate(item: Item) -> bool:
+        return bool(ctx.journal and ctx.journal.find_duplicate(item.title, item.link, ctx.now, hours))
+
     if mode == "digest":
-        messages = format_digest(source.name, items, selection.skipped_over_limit)
-        for message in messages:
-            client.send(hook or "", message, source.display_name, previews=False)
-        for item in items:
+        fresh_for_firehose = [i for i in kept if not is_firehose_duplicate(i)]
+        if card:
+            payloads = [{"embeds": group} for group in group_embeds(
+                digest_embeds(kept, skipped=selection.skipped_over_limit, **common))]
+        else:
+            payloads = [{"content": m, "flags": 4} for m in format_digest(source.name, kept, selection.skipped_over_limit)]
+        for index, payload in enumerate(payloads):
+            client.deliver(hook or "", payload, username=username, avatar_url=avatar,
+                           ping_role=ctx.role_once(category) if index == 0 else "")
+        for item in kept:
             st.mark_seen(item.keys())
-        return len(items)
-    for item in items:
-        for message in chunk_lines([format_item(item)]):
-            client.send(hook or "", message, source.display_name)
+            if ctx.journal:
+                ctx.journal.add(title=item.title, url=item.link, source_id=source.id, source_name=source.name,
+                                category=category, when=ctx.now, published=item.published,
+                                firehose=item in fresh_for_firehose and bool(ctx.firehose))
+        if fresh_for_firehose:
+            if card:
+                firehose_copy([{"embeds": g} for g in group_embeds(digest_embeds(fresh_for_firehose, **common))])
+            else:
+                firehose_copy([{"content": m, "flags": 4} for m in format_digest(source.name, fresh_for_firehose)])
+        return len(kept), dupes
+
+    posted = 0
+    for item in kept:
+        to_firehose = not is_firehose_duplicate(item)
+        if card:
+            payload = {"embeds": [card_embed(item, image=ctx.image_for(item),
+                                             image_mode=ctx.discord.get("preview_image", "thumbnail"), **common)]}
+        else:
+            payload = {"content": "\n".join(chunk_lines([format_item(item)]))}
+        client.deliver(hook or "", payload, username=username, avatar_url=avatar,
+                       ping_role=ctx.role_once(category))
         st.mark_seen(item.keys())  # only after Discord confirmed delivery
+        if ctx.journal:
+            ctx.journal.add(title=item.title, url=item.link, source_id=source.id, source_name=source.name,
+                            category=category, when=ctx.now, published=item.published,
+                            firehose=to_firehose and bool(ctx.firehose))
+        if to_firehose:
+            firehose_copy([payload])
         posted += 1
-    return posted
+    return posted, dupes
 
 
 def _success(source: Source, st: SourceState, now, report: RunReport) -> None:
@@ -450,7 +565,7 @@ def _success(source: Source, st: SourceState, now, report: RunReport) -> None:
 # --------------------------------------------------------------------------
 
 STATUS_ICON = {
-    "posted": "📬", "ok": "✅", "not-modified": "✅", "seeded": "🌱", "archived": "🗞️",
+    "posted": "📬", "ok": "✅", "not-modified": "✅", "seeded": "🌱",
     "failed": "❌", "no-webhook": "⚪", "skipped": "⏸️",
 }
 
@@ -471,9 +586,9 @@ def summary_markdown(report: RunReport, title: str = "Feed run") -> str:
         for o in sorted(interesting, key=lambda o: (o.status != "failed", o.source.id)):
             detail = o.detail.replace("|", "\\|").replace("\n", " ")[:300]
             lines.append(f"| {STATUS_ICON.get(o.status, '')} | `{o.source.id}` | {o.method or '-'} | {detail} |")
-    quiet = [o.source.id for o in report.outcomes if o.status == "archived"]
+    quiet = [o.source.id for o in report.outcomes if o.status == "no-webhook"]
     if quiet:
-        lines += ["", f"<details><summary>{len(quiet)} sources without a webhook (website only)</summary>", "",
+        lines += ["", f"<details><summary>{len(quiet)} sources without a webhook (not polled)</summary>", "",
                   ", ".join(f"`{q}`" for q in quiet), "", "</details>"]
     return "\n".join(lines) + "\n"
 

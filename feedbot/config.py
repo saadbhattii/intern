@@ -33,8 +33,28 @@ DEFAULTS = {
 _SOURCE_KEYS = {
     "id", "name", "category", "feed", "site", "kind", "link_pattern", "include_keywords",
     "exclude_keywords", "max_per_run", "max_age_days", "mode", "enabled", "username", "note",
-    "author", "high_volume",
+    "author", "high_volume", "avatar",
 }
+
+# Webhook keys with a special meaning in DISCORD_WEBHOOKS (besides source ids,
+# "category:<id>" and "default").
+SPECIAL_WEBHOOKS = {
+    "firehose": "every post from every category, without duplicates",
+    "briefing": "the daily briefing (and the weekly roundup if 'weekly' is not set)",
+    "weekly": "the weekly roundup",
+    "directory": "a self-updating list of all sources",
+}
+
+DISCORD_DEFAULTS = {
+    "brand": "Within Quantum",
+    "style": "card",            # card: branded embed | link: title plus bare link with Discord's preview
+    "avatars": "auto",          # auto: each source's website icon | off: Discord's default icon
+    "preview_image": "thumbnail",  # thumbnail | large | none (only for style = "card")
+    "dedupe_hours": 72,         # skip the same story within this many hours (0 = off)
+    "asset_base_url": "",       # prefix for avatar paths like "assets/avatars/ibm.png"
+    "briefing_max_per_category": 15,
+}
+_HEX = re.compile(r"^#?[0-9a-fA-F]{6}$")
 
 
 @dataclass
@@ -56,6 +76,7 @@ class Source:
     note: str = ""
     author: str = ""
     high_volume: bool = False
+    avatar: str = ""
 
     @property
     def display_name(self) -> str:
@@ -70,20 +91,12 @@ class Source:
         return True
 
 
-SITE_DEFAULTS = {
-    "title": "The Ket",
-    "tagline": "Quantum computing, mathematics, theory and AI, from the people doing the work.",
-    "repo_url": "",
-    "items_per_source": 30,
-}
-
-
 @dataclass
 class Config:
     defaults: dict
     sources: list[Source]
     categories: dict[str, str]
-    site: dict = field(default_factory=lambda: dict(SITE_DEFAULTS))
+    discord: dict = field(default_factory=lambda: dict(DISCORD_DEFAULTS, colors={}, roles={}))
 
     def by_id(self) -> dict[str, Source]:
         return {s.id: s for s in self.sources}
@@ -128,23 +141,49 @@ def load_config(path: str | Path = "sources.toml") -> Config:
         errors.append("[categories] must map category ids to display names")
         categories = {}
 
-    site_settings = dict(SITE_DEFAULTS)
-    for key, value in (raw.get("site") or {}).items():
-        if key not in SITE_DEFAULTS:
-            errors.append(f"[site] unknown key '{key}'")
-        elif key == "items_per_source":
-            if not isinstance(value, int) or isinstance(value, bool) or not 1 <= value <= 40:
-                errors.append("[site] items_per_source must be an integer from 1 to 40")
-            else:
-                site_settings[key] = value
-        elif not isinstance(value, str):
-            errors.append(f"[site] {key} must be a string")
-        elif key == "repo_url" and value and not _is_url(value):
-            errors.append("[site] repo_url must be an http(s) URL")
+    discord = dict(DISCORD_DEFAULTS, colors={}, roles={})
+    raw_discord = raw.get("discord") or {}
+    if not isinstance(raw_discord, dict):
+        errors.append("[discord] must be a table")
+        raw_discord = {}
+    for key, value in raw_discord.items():
+        if key == "colors":
+            if not isinstance(value, dict):
+                errors.append("[discord.colors] must map category ids to colours like \"#4F7CAC\"")
+                continue
+            for cat, colour in value.items():
+                if not isinstance(colour, str) or not _HEX.match(colour):
+                    errors.append(f"[discord.colors] {cat}: colour must look like \"#4F7CAC\"")
+                else:
+                    discord["colors"][cat] = int(colour.lstrip("#"), 16)
+        elif key == "roles":
+            if not isinstance(value, dict):
+                errors.append("[discord.roles] must map category ids to Discord role ids (as text)")
+                continue
+            for cat, role in value.items():
+                if not isinstance(role, str) or not role.isdigit():
+                    errors.append(f"[discord.roles] {cat}: role id must be digits in quotes, e.g. \"123456789012345678\"")
+                else:
+                    discord["roles"][cat] = role
+        elif key not in DISCORD_DEFAULTS:
+            errors.append(f"[discord] unknown key '{key}'")
+        elif key == "style" and value not in ("card", "link"):
+            errors.append("[discord] style must be \"card\" or \"link\"")
+        elif key == "avatars" and value not in ("auto", "off"):
+            errors.append("[discord] avatars must be \"auto\" or \"off\"")
+        elif key == "preview_image" and value not in ("thumbnail", "large", "none"):
+            errors.append("[discord] preview_image must be \"thumbnail\", \"large\" or \"none\"")
+        elif key in ("dedupe_hours", "briefing_max_per_category") and (
+                not isinstance(value, int) or isinstance(value, bool) or value < 0):
+            errors.append(f"[discord] {key} must be a non-negative integer")
+        elif key in ("brand", "asset_base_url") and not isinstance(value, str):
+            errors.append(f"[discord] {key} must be text")
+        elif key == "asset_base_url" and value and not _is_url(value):
+            errors.append("[discord] asset_base_url must be an http(s) URL")
         else:
-            site_settings[key] = value.strip()
+            discord[key] = value.strip() if isinstance(value, str) else value
 
-    unknown_top = set(raw) - {"defaults", "categories", "source", "site"}
+    unknown_top = set(raw) - {"defaults", "categories", "source", "discord"}
     for key in sorted(unknown_top):
         errors.append(f"unknown top-level key '{key}' (did you mean [[source]]?)")
 
@@ -241,6 +280,10 @@ def load_config(path: str | Path = "sources.toml") -> Config:
         if not isinstance(username, str) or len(username) > 80:
             errors.append(f"{where}: username must be a string of at most 80 characters")
             username = ""
+        avatar = entry.get("avatar", "")
+        if not isinstance(avatar, str) or (avatar and " " in avatar):
+            errors.append(f"{where}: avatar must be an image URL or a repository path")
+            avatar = ""
         for text_key in ("note", "author"):
             if not isinstance(entry.get(text_key, ""), str):
                 errors.append(f"{where}: {text_key} must be a string")
@@ -264,6 +307,7 @@ def load_config(path: str | Path = "sources.toml") -> Config:
                 note=str(entry.get("note", "")),
                 author=str(entry.get("author", "")),
                 high_volume=high_volume,
+                avatar=avatar.strip(),
             )
         )
 
@@ -271,7 +315,12 @@ def load_config(path: str | Path = "sources.toml") -> Config:
         errors.append("no [[source]] entries found")
     if errors:
         raise ConfigError(errors)
-    return Config(defaults=defaults, sources=sources, categories=categories, site=site_settings)
+    for cat in list(discord["colors"]) + list(discord["roles"]):
+        if categories and cat not in categories:
+            errors.append(f"[discord] '{cat}' is not a category listed under [categories]")
+    if errors:
+        raise ConfigError(errors)
+    return Config(defaults=defaults, sources=sources, categories=categories, discord=discord)
 
 
 @dataclass
@@ -286,6 +335,12 @@ class Webhooks:
             if url:
                 return url
         return None
+
+    def special(self, name: str) -> str | None:
+        """Webhook for a special channel ('firehose', 'briefing', 'weekly', 'directory')."""
+        if name == "weekly":
+            return self.mapping.get("weekly") or self.mapping.get("briefing")
+        return self.mapping.get(name)
 
 
 def parse_webhooks(raw: str | None, config: Config | None = None) -> Webhooks:
@@ -305,6 +360,7 @@ def parse_webhooks(raw: str | None, config: Config | None = None) -> Webhooks:
         valid_keys = {s.id for s in config.sources}
         valid_keys |= {f"category:{s.category}" for s in config.sources}
         valid_keys.add("default")
+        valid_keys |= set(SPECIAL_WEBHOOKS)
 
     mapping: dict[str, str] = {}
     for key, value in data.items():

@@ -1,6 +1,10 @@
 name: Post new articles
 
 on:
+  schedule:
+    # Every 30 minutes (UTC), at off-peak minutes because GitHub delays jobs queued at :00.
+    # Missed or delayed runs are harmless: state tracks exactly what was posted.
+    - cron: "7,37 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -52,6 +56,12 @@ jobs:
           if [ -n "${INPUT_ONLY}" ]; then args+=(--only "${INPUT_ONLY}"); fi
           if [ -n "${INPUT_FORCE}" ] && [ "${INPUT_FORCE}" != "0" ]; then args+=(--force-latest "${INPUT_FORCE}"); fi
           python -m feedbot "${args[@]}"
+
+      - name: Update the source directory in Discord
+        if: ${{ always() && inputs.dry_run != true }}
+        env:
+          DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
+        run: python -m feedbot directory || echo "::warning::could not update the directory (non-fatal)"
 
       - name: Regenerate docs/SOURCES.md
         if: ${{ always() && inputs.dry_run != true }}

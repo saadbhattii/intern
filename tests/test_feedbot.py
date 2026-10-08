@@ -78,6 +78,14 @@ LISTING = """<html><head>
 </body></html>"""
 
 
+
+def text_of(payload: dict) -> str:
+    """Visible text of a webhook message: plain content plus card titles and lists."""
+    parts = [payload.get("content", "")]
+    for embed in payload.get("embeds", []):
+        parts += [embed.get("title", ""), embed.get("description", "")]
+    return "\n".join(p for p in parts if p)
+
 def item(n: int, days_ago: float | None = 1, title: str | None = None) -> Item:
     published = NOW - timedelta(days=days_ago) if days_ago is not None else None
     return Item(title=title or f"Post {n}", link=f"https://ex.com/p/{n}", guid=f"g{n}", published=published)
@@ -484,7 +492,7 @@ class EndToEndTests(unittest.TestCase):
         # Run 1: seeds silently, broken source isolated, unhooked source not polled.
         report = run(self.config, self.hooks, state, client=client(post), fetch=fetch, workers=2)
         statuses = {o.source.id: o.status for o in report.outcomes}
-        self.assertEqual(statuses, {"good": "seeded", "broken": "failed", "unhooked": "archived"})
+        self.assertEqual(statuses, {"good": "seeded", "broken": "failed", "unhooked": "no-webhook"})
         self.assertEqual(post.payloads, [])
         state.save()
 
@@ -493,7 +501,7 @@ class EndToEndTests(unittest.TestCase):
         state = State.load(self.dir / "state.json")
         report = run(self.config, self.hooks, state, client=client(post), fetch=fetch, workers=2)
         self.assertEqual(len(post.payloads), 1)
-        self.assertIn("Post 3", post.payloads[0]["content"])
+        self.assertIn("Post 3", text_of(post.payloads[0]))
         state.save()
 
         # Run 3: nothing new; broken source reaches the alert threshold exactly once.
@@ -517,7 +525,7 @@ class EndToEndTests(unittest.TestCase):
         working = FakePost()
         run(self.config, self.hooks, state, only={"good"}, client=client(working), fetch=fetch)
         self.assertEqual(len(working.payloads), 1)
-        self.assertIn("Post 2", working.payloads[0]["content"])
+        self.assertIn("Post 2", text_of(working.payloads[0]))
 
     def test_dead_webhook_does_not_mark_seen(self):
         fetch = FakeFetch({"https://good.com/feed": self.feed(item(1, 0.5))})
