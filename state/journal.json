@@ -5478,6 +5478,50 @@
    "t": "Fermilab to lead two new Genesis Mission awards to accelerate development of microelectronics and quantum",
    "u": "https://news.fnal.gov/2026/10/fermilab-to-lead-two-new-genesis-mission-awards-to-accelerate-development-of-microelectronics-and-quantum/",
    "w": "264ac428e52865e9cbcb"
+  },
+  {
+   "c": "quantum-researchers",
+   "d": "2026-10-08T15:27:53+00:00",
+   "id": "ba6969a6e94f3b36dad4",
+   "n": "Quantum Frontiers",
+   "p": "2026-10-08T15:31:00+00:00",
+   "s": "quantum-frontiers",
+   "t": "In praise of questions",
+   "u": "https://quantumfrontiers.com/2026/10/08/in-praise-of-questions/",
+   "w": "322f68d82b9829cfb4cc"
+  },
+  {
+   "c": "math",
+   "d": "2026-10-08T15:10:00+00:00",
+   "id": "4d9972760abdb286d45b",
+   "n": "Persiflage",
+   "p": "2026-10-08T15:31:00+00:00",
+   "s": "persiflage",
+   "t": "A Brief Digest of Some New OpenAI Results",
+   "u": "https://galoisrepresentations.org/2026/10/08/a-brief-digest-of-some-new-openai-results/",
+   "w": "4c3df3fa3a1733eb1e73"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T00:00:00+00:00",
+   "id": "d9e485b409fe8517ac6e",
+   "n": "OpenAI News",
+   "p": "2026-10-08T15:31:00+00:00",
+   "s": "openai",
+   "t": "Disrupting AI-enabled “false front” operations",
+   "u": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T15:02:06+00:00",
+   "id": "ee1b3b700c099fde6bc2",
+   "n": "Yoshua Bengio",
+   "p": "2026-10-08T15:31:00+00:00",
+   "s": "yoshua-bengio",
+   "t": "Bengio: ‘If you prioritize safety, leave frontier AI companies’",
+   "u": "https://yoshuabengio.org/en/blog/bengio-if-you-prioritize-safety-leave-frontier-ai-companies",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
