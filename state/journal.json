@@ -3321,6 +3321,39 @@
    "s": "sophie-huiberts",
    "t": "Community and Company",
    "u": "https://sophie.huiberts.me/blog/2026/community/index.html"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-08T13:06:55+00:00",
+   "id": "3f75cb91759b6c7b2427",
+   "n": "HPCwire (quantum)",
+   "p": "2026-10-08T13:31:03+00:00",
+   "s": "hpcwire-quantum",
+   "t": "IonQ Advances to Final Stage of DARPA’s Quantum Benchmarking Initiative",
+   "u": "https://www.hpcwire.com/off-the-wire/ionq-advances-to-final-stage-of-darpas-quantum-benchmarking-initiative/",
+   "w": "743abde5e483be0069e5"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T13:00:46+00:00",
+   "id": "3a27acd6fba5e7448ae8",
+   "n": "NVIDIA Blog",
+   "p": "2026-10-08T13:31:03+00:00",
+   "s": "nvidia-blog",
+   "t": "Rally Up: ‘Gears of War: E-Day’ Launches on GeForce NOW",
+   "u": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day/",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-08T13:14:53+00:00",
+   "id": "0a73d2a3fbfd18d88929",
+   "n": "Understanding AI",
+   "p": "2026-10-08T13:31:03+00:00",
+   "s": "understanding-ai",
+   "t": "Understanding Jev, the new model everyone is talking about",
+   "u": "https://www.understandingai.org/p/understanding-jev-the-new-model-everyone",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
