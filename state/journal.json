@@ -7700,6 +7700,17 @@
    "t": "LegalOn halves Codex costs while maintaining development speed",
    "u": "https://openai.com/index/legalon-halves-codex-costs",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-09T00:08:24+00:00",
+   "id": "aca10e9da17b0be6c508",
+   "n": "MIT Technology Review (AI)",
+   "p": "2026-10-09T00:30:58+00:00",
+   "s": "mit-tech-review-ai",
+   "t": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
+   "u": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
+   "w": "743abde5e483be0069e5"
   }
  ],
  "meta": {}
