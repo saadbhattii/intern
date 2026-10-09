@@ -8050,6 +8050,28 @@
    "t": "Quantinuum and HQS Simulate 21-Spin NMR Spectrum on 42 Qubits With 1,400+ Two-Qubit Gate Circuits",
    "u": "https://quantumcomputingreport.com/quantinuum-and-hqs-simulate-21-spin-nmr-spectrum-on-42-qubits-with-1400-two-qubit-gate-circuits/",
    "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-09T18:44:06+00:00",
+   "id": "fecc914eb4b6f8e85cca",
+   "n": "Ars Technica (AI)",
+   "p": "2026-10-09T19:00:57+00:00",
+   "s": "ars-technica-ai",
+   "t": "AI disqualification yields new Nikon Small World in Motion winner",
+   "u": "https://arstechnica.com/science/2026/10/winning-nikon-small-world-in-motion-video-disqualified-for-ai-use/",
+   "w": "743abde5e483be0069e5"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-09T07:00:00+00:00",
+   "id": "9bf93d58cc35db9987f8",
+   "n": "OpenAI News",
+   "p": "2026-10-09T19:00:57+00:00",
+   "s": "openai",
+   "t": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+   "u": "https://openai.com/index/asana-browser-agent",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
