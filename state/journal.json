@@ -8072,6 +8072,37 @@
    "t": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
    "u": "https://openai.com/index/asana-browser-agent",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "analysts",
+   "id": "6c9b5943ff5780aec5e0",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-09T19:30:59+00:00",
+   "s": "quantum-computing-report",
+   "t": "Arqit Quantum Inc. Reports Select Preliminary FY 2026 Financial Results: Annual Revenue Tops $975K, NATO Contract Win, and Cash Position Reaches $51M",
+   "u": "https://quantumcomputingreport.com/arqit-quantum-inc-reports-select-preliminary-fy-2026-financial-results-annual-revenue-tops-975k-nato-contract-win-and-cash-position-reaches-51m/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "id": "eb10f5fa6c56a7e708ce",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-09T19:30:59+00:00",
+   "s": "quantum-computing-report",
+   "t": "University of Auckland, NIST, and UMD Demonstrate Octave-Spanning Chip-Scale Microcomb in Nature",
+   "u": "https://quantumcomputingreport.com/university-of-auckland-nist-and-umd-demonstrate-octave-spanning-chip-scale-microcomb-in-nature/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-09T18:46:22+00:00",
+   "id": "3ad7ca3e9fdb1c7e5a15",
+   "n": "The Quantum Insider",
+   "p": "2026-10-09T19:30:59+00:00",
+   "s": "quantum-insider",
+   "t": "Tuning a quantum computer: what a violin teaches us about qubit calibration",
+   "u": "https://thequantuminsider.com/2026/10/09/tuning-a-quantum-computer-what-a-violin-teaches-us-about-qubit-calibration/",
+   "w": "38ea256357822bec3bfd"
   }
  ],
  "meta": {}
