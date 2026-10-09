@@ -8018,6 +8018,27 @@
    "t": "ICYMI: What landed for AI builders in September 2026",
    "u": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "math",
+   "d": "2026-10-09T16:35:03+00:00",
+   "id": "ad0231bd8e7304287931",
+   "n": "What's new",
+   "p": "2026-10-09T17:00:57+00:00",
+   "s": "terry-tao",
+   "t": "What mathematicians should know about the Lean Theorem Prover: questions of reliability and AI",
+   "u": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
+   "w": "4c3df3fa3a1733eb1e73"
+  },
+  {
+   "c": "analysts",
+   "id": "021b37bacb08c5b0934e",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-09T17:00:57+00:00",
+   "s": "quantum-computing-report",
+   "t": "Fujitsu Partners with State of New Mexico to Establish Quantum Computing R&D Center",
+   "u": "https://quantumcomputingreport.com/fujitsu-partners-with-state-of-new-mexico-to-establish-quantum-computing-rd-center/",
+   "w": "38ea256357822bec3bfd"
   }
  ],
  "meta": {}
