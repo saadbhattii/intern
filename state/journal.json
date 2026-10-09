@@ -7963,6 +7963,61 @@
    "t": "Impactful scheduling for GPU clusters",
    "u": "https://huggingface.co/blog/allenai/impactful-scheduling",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-09T14:41:11+00:00",
+   "id": "473b7642377a4ab2db34",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-09T16:00:59+00:00",
+   "s": "quantum-computing-report",
+   "t": "NTT DOCOMO BUSINESS Partners with Classiq to Expand Enterprise Quantum Software Adoption in Japan",
+   "u": "https://quantumcomputingreport.com/ntt-docomo-business-partners-with-classiq-to-expand-enterprise-quantum-software-adoption-in-japan/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-09T14:59:44+00:00",
+   "id": "f74ef2c4cce8be654aef",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-09T16:00:59+00:00",
+   "s": "quantum-computing-report",
+   "t": "IonQ Demonstrates 1 kHz Memory-Enhanced Quantum Interconnect Connecting Trapped Ions and Diamond Color Centers",
+   "u": "https://quantumcomputingreport.com/ionq-demonstrates-1-khz-memory-enhanced-quantum-interconnect-connecting-trapped-ions-and-diamond-color-centers/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-09T15:42:27+00:00",
+   "id": "f63ad77390ec06138c09",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-09T16:00:59+00:00",
+   "s": "quantum-computing-report",
+   "t": "Quobly and SiPearl Form Partnership to Integrate European ARM CPUs and Silicon Spin QPUs",
+   "u": "https://quantumcomputingreport.com/quobly-and-sipearl-form-partnership-to-integrate-european-arm-cpus-and-silicon-spin-qpus/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-09T15:35:02+00:00",
+   "id": "3c8f1a5658927de75dcc",
+   "n": "AWS Machine Learning Blog",
+   "p": "2026-10-09T16:00:59+00:00",
+   "s": "aws-machine-learning",
+   "t": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
+   "u": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-09T15:38:39+00:00",
+   "id": "f269df2714354eb99f82",
+   "n": "AWS Machine Learning Blog",
+   "p": "2026-10-09T16:00:59+00:00",
+   "s": "aws-machine-learning",
+   "t": "ICYMI: What landed for AI builders in September 2026",
+   "u": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
