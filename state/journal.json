@@ -7876,6 +7876,50 @@
    "t": "New Math from OpenAI",
    "u": "https://thezvi.wordpress.com/2026/10/09/new-math-from-openai/",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-09T13:53:14+00:00",
+   "id": "ed73a0b6082adcfb0747",
+   "n": "Statistical Modeling, Causal Inference, and Social Science",
+   "p": "2026-10-09T14:00:58+00:00",
+   "s": "gelman-stat-modeling",
+   "t": "Thinking more seriously about the design of exploratory studies: A manifesto",
+   "u": "https://statmodeling.stat.columbia.edu/2026/10/09/thinking-more-seriously-about-the-design-of-exploratory-studies-a-manifesto/",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-09T12:56:38+00:00",
+   "id": "d246e1501fdc42136158",
+   "n": "The Quantum Insider",
+   "p": "2026-10-09T14:00:58+00:00",
+   "s": "quantum-insider",
+   "t": "BTQ and MoonPay Korea Partner on Post-Quantum Stablecoin Security",
+   "u": "https://thequantuminsider.com/2026/10/09/btq-technologies-secure-moonpay-korea-stablecoin-infrastructure/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-09T13:05:36+00:00",
+   "id": "86c1ae0401660fa8b4fd",
+   "n": "The Quantum Insider",
+   "p": "2026-10-09T14:00:58+00:00",
+   "s": "quantum-insider",
+   "t": "Quantum X Labs Seeks Patent for Structured-Beam Atom Cooling System",
+   "u": "https://thequantuminsider.com/2026/10/09/quantum-x-labs-us-patent-application-cold-atom-technology/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-09T13:20:20+00:00",
+   "id": "704bc952fc4d651ef0b7",
+   "n": "The Quantum Insider",
+   "p": "2026-10-09T14:00:58+00:00",
+   "s": "quantum-insider",
+   "t": "IonQ Demonstrates 1,000 Entanglement Events per Second in Quantum Interconnect",
+   "u": "https://thequantuminsider.com/2026/10/09/ionq-1000-entanglement-events-per-second-quantum-interconnect/",
+   "w": "38ea256357822bec3bfd"
   }
  ],
  "meta": {}
