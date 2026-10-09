@@ -7777,6 +7777,28 @@
    "t": "Quantum Elements’ Constellation Wins TMCnet 2026 Quantum Computing Product Award",
    "u": "https://thequantuminsider.com/2026/10/09/quantum-elements-tmcnet-2026-quantum-computing-product-of-the-year-award/",
    "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-09T09:00:00+00:00",
+   "id": "67ec9f90215a29132747",
+   "n": "MIT Technology Review (AI)",
+   "p": "2026-10-09T09:30:58+00:00",
+   "s": "mit-tech-review-ai",
+   "t": "We’re putting too much faith in AI’s ability to say no",
+   "u": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no/",
+   "w": "743abde5e483be0069e5"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-09T07:00:00+00:00",
+   "id": "570fe3204556675e8dd9",
+   "n": "OpenAI News",
+   "p": "2026-10-09T09:30:58+00:00",
+   "s": "openai",
+   "t": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+   "u": "https://openai.com/index/sophos",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
