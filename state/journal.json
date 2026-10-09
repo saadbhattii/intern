@@ -8125,6 +8125,27 @@
    "t": "I expect rapid progress but not towards general superintelligence",
    "u": "https://www.interconnects.ai/p/i-expect-rapid-progress-but-not-towards",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "publications",
+   "d": "2026-10-09T22:04:07+00:00",
+   "id": "22c3579861187b297e18",
+   "n": "Ars Technica (AI)",
+   "p": "2026-10-09T22:30:57+00:00",
+   "s": "ars-technica-ai",
+   "t": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+   "u": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+   "w": "743abde5e483be0069e5"
+  },
+  {
+   "c": "ai",
+   "id": "ad9f073b4701b9e8e7b1",
+   "n": "Anthropic Research",
+   "p": "2026-10-09T22:30:57+00:00",
+   "s": "anthropic-research",
+   "t": "Alignment Investigating unintended model actions in our evaluations and internal use",
+   "u": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
