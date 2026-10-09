@@ -7920,6 +7920,49 @@
    "t": "IonQ Demonstrates 1,000 Entanglement Events per Second in Quantum Interconnect",
    "u": "https://thequantuminsider.com/2026/10/09/ionq-1000-entanglement-events-per-second-quantum-interconnect/",
    "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-09T15:22:39+00:00",
+   "id": "08b98dfcff96e6d21afe",
+   "n": "Statistical Modeling, Causal Inference, and Social Science",
+   "p": "2026-10-09T15:31:01+00:00",
+   "s": "gelman-stat-modeling",
+   "t": "Digital twins version 2.0: The skeptics speak up",
+   "u": "https://statmodeling.stat.columbia.edu/2026/10/09/digital-twins-version-2-0-the-skeptics-speak-up/",
+   "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "institutes",
+   "id": "d7f71c05352dd62cd198",
+   "n": "Perimeter Institute",
+   "p": "2026-10-09T15:31:01+00:00",
+   "s": "perimeter",
+   "t": "10 Community Science projects you can contribute to right now",
+   "u": "https://perimeterinstitute.ca/news/10-community-science-projects-you-can-contribute-right-now",
+   "w": "6341e8660a5f186cb2aa"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-09T14:45:33+00:00",
+   "id": "4115205fb5938c1d52fc",
+   "n": "The Quantum Insider",
+   "p": "2026-10-09T15:31:01+00:00",
+   "s": "quantum-insider",
+   "t": "Guest Post: Quantum Computing’s Transistor Moment",
+   "u": "https://thequantuminsider.com/2026/10/09/guest-post-quantum-computings-transistor-moment/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-09T15:20:29+00:00",
+   "id": "e05551817b225bef5e8c",
+   "n": "Hugging Face Blog",
+   "p": "2026-10-09T15:31:01+00:00",
+   "s": "hugging-face",
+   "t": "Impactful scheduling for GPU clusters",
+   "u": "https://huggingface.co/blog/allenai/impactful-scheduling",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
