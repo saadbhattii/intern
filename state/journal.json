@@ -8167,6 +8167,39 @@
    "t": "Building the Software Stack Fault Tolerance Actually Needs",
    "u": "https://www.quera.com/blog-posts/building-the-software-stack-fault-tolerance-actually-needs",
    "w": "d9ef1d3b9c1f36ff3d1e"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-09T22:15:50+00:00",
+   "id": "83e70b227148b9423ddf",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-10T01:30:57+00:00",
+   "s": "quantum-computing-report",
+   "t": "Podcast with Harry Kumar, Co-founder, Director & CCO of Moth Quantum",
+   "u": "https://quantumcomputingreport.com/podcast-with-harry-kumar-co-founder-director-cco-of-moth-quantum/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-10T00:09:23+00:00",
+   "id": "344c229cd39b0a5fb44f",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-10T01:30:57+00:00",
+   "s": "quantum-computing-report",
+   "t": "Quantum X Labs Expands Intellectual Property and R&D Across Neutral-Atom Hardware, Rydberg Sensing, and Circuit Security",
+   "u": "https://quantumcomputingreport.com/quantum-x-labs-expands-intellectual-property-and-rd-across-neutral-atom-hardware-rydberg-sensing-and-circuit-security/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-10T00:31:40+00:00",
+   "id": "4b4e62baa0f57f3e6269",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-10T01:30:57+00:00",
+   "s": "quantum-computing-report",
+   "t": "Who’s News: Strategic Appointments at PQShield, VTT, QuantWare, and Rensselaer Polytechnic Institute",
+   "u": "https://quantumcomputingreport.com/whos-news-strategic-appointments-at-pqshield-vtt-quantware-and-rensselaer-polytechnic-institute/",
+   "w": "38ea256357822bec3bfd"
   }
  ],
  "meta": {}
