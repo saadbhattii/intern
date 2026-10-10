@@ -8255,6 +8255,39 @@
    "t": "Math 2.0",
    "u": "https://terrytao.wordpress.com/2026/10/10/math-2-0/",
    "w": "4c3df3fa3a1733eb1e73"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-10T18:05:18+00:00",
+   "id": "910e38f04af810fc9437",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-10T19:30:57+00:00",
+   "s": "quantum-computing-report",
+   "t": "Multi-Institutional Consortium Expands QRMI to Standardize Quantum-HPC Integration Across Major Workload Managers",
+   "u": "https://quantumcomputingreport.com/multi-institutional-consortium-expands-qrmi-to-standardize-quantum-hpc-integration-across-major-workload-managers/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-10T18:25:41+00:00",
+   "id": "8c38512c56b175e123e7",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-10T19:30:57+00:00",
+   "s": "quantum-computing-report",
+   "t": "University of Saskatchewan Researchers Achieve Record Hyperbolic Surface Code Efficiency for Modular Fault-Tolerant Architectures",
+   "u": "https://quantumcomputingreport.com/university-of-saskatchewan-researchers-achieve-record-hyperbolic-surface-code-efficiency-for-modular-fault-tolerant-architectures/",
+   "w": "38ea256357822bec3bfd"
+  },
+  {
+   "c": "analysts",
+   "d": "2026-10-10T18:45:30+00:00",
+   "id": "103046a2f852a71325f4",
+   "n": "Quantum Computing Report",
+   "p": "2026-10-10T19:30:57+00:00",
+   "s": "quantum-computing-report",
+   "t": "Xanadu Cuts Quantum Read-Only Memory Costs by ~4x via Dense Encoding",
+   "u": "https://quantumcomputingreport.com/xanadu-cuts-quantum-read-only-memory-costs-by-4x-via-dense-encoding/",
+   "w": "38ea256357822bec3bfd"
   }
  ],
  "meta": {}
