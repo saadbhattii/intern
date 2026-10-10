@@ -8157,6 +8157,16 @@
    "t": "Ai2 at COLM 2026: Open research, from models to agents for science",
    "u": "https://allenai.org/blog/colm-2026-recap",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "hardware",
+   "id": "9ea673e4e0da2f04b4b2",
+   "n": "QuEra Computing",
+   "p": "2026-10-10T01:00:56+00:00",
+   "s": "quera",
+   "t": "Building the Software Stack Fault Tolerance Actually Needs",
+   "u": "https://www.quera.com/blog-posts/building-the-software-stack-fault-tolerance-actually-needs",
+   "w": "d9ef1d3b9c1f36ff3d1e"
   }
  ],
  "meta": {}
