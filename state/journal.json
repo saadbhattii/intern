@@ -8146,6 +8146,17 @@
    "t": "Alignment Investigating unintended model actions in our evaluations and internal use",
    "u": "https://www.anthropic.com/research/investigating-unintended-model-actions",
    "w": "9a87363646b342e1cd27"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-09T08:00:00+00:00",
+   "id": "b9f7a8968071758614b2",
+   "n": "Ai2 (Allen Institute for AI)",
+   "p": "2026-10-10T00:30:57+00:00",
+   "s": "ai2",
+   "t": "Ai2 at COLM 2026: Open research, from models to agents for science",
+   "u": "https://allenai.org/blog/colm-2026-recap",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
