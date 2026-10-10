@@ -8233,6 +8233,17 @@
    "t": "Great Networking and a Dinner Cruise",
    "u": "https://www.insidequantumtechnology.com/news-archive/great-networking-and-a-dinner-cruise/",
    "w": "743abde5e483be0069e5"
+  },
+  {
+   "c": "ai",
+   "d": "2026-10-10T13:11:15+00:00",
+   "id": "188571544c89500f6ccc",
+   "n": "Statistical Modeling, Causal Inference, and Social Science",
+   "p": "2026-10-10T13:30:56+00:00",
+   "s": "gelman-stat-modeling",
+   "t": "The problem is noise, not N: why increasing the sample size isn’t all that.",
+   "u": "https://statmodeling.stat.columbia.edu/2026/10/10/the-problem-is-noise-not-n-why-increasing-the-sample-size-isnt-all-that/",
+   "w": "9a87363646b342e1cd27"
   }
  ],
  "meta": {}
